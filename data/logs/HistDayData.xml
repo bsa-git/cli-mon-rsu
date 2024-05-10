@@ -1,0 +1,1333 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<DATAPACKET Version="2.0">
+<METADATA>
+<FIELDS>
+<FIELD FieldName="source" DisplayLabel="Позиция в истории" FieldType="String" FieldClass="THist"/>
+<FIELD FieldName="time" DisplayLabel="ДатаВремя в истории" FieldType="DateTime" FieldClass="THist"/>
+<FIELD FieldName="value" DisplayLabel="Значение в истории" FieldType="Float" FieldClass="THist"/>
+<FIELD FieldName="id" DisplayLabel="Уникальный код записи" FieldType="Integer" FieldClass="TDataBase"/>
+<FIELD FieldName="ts" DisplayLabel="Временная мента" FieldType="DateTime" FieldClass="TDataBase"/>
+<FIELD FieldName="tag_id" DisplayLabel="Уникальный код позиции" FieldType="Integer" FieldClass="TDataBase"/>
+<FIELD FieldName="name" DisplayLabel="Название позиции" FieldType="String" FieldClass="TDataBase"/>
+<FIELD FieldName="date_hist" DisplayLabel="Дата в истории" FieldType="Date" FieldClass="TDataBase"/>
+<FIELD FieldName="time_hist" DisplayLabel="Время в истории" FieldType="Time" FieldClass="TDataBase"/>
+<FIELD FieldName="value" DisplayLabel="Значение в истории" FieldType="Float" FieldClass="TDataBase"/>
+</FIELDS>
+</METADATA>
+<PARAMS c="hist" a="day_data"/>
+<RESULTS>
+<TITLE>
+Получить суточные данные из истории и сохранить их в базе данных</TITLE>
+<RESULT>
+1</RESULT>
+<MESSAGE>
+OK...Суточные данные получены за  (2013-09-09)</MESSAGE>
+</RESULTS>
+<WARNINGS>
+</WARNINGS>
+<ROWHIST>
+<ROW source="02PGAZ:02NG_FQD.OUT" time="2013-09-09T1:00:00" value="7.788"/>
+<ROW source="02PGAZ:02NG_FQD.OUT" time="2013-09-09T2:00:00" value="15.5961"/>
+<ROW source="02PGAZ:02NG_FQD.OUT" time="2013-09-09T3:00:00" value="23.4277"/>
+<ROW source="02PGAZ:02NG_FQD.OUT" time="2013-09-09T4:00:00" value="31.2768"/>
+<ROW source="02PGAZ:02NG_FQD.OUT" time="2013-09-09T5:00:00" value="39.12"/>
+<ROW source="02PGAZ:02NG_FQD.OUT" time="2013-09-09T6:00:00" value="46.9656"/>
+<ROW source="02PGAZ:02NG_FQD.OUT" time="2013-09-09T7:00:00" value="54.8302"/>
+<ROW source="02PGAZ:02NG_FQD.OUT" time="2013-09-09T8:00:00" value="62.651"/>
+<ROW source="02PGAZ:02NG_FQD.OUT" time="2013-09-09T9:00:00" value="70.446"/>
+<ROW source="02PGAZ:02NG_FQD.OUT" time="2013-09-09T10:00:00" value="78.2321"/>
+<ROW source="02PGAZ:02NG_FQD.OUT" time="2013-09-09T11:00:00" value="85.9546"/>
+<ROW source="02PGAZ:02NG_FQD.OUT" time="2013-09-09T12:00:00" value="93.6371"/>
+<ROW source="02PGAZ:02NG_FQD.OUT" time="2013-09-09T13:00:00" value="101.359"/>
+<ROW source="02PGAZ:02NG_FQD.OUT" time="2013-09-09T14:00:00" value="109.068"/>
+<ROW source="02PGAZ:02NG_FQD.OUT" time="2013-09-09T15:00:00" value="116.763"/>
+<ROW source="02PGAZ:02NG_FQD.OUT" time="2013-09-09T16:00:00" value="124.436"/>
+<ROW source="02PGAZ:02NG_FQD.OUT" time="2013-09-09T17:00:00" value="132.093"/>
+<ROW source="02PGAZ:02NG_FQD.OUT" time="2013-09-09T18:00:00" value="139.735"/>
+<ROW source="02PGAZ:02NG_FQD.OUT" time="2013-09-09T19:00:00" value="147.368"/>
+<ROW source="02PGAZ:02NG_FQD.OUT" time="2013-09-09T20:00:00" value="154.985"/>
+<ROW source="02PGAZ:02NG_FQD.OUT" time="2013-09-09T21:00:00" value="162.628"/>
+<ROW source="02PGAZ:02NG_FQD.OUT" time="2013-09-09T22:00:00" value="170.301"/>
+<ROW source="02PGAZ:02NG_FQD.OUT" time="2013-09-09T23:00:00" value="177.973"/>
+<ROW source="02PGAZ:02NG_FQD.OUT" time="2013-09-09T23:59:59" value="185.699"/>
+<ROW source="02AMIAK:02JAM1_FQD.OUT" time="2013-09-09T1:00:00" value="15.9696"/>
+<ROW source="02AMIAK:02JAM1_FQD.OUT" time="2013-09-09T2:00:00" value="31.983"/>
+<ROW source="02AMIAK:02JAM1_FQD.OUT" time="2013-09-09T3:00:00" value="48.065"/>
+<ROW source="02AMIAK:02JAM1_FQD.OUT" time="2013-09-09T4:00:00" value="64.0991"/>
+<ROW source="02AMIAK:02JAM1_FQD.OUT" time="2013-09-09T5:00:00" value="80.1629"/>
+<ROW source="02AMIAK:02JAM1_FQD.OUT" time="2013-09-09T6:00:00" value="96.2296"/>
+<ROW source="02AMIAK:02JAM1_FQD.OUT" time="2013-09-09T7:00:00" value="112.285"/>
+<ROW source="02AMIAK:02JAM1_FQD.OUT" time="2013-09-09T8:00:00" value="128.272"/>
+<ROW source="02AMIAK:02JAM1_FQD.OUT" time="2013-09-09T9:00:00" value="144.139"/>
+<ROW source="02AMIAK:02JAM1_FQD.OUT" time="2013-09-09T10:00:00" value="159.991"/>
+<ROW source="02AMIAK:02JAM1_FQD.OUT" time="2013-09-09T11:00:00" value="175.616"/>
+<ROW source="02AMIAK:02JAM1_FQD.OUT" time="2013-09-09T12:00:00" value="191.26"/>
+<ROW source="02AMIAK:02JAM1_FQD.OUT" time="2013-09-09T13:00:00" value="207.381"/>
+<ROW source="02AMIAK:02JAM1_FQD.OUT" time="2013-09-09T14:00:00" value="223.137"/>
+<ROW source="02AMIAK:02JAM1_FQD.OUT" time="2013-09-09T15:00:00" value="238.92"/>
+<ROW source="02AMIAK:02JAM1_FQD.OUT" time="2013-09-09T16:00:00" value="254.646"/>
+<ROW source="02AMIAK:02JAM1_FQD.OUT" time="2013-09-09T17:00:00" value="270.274"/>
+<ROW source="02AMIAK:02JAM1_FQD.OUT" time="2013-09-09T18:00:00" value="285.926"/>
+<ROW source="02AMIAK:02JAM1_FQD.OUT" time="2013-09-09T19:00:00" value="301.568"/>
+<ROW source="02AMIAK:02JAM1_FQD.OUT" time="2013-09-09T20:00:00" value="317.229"/>
+<ROW source="02AMIAK:02JAM1_FQD.OUT" time="2013-09-09T21:00:00" value="333.111"/>
+<ROW source="02AMIAK:02JAM1_FQD.OUT" time="2013-09-09T22:00:00" value="349.023"/>
+<ROW source="02AMIAK:02JAM1_FQD.OUT" time="2013-09-09T23:00:00" value="364.926"/>
+<ROW source="02AMIAK:02JAM1_FQD.OUT" time="2013-09-09T23:59:59" value="380.911"/>
+<ROW source="02AMIAK:02JAM2_FQD.OUT" time="2013-09-09T1:00:00" value="12.6072"/>
+<ROW source="02AMIAK:02JAM2_FQD.OUT" time="2013-09-09T2:00:00" value="25.2391"/>
+<ROW source="02AMIAK:02JAM2_FQD.OUT" time="2013-09-09T3:00:00" value="37.911"/>
+<ROW source="02AMIAK:02JAM2_FQD.OUT" time="2013-09-09T4:00:00" value="50.5687"/>
+<ROW source="02AMIAK:02JAM2_FQD.OUT" time="2013-09-09T5:00:00" value="63.2522"/>
+<ROW source="02AMIAK:02JAM2_FQD.OUT" time="2013-09-09T6:00:00" value="75.9478"/>
+<ROW source="02AMIAK:02JAM2_FQD.OUT" time="2013-09-09T7:00:00" value="88.6593"/>
+<ROW source="02AMIAK:02JAM2_FQD.OUT" time="2013-09-09T8:00:00" value="101.31"/>
+<ROW source="02AMIAK:02JAM2_FQD.OUT" time="2013-09-09T9:00:00" value="113.873"/>
+<ROW source="02AMIAK:02JAM2_FQD.OUT" time="2013-09-09T10:00:00" value="126.424"/>
+<ROW source="02AMIAK:02JAM2_FQD.OUT" time="2013-09-09T11:00:00" value="138.836"/>
+<ROW source="02AMIAK:02JAM2_FQD.OUT" time="2013-09-09T12:00:00" value="151.194"/>
+<ROW source="02AMIAK:02JAM2_FQD.OUT" time="2013-09-09T13:00:00" value="163.954"/>
+<ROW source="02AMIAK:02JAM2_FQD.OUT" time="2013-09-09T14:00:00" value="176.428"/>
+<ROW source="02AMIAK:02JAM2_FQD.OUT" time="2013-09-09T15:00:00" value="188.948"/>
+<ROW source="02AMIAK:02JAM2_FQD.OUT" time="2013-09-09T16:00:00" value="201.404"/>
+<ROW source="02AMIAK:02JAM2_FQD.OUT" time="2013-09-09T17:00:00" value="213.772"/>
+<ROW source="02AMIAK:02JAM2_FQD.OUT" time="2013-09-09T18:00:00" value="226.152"/>
+<ROW source="02AMIAK:02JAM2_FQD.OUT" time="2013-09-09T19:00:00" value="238.529"/>
+<ROW source="02AMIAK:02JAM2_FQD.OUT" time="2013-09-09T20:00:00" value="250.925"/>
+<ROW source="02AMIAK:02JAM2_FQD.OUT" time="2013-09-09T21:00:00" value="263.479"/>
+<ROW source="02AMIAK:02JAM2_FQD.OUT" time="2013-09-09T22:00:00" value="276.023"/>
+<ROW source="02AMIAK:02JAM2_FQD.OUT" time="2013-09-09T23:00:00" value="288.554"/>
+<ROW source="02AMIAK:02JAM2_FQD.OUT" time="2013-09-09T23:59:59" value="301.143"/>
+<ROW source="02VODA_XOB:02UMV_FQD.OUT" time="2013-09-09T1:00:00" value="0.1831"/>
+<ROW source="02VODA_XOB:02UMV_FQD.OUT" time="2013-09-09T2:00:00" value="0.3673"/>
+<ROW source="02VODA_XOB:02UMV_FQD.OUT" time="2013-09-09T3:00:00" value="0.5517"/>
+<ROW source="02VODA_XOB:02UMV_FQD.OUT" time="2013-09-09T4:00:00" value="0.7361"/>
+<ROW source="02VODA_XOB:02UMV_FQD.OUT" time="2013-09-09T5:00:00" value="0.9205"/>
+<ROW source="02VODA_XOB:02UMV_FQD.OUT" time="2013-09-09T6:00:00" value="1.1048"/>
+<ROW source="02VODA_XOB:02UMV_FQD.OUT" time="2013-09-09T7:00:00" value="1.2894"/>
+<ROW source="02VODA_XOB:02UMV_FQD.OUT" time="2013-09-09T8:00:00" value="1.4728"/>
+<ROW source="02VODA_XOB:02UMV_FQD.OUT" time="2013-09-09T9:00:00" value="1.6567"/>
+<ROW source="02VODA_XOB:02UMV_FQD.OUT" time="2013-09-09T10:00:00" value="1.8401"/>
+<ROW source="02VODA_XOB:02UMV_FQD.OUT" time="2013-09-09T11:00:00" value="2.023"/>
+<ROW source="02VODA_XOB:02UMV_FQD.OUT" time="2013-09-09T12:00:00" value="2.2063"/>
+<ROW source="02VODA_XOB:02UMV_FQD.OUT" time="2013-09-09T13:00:00" value="2.3902"/>
+<ROW source="02VODA_XOB:02UMV_FQD.OUT" time="2013-09-09T14:00:00" value="2.5728"/>
+<ROW source="02VODA_XOB:02UMV_FQD.OUT" time="2013-09-09T15:00:00" value="2.7548"/>
+<ROW source="02VODA_XOB:02UMV_FQD.OUT" time="2013-09-09T16:00:00" value="2.9354"/>
+<ROW source="02VODA_XOB:02UMV_FQD.OUT" time="2013-09-09T17:00:00" value="3.1154"/>
+<ROW source="02VODA_XOB:02UMV_FQD.OUT" time="2013-09-09T18:00:00" value="3.2958"/>
+<ROW source="02VODA_XOB:02UMV_FQD.OUT" time="2013-09-09T19:00:00" value="3.4763"/>
+<ROW source="02VODA_XOB:02UMV_FQD.OUT" time="2013-09-09T20:00:00" value="3.657"/>
+<ROW source="02VODA_XOB:02UMV_FQD.OUT" time="2013-09-09T21:00:00" value="3.838"/>
+<ROW source="02VODA_XOB:02UMV_FQD.OUT" time="2013-09-09T22:00:00" value="4.0188"/>
+<ROW source="02VODA_XOB:02UMV_FQD.OUT" time="2013-09-09T23:00:00" value="4.1994"/>
+<ROW source="02VODA_XOB:02UMV_FQD.OUT" time="2013-09-09T23:59:59" value="4.3809"/>
+<ROW source="02AMIAK:02NH3_FQDM.PNT" time="2013-09-09T1:00:00" value="0"/>
+<ROW source="02AMIAK:02NH3_FQDM.PNT" time="2013-09-09T2:00:00" value="0.0002"/>
+<ROW source="02AMIAK:02NH3_FQDM.PNT" time="2013-09-09T3:00:00" value="0.0002"/>
+<ROW source="02AMIAK:02NH3_FQDM.PNT" time="2013-09-09T4:00:00" value="0.0002"/>
+<ROW source="02AMIAK:02NH3_FQDM.PNT" time="2013-09-09T5:00:00" value="0.0002"/>
+<ROW source="02AMIAK:02NH3_FQDM.PNT" time="2013-09-09T6:00:00" value="0.0002"/>
+<ROW source="02AMIAK:02NH3_FQDM.PNT" time="2013-09-09T7:00:00" value="0.0002"/>
+<ROW source="02AMIAK:02NH3_FQDM.PNT" time="2013-09-09T8:00:00" value="0.0002"/>
+<ROW source="02AMIAK:02NH3_FQDM.PNT" time="2013-09-09T9:00:00" value="0.0002"/>
+<ROW source="02AMIAK:02NH3_FQDM.PNT" time="2013-09-09T10:00:00" value="0.0002"/>
+<ROW source="02AMIAK:02NH3_FQDM.PNT" time="2013-09-09T11:00:00" value="0.0005"/>
+<ROW source="02AMIAK:02NH3_FQDM.PNT" time="2013-09-09T12:00:00" value="0.0006"/>
+<ROW source="02AMIAK:02NH3_FQDM.PNT" time="2013-09-09T13:00:00" value="1.0261"/>
+<ROW source="02AMIAK:02NH3_FQDM.PNT" time="2013-09-09T14:00:00" value="1.1635"/>
+<ROW source="02AMIAK:02NH3_FQDM.PNT" time="2013-09-09T15:00:00" value="1.1635"/>
+<ROW source="02AMIAK:02NH3_FQDM.PNT" time="2013-09-09T16:00:00" value="1.1635"/>
+<ROW source="02AMIAK:02NH3_FQDM.PNT" time="2013-09-09T17:00:00" value="1.1635"/>
+<ROW source="02AMIAK:02NH3_FQDM.PNT" time="2013-09-09T18:00:00" value="1.1635"/>
+<ROW source="02AMIAK:02NH3_FQDM.PNT" time="2013-09-09T19:00:00" value="1.1635"/>
+<ROW source="02AMIAK:02NH3_FQDM.PNT" time="2013-09-09T20:00:00" value="1.1755"/>
+<ROW source="02AMIAK:02NH3_FQDM.PNT" time="2013-09-09T21:00:00" value="1.6539"/>
+<ROW source="02AMIAK:02NH3_FQDM.PNT" time="2013-09-09T22:00:00" value="2.3462"/>
+<ROW source="02AMIAK:02NH3_FQDM.PNT" time="2013-09-09T23:00:00" value="2.7857"/>
+<ROW source="02AMIAK:02NH3_FQDM.PNT" time="2013-09-09T23:59:59" value="3.1987"/>
+<ROW source="02PAR:02PARF1_FQD.OUT" time="2013-09-09T1:00:00" value="54.2532"/>
+<ROW source="02PAR:02PARF1_FQD.OUT" time="2013-09-09T2:00:00" value="108.627"/>
+<ROW source="02PAR:02PARF1_FQD.OUT" time="2013-09-09T3:00:00" value="163.157"/>
+<ROW source="02PAR:02PARF1_FQD.OUT" time="2013-09-09T4:00:00" value="217.812"/>
+<ROW source="02PAR:02PARF1_FQD.OUT" time="2013-09-09T5:00:00" value="272.388"/>
+<ROW source="02PAR:02PARF1_FQD.OUT" time="2013-09-09T6:00:00" value="326.972"/>
+<ROW source="02PAR:02PARF1_FQD.OUT" time="2013-09-09T7:00:00" value="381.616"/>
+<ROW source="02PAR:02PARF1_FQD.OUT" time="2013-09-09T8:00:00" value="435.909"/>
+<ROW source="02PAR:02PARF1_FQD.OUT" time="2013-09-09T9:00:00" value="489.926"/>
+<ROW source="02PAR:02PARF1_FQD.OUT" time="2013-09-09T10:00:00" value="543.772"/>
+<ROW source="02PAR:02PARF1_FQD.OUT" time="2013-09-09T11:00:00" value="597.293"/>
+<ROW source="02PAR:02PARF1_FQD.OUT" time="2013-09-09T12:00:00" value="650.72"/>
+<ROW source="02PAR:02PARF1_FQD.OUT" time="2013-09-09T13:00:00" value="703.953"/>
+<ROW source="02PAR:02PARF1_FQD.OUT" time="2013-09-09T14:00:00" value="757.206"/>
+<ROW source="02PAR:02PARF1_FQD.OUT" time="2013-09-09T15:00:00" value="810.492"/>
+<ROW source="02PAR:02PARF1_FQD.OUT" time="2013-09-09T16:00:00" value="863.304"/>
+<ROW source="02PAR:02PARF1_FQD.OUT" time="2013-09-09T17:00:00" value="915.737"/>
+<ROW source="02PAR:02PARF1_FQD.OUT" time="2013-09-09T18:00:00" value="968.093"/>
+<ROW source="02PAR:02PARF1_FQD.OUT" time="2013-09-09T19:00:00" value="1020.321"/>
+<ROW source="02PAR:02PARF1_FQD.OUT" time="2013-09-09T20:00:00" value="1072.58"/>
+<ROW source="02PAR:02PARF1_FQD.OUT" time="2013-09-09T21:00:00" value="1125.143"/>
+<ROW source="02PAR:02PARF1_FQD.OUT" time="2013-09-09T22:00:00" value="1177.871"/>
+<ROW source="02PAR:02PARF1_FQD.OUT" time="2013-09-09T23:00:00" value="1230.605"/>
+<ROW source="02PAR:02PARF1_FQD.OUT" time="2013-09-09T23:59:59" value="1283.668"/>
+<ROW source="02PAR:02PARG1_FQD.OUT" time="2013-09-09T1:00:00" value="37.2445"/>
+<ROW source="02PAR:02PARG1_FQD.OUT" time="2013-09-09T2:00:00" value="74.571"/>
+<ROW source="02PAR:02PARG1_FQD.OUT" time="2013-09-09T3:00:00" value="112.004"/>
+<ROW source="02PAR:02PARG1_FQD.OUT" time="2013-09-09T4:00:00" value="149.522"/>
+<ROW source="02PAR:02PARG1_FQD.OUT" time="2013-09-09T5:00:00" value="186.987"/>
+<ROW source="02PAR:02PARG1_FQD.OUT" time="2013-09-09T6:00:00" value="224.455"/>
+<ROW source="02PAR:02PARG1_FQD.OUT" time="2013-09-09T7:00:00" value="261.964"/>
+<ROW source="02PAR:02PARG1_FQD.OUT" time="2013-09-09T8:00:00" value="299.235"/>
+<ROW source="02PAR:02PARG1_FQD.OUT" time="2013-09-09T9:00:00" value="336.319"/>
+<ROW source="02PAR:02PARG1_FQD.OUT" time="2013-09-09T10:00:00" value="373.288"/>
+<ROW source="02PAR:02PARG1_FQD.OUT" time="2013-09-09T11:00:00" value="410.038"/>
+<ROW source="02PAR:02PARG1_FQD.OUT" time="2013-09-09T12:00:00" value="446.725"/>
+<ROW source="02PAR:02PARG1_FQD.OUT" time="2013-09-09T13:00:00" value="483.285"/>
+<ROW source="02PAR:02PARG1_FQD.OUT" time="2013-09-09T14:00:00" value="519.859"/>
+<ROW source="02PAR:02PARG1_FQD.OUT" time="2013-09-09T15:00:00" value="556.456"/>
+<ROW source="02PAR:02PARG1_FQD.OUT" time="2013-09-09T16:00:00" value="592.73"/>
+<ROW source="02PAR:02PARG1_FQD.OUT" time="2013-09-09T17:00:00" value="628.746"/>
+<ROW source="02PAR:02PARG1_FQD.OUT" time="2013-09-09T18:00:00" value="664.71"/>
+<ROW source="02PAR:02PARG1_FQD.OUT" time="2013-09-09T19:00:00" value="700.585"/>
+<ROW source="02PAR:02PARG1_FQD.OUT" time="2013-09-09T20:00:00" value="736.48"/>
+<ROW source="02PAR:02PARG1_FQD.OUT" time="2013-09-09T21:00:00" value="772.581"/>
+<ROW source="02PAR:02PARG1_FQD.OUT" time="2013-09-09T22:00:00" value="808.791"/>
+<ROW source="02PAR:02PARG1_FQD.OUT" time="2013-09-09T23:00:00" value="845.006"/>
+<ROW source="02PAR:02PARG1_FQD.OUT" time="2013-09-09T23:59:59" value="881.445"/>
+<ROW source="02PAR:02PARF2_FQD.OUT" time="2013-09-09T1:00:00" value="53.2545"/>
+<ROW source="02PAR:02PARF2_FQD.OUT" time="2013-09-09T2:00:00" value="106.611"/>
+<ROW source="02PAR:02PARF2_FQD.OUT" time="2013-09-09T3:00:00" value="160.126"/>
+<ROW source="02PAR:02PARF2_FQD.OUT" time="2013-09-09T4:00:00" value="213.775"/>
+<ROW source="02PAR:02PARF2_FQD.OUT" time="2013-09-09T5:00:00" value="267.374"/>
+<ROW source="02PAR:02PARF2_FQD.OUT" time="2013-09-09T6:00:00" value="320.96"/>
+<ROW source="02PAR:02PARF2_FQD.OUT" time="2013-09-09T7:00:00" value="374.631"/>
+<ROW source="02PAR:02PARF2_FQD.OUT" time="2013-09-09T8:00:00" value="427.96"/>
+<ROW source="02PAR:02PARF2_FQD.OUT" time="2013-09-09T9:00:00" value="481.018"/>
+<ROW source="02PAR:02PARF2_FQD.OUT" time="2013-09-09T10:00:00" value="534.001"/>
+<ROW source="02PAR:02PARF2_FQD.OUT" time="2013-09-09T11:00:00" value="586.625"/>
+<ROW source="02PAR:02PARF2_FQD.OUT" time="2013-09-09T12:00:00" value="639.09"/>
+<ROW source="02PAR:02PARF2_FQD.OUT" time="2013-09-09T13:00:00" value="691.338"/>
+<ROW source="02PAR:02PARF2_FQD.OUT" time="2013-09-09T14:00:00" value="743.765"/>
+<ROW source="02PAR:02PARF2_FQD.OUT" time="2013-09-09T15:00:00" value="796.246"/>
+<ROW source="02PAR:02PARF2_FQD.OUT" time="2013-09-09T16:00:00" value="848.17"/>
+<ROW source="02PAR:02PARF2_FQD.OUT" time="2013-09-09T17:00:00" value="899.618"/>
+<ROW source="02PAR:02PARF2_FQD.OUT" time="2013-09-09T18:00:00" value="950.988"/>
+<ROW source="02PAR:02PARF2_FQD.OUT" time="2013-09-09T19:00:00" value="1002.194"/>
+<ROW source="02PAR:02PARF2_FQD.OUT" time="2013-09-09T20:00:00" value="1053.406"/>
+<ROW source="02PAR:02PARF2_FQD.OUT" time="2013-09-09T21:00:00" value="1104.908"/>
+<ROW source="02PAR:02PARF2_FQD.OUT" time="2013-09-09T22:00:00" value="1156.594"/>
+<ROW source="02PAR:02PARF2_FQD.OUT" time="2013-09-09T23:00:00" value="1208.275"/>
+<ROW source="02PAR:02PARF2_FQD.OUT" time="2013-09-09T23:59:59" value="1260.295"/>
+<ROW source="02PAR:02PARG2_FQD.OUT" time="2013-09-09T1:00:00" value="36.5559"/>
+<ROW source="02PAR:02PARG2_FQD.OUT" time="2013-09-09T2:00:00" value="73.1809"/>
+<ROW source="02PAR:02PARG2_FQD.OUT" time="2013-09-09T3:00:00" value="109.915"/>
+<ROW source="02PAR:02PARG2_FQD.OUT" time="2013-09-09T4:00:00" value="146.74"/>
+<ROW source="02PAR:02PARG2_FQD.OUT" time="2013-09-09T5:00:00" value="183.532"/>
+<ROW source="02PAR:02PARG2_FQD.OUT" time="2013-09-09T6:00:00" value="220.313"/>
+<ROW source="02PAR:02PARG2_FQD.OUT" time="2013-09-09T7:00:00" value="257.153"/>
+<ROW source="02PAR:02PARG2_FQD.OUT" time="2013-09-09T8:00:00" value="293.762"/>
+<ROW source="02PAR:02PARG2_FQD.OUT" time="2013-09-09T9:00:00" value="330.186"/>
+<ROW source="02PAR:02PARG2_FQD.OUT" time="2013-09-09T10:00:00" value="366.559"/>
+<ROW source="02PAR:02PARG2_FQD.OUT" time="2013-09-09T11:00:00" value="402.688"/>
+<ROW source="02PAR:02PARG2_FQD.OUT" time="2013-09-09T12:00:00" value="438.71"/>
+<ROW source="02PAR:02PARG2_FQD.OUT" time="2013-09-09T13:00:00" value="474.587"/>
+<ROW source="02PAR:02PARG2_FQD.OUT" time="2013-09-09T14:00:00" value="510.589"/>
+<ROW source="02PAR:02PARG2_FQD.OUT" time="2013-09-09T15:00:00" value="546.627"/>
+<ROW source="02PAR:02PARG2_FQD.OUT" time="2013-09-09T16:00:00" value="582.286"/>
+<ROW source="02PAR:02PARG2_FQD.OUT" time="2013-09-09T17:00:00" value="617.621"/>
+<ROW source="02PAR:02PARG2_FQD.OUT" time="2013-09-09T18:00:00" value="652.903"/>
+<ROW source="02PAR:02PARG2_FQD.OUT" time="2013-09-09T19:00:00" value="688.073"/>
+<ROW source="02PAR:02PARG2_FQD.OUT" time="2013-09-09T20:00:00" value="723.244"/>
+<ROW source="02PAR:02PARG2_FQD.OUT" time="2013-09-09T21:00:00" value="758.613"/>
+<ROW source="02PAR:02PARG2_FQD.OUT" time="2013-09-09T22:00:00" value="794.104"/>
+<ROW source="02PAR:02PARG2_FQD.OUT" time="2013-09-09T23:00:00" value="829.595"/>
+<ROW source="02PAR:02PARG2_FQD.OUT" time="2013-09-09T23:59:59" value="865.316"/>
+<ROW source="02PGAZ:02PD5.PNT" time="2013-09-09T1:00:00" value="992.419"/>
+<ROW source="02PGAZ:02PD5.PNT" time="2013-09-09T2:00:00" value="995.011"/>
+<ROW source="02PGAZ:02PD5.PNT" time="2013-09-09T3:00:00" value="1001.93"/>
+<ROW source="02PGAZ:02PD5.PNT" time="2013-09-09T4:00:00" value="1004.562"/>
+<ROW source="02PGAZ:02PD5.PNT" time="2013-09-09T5:00:00" value="1005.334"/>
+<ROW source="02PGAZ:02PD5.PNT" time="2013-09-09T6:00:00" value="1018.487"/>
+<ROW source="02PGAZ:02PD5.PNT" time="2013-09-09T7:00:00" value="1011.645"/>
+<ROW source="02PGAZ:02PD5.PNT" time="2013-09-09T8:00:00" value="1018.99"/>
+<ROW source="02PGAZ:02PD5.PNT" time="2013-09-09T9:00:00" value="1012.978"/>
+<ROW source="02PGAZ:02PD5.PNT" time="2013-09-09T10:00:00" value="1014.179"/>
+<ROW source="02PGAZ:02PD5.PNT" time="2013-09-09T11:00:00" value="1005.57"/>
+<ROW source="02PGAZ:02PD5.PNT" time="2013-09-09T12:00:00" value="1025.385"/>
+<ROW source="02PGAZ:02PD5.PNT" time="2013-09-09T13:00:00" value="1046.906"/>
+<ROW source="02PGAZ:02PD5.PNT" time="2013-09-09T14:00:00" value="1036.136"/>
+<ROW source="02PGAZ:02PD5.PNT" time="2013-09-09T15:00:00" value="1019.404"/>
+<ROW source="02PGAZ:02PD5.PNT" time="2013-09-09T16:00:00" value="1007.656"/>
+<ROW source="02PGAZ:02PD5.PNT" time="2013-09-09T17:00:00" value="997.544"/>
+<ROW source="02PGAZ:02PD5.PNT" time="2013-09-09T18:00:00" value="997.835"/>
+<ROW source="02PGAZ:02PD5.PNT" time="2013-09-09T19:00:00" value="992.254"/>
+<ROW source="02PGAZ:02PD5.PNT" time="2013-09-09T20:00:00" value="990.981"/>
+<ROW source="02PGAZ:02PD5.PNT" time="2013-09-09T21:00:00" value="999.425"/>
+<ROW source="02PGAZ:02PD5.PNT" time="2013-09-09T22:00:00" value="999.267"/>
+<ROW source="02PGAZ:02PD5.PNT" time="2013-09-09T23:00:00" value="1005.676"/>
+<ROW source="02PGAZ:02PD5.PNT" time="2013-09-09T23:59:59" value="1003.222"/>
+<ROW source="02PGAZ:02P5.PNT" time="2013-09-09T1:00:00" value="10.8859"/>
+<ROW source="02PGAZ:02P5.PNT" time="2013-09-09T2:00:00" value="10.8859"/>
+<ROW source="02PGAZ:02P5.PNT" time="2013-09-09T3:00:00" value="10.8859"/>
+<ROW source="02PGAZ:02P5.PNT" time="2013-09-09T4:00:00" value="10.8696"/>
+<ROW source="02PGAZ:02P5.PNT" time="2013-09-09T5:00:00" value="10.8213"/>
+<ROW source="02PGAZ:02P5.PNT" time="2013-09-09T6:00:00" value="10.7725"/>
+<ROW source="02PGAZ:02P5.PNT" time="2013-09-09T7:00:00" value="10.7238"/>
+<ROW source="02PGAZ:02P5.PNT" time="2013-09-09T8:00:00" value="10.6908"/>
+<ROW source="02PGAZ:02P5.PNT" time="2013-09-09T9:00:00" value="10.8212"/>
+<ROW source="02PGAZ:02P5.PNT" time="2013-09-09T10:00:00" value="10.8696"/>
+<ROW source="02PGAZ:02P5.PNT" time="2013-09-09T11:00:00" value="10.8537"/>
+<ROW source="02PGAZ:02P5.PNT" time="2013-09-09T12:00:00" value="10.789"/>
+<ROW source="02PGAZ:02P5.PNT" time="2013-09-09T13:00:00" value="10.6918"/>
+<ROW source="02PGAZ:02P5.PNT" time="2013-09-09T14:00:00" value="10.6757"/>
+<ROW source="02PGAZ:02P5.PNT" time="2013-09-09T15:00:00" value="10.7892"/>
+<ROW source="02PGAZ:02P5.PNT" time="2013-09-09T16:00:00" value="10.8381"/>
+<ROW source="02PGAZ:02P5.PNT" time="2013-09-09T17:00:00" value="10.8875"/>
+<ROW source="02PGAZ:02P5.PNT" time="2013-09-09T18:00:00" value="10.8875"/>
+<ROW source="02PGAZ:02P5.PNT" time="2013-09-09T19:00:00" value="10.8388"/>
+<ROW source="02PGAZ:02P5.PNT" time="2013-09-09T20:00:00" value="10.7575"/>
+<ROW source="02PGAZ:02P5.PNT" time="2013-09-09T21:00:00" value="10.7089"/>
+<ROW source="02PGAZ:02P5.PNT" time="2013-09-09T22:00:00" value="10.6925"/>
+<ROW source="02PGAZ:02P5.PNT" time="2013-09-09T23:00:00" value="10.6925"/>
+<ROW source="02PGAZ:02P5.PNT" time="2013-09-09T23:59:59" value="10.7246"/>
+<ROW source="02PGAZ:02T16.PNT" time="2013-09-09T1:00:00" value="8.3996"/>
+<ROW source="02PGAZ:02T16.PNT" time="2013-09-09T2:00:00" value="8.4998"/>
+<ROW source="02PGAZ:02T16.PNT" time="2013-09-09T3:00:00" value="8.2991"/>
+<ROW source="02PGAZ:02T16.PNT" time="2013-09-09T4:00:00" value="7.9982"/>
+<ROW source="02PGAZ:02T16.PNT" time="2013-09-09T5:00:00" value="7.6979"/>
+<ROW source="02PGAZ:02T16.PNT" time="2013-09-09T6:00:00" value="7.9983"/>
+<ROW source="02PGAZ:02T16.PNT" time="2013-09-09T7:00:00" value="7.8988"/>
+<ROW source="02PGAZ:02T16.PNT" time="2013-09-09T8:00:00" value="9.3007"/>
+<ROW source="02PGAZ:02T16.PNT" time="2013-09-09T9:00:00" value="12.1107"/>
+<ROW source="02PGAZ:02T16.PNT" time="2013-09-09T10:00:00" value="17.3362"/>
+<ROW source="02PGAZ:02T16.PNT" time="2013-09-09T11:00:00" value="19.443"/>
+<ROW source="02PGAZ:02T16.PNT" time="2013-09-09T12:00:00" value="22.5498"/>
+<ROW source="02PGAZ:02T16.PNT" time="2013-09-09T13:00:00" value="23.7533"/>
+<ROW source="02PGAZ:02T16.PNT" time="2013-09-09T14:00:00" value="23.5528"/>
+<ROW source="02PGAZ:02T16.PNT" time="2013-09-09T15:00:00" value="21.348"/>
+<ROW source="02PGAZ:02T16.PNT" time="2013-09-09T16:00:00" value="21.6502"/>
+<ROW source="02PGAZ:02T16.PNT" time="2013-09-09T17:00:00" value="21.6504"/>
+<ROW source="02PGAZ:02T16.PNT" time="2013-09-09T18:00:00" value="21.5501"/>
+<ROW source="02PGAZ:02T16.PNT" time="2013-09-09T19:00:00" value="20.0473"/>
+<ROW source="02PGAZ:02T16.PNT" time="2013-09-09T20:00:00" value="17.6407"/>
+<ROW source="02PGAZ:02T16.PNT" time="2013-09-09T21:00:00" value="15.5356"/>
+<ROW source="02PGAZ:02T16.PNT" time="2013-09-09T22:00:00" value="14.834"/>
+<ROW source="02PGAZ:02T16.PNT" time="2013-09-09T23:00:00" value="14.1324"/>
+<ROW source="02PGAZ:02T16.PNT" time="2013-09-09T23:59:59" value="13.1303"/>
+<ROW source="02PGAZ:02F5.PNT" time="2013-09-09T1:00:00" value="7796.795"/>
+<ROW source="02PGAZ:02F5.PNT" time="2013-09-09T2:00:00" value="7814.315"/>
+<ROW source="02PGAZ:02F5.PNT" time="2013-09-09T3:00:00" value="7839.781"/>
+<ROW source="02PGAZ:02F5.PNT" time="2013-09-09T4:00:00" value="7843.726"/>
+<ROW source="02PGAZ:02F5.PNT" time="2013-09-09T5:00:00" value="7833.84"/>
+<ROW source="02PGAZ:02F5.PNT" time="2013-09-09T6:00:00" value="7866.98"/>
+<ROW source="02PGAZ:02F5.PNT" time="2013-09-09T7:00:00" value="7830.868"/>
+<ROW source="02PGAZ:02F5.PNT" time="2013-09-09T8:00:00" value="7816.334"/>
+<ROW source="02PGAZ:02F5.PNT" time="2013-09-09T9:00:00" value="7807.444"/>
+<ROW source="02PGAZ:02F5.PNT" time="2013-09-09T10:00:00" value="7763.459"/>
+<ROW source="02PGAZ:02F5.PNT" time="2013-09-09T11:00:00" value="7687.109"/>
+<ROW source="02PGAZ:02F5.PNT" time="2013-09-09T12:00:00" value="7683.976"/>
+<ROW source="02PGAZ:02F5.PNT" time="2013-09-09T13:00:00" value="7719.538"/>
+<ROW source="02PGAZ:02F5.PNT" time="2013-09-09T14:00:00" value="7679.112"/>
+<ROW source="02PGAZ:02F5.PNT" time="2013-09-09T15:00:00" value="7686.61"/>
+<ROW source="02PGAZ:02F5.PNT" time="2013-09-09T16:00:00" value="7647.624"/>
+<ROW source="02PGAZ:02F5.PNT" time="2013-09-09T17:00:00" value="7643.652"/>
+<ROW source="02PGAZ:02F5.PNT" time="2013-09-09T18:00:00" value="7637.393"/>
+<ROW source="02PGAZ:02F5.PNT" time="2013-09-09T19:00:00" value="7611.823"/>
+<ROW source="02PGAZ:02F5.PNT" time="2013-09-09T20:00:00" value="7611.061"/>
+<ROW source="02PGAZ:02F5.PNT" time="2013-09-09T21:00:00" value="7655.027"/>
+<ROW source="02PGAZ:02F5.PNT" time="2013-09-09T22:00:00" value="7668.725"/>
+<ROW source="02PGAZ:02F5.PNT" time="2013-09-09T23:00:00" value="7708.004"/>
+<ROW source="02PGAZ:02F5.PNT" time="2013-09-09T23:59:59" value="7708.418"/>
+<ROW source="02PGAZ:02F5_R.PNT" time="2013-09-09T1:00:00" value="0.684"/>
+<ROW source="02PGAZ:02F5_R.PNT" time="2013-09-09T2:00:00" value="0.684"/>
+<ROW source="02PGAZ:02F5_R.PNT" time="2013-09-09T3:00:00" value="0.684"/>
+<ROW source="02PGAZ:02F5_R.PNT" time="2013-09-09T4:00:00" value="0.684"/>
+<ROW source="02PGAZ:02F5_R.PNT" time="2013-09-09T5:00:00" value="0.684"/>
+<ROW source="02PGAZ:02F5_R.PNT" time="2013-09-09T6:00:00" value="0.684"/>
+<ROW source="02PGAZ:02F5_R.PNT" time="2013-09-09T7:00:00" value="0.684"/>
+<ROW source="02PGAZ:02F5_R.PNT" time="2013-09-09T8:00:00" value="0.684"/>
+<ROW source="02PGAZ:02F5_R.PNT" time="2013-09-09T9:00:00" value="0.684"/>
+<ROW source="02PGAZ:02F5_R.PNT" time="2013-09-09T10:00:00" value="0.684"/>
+<ROW source="02PGAZ:02F5_R.PNT" time="2013-09-09T11:00:00" value="0.684"/>
+<ROW source="02PGAZ:02F5_R.PNT" time="2013-09-09T12:00:00" value="0.684"/>
+<ROW source="02PGAZ:02F5_R.PNT" time="2013-09-09T13:00:00" value="0.684"/>
+<ROW source="02PGAZ:02F5_R.PNT" time="2013-09-09T14:00:00" value="0.684"/>
+<ROW source="02PGAZ:02F5_R.PNT" time="2013-09-09T15:00:00" value="0.684"/>
+<ROW source="02PGAZ:02F5_R.PNT" time="2013-09-09T16:00:00" value="0.684"/>
+<ROW source="02PGAZ:02F5_R.PNT" time="2013-09-09T17:00:00" value="0.684"/>
+<ROW source="02PGAZ:02F5_R.PNT" time="2013-09-09T18:00:00" value="0.684"/>
+<ROW source="02PGAZ:02F5_R.PNT" time="2013-09-09T19:00:00" value="0.684"/>
+<ROW source="02PGAZ:02F5_R.PNT" time="2013-09-09T20:00:00" value="0.684"/>
+<ROW source="02PGAZ:02F5_R.PNT" time="2013-09-09T21:00:00" value="0.684"/>
+<ROW source="02PGAZ:02F5_R.PNT" time="2013-09-09T22:00:00" value="0.684"/>
+<ROW source="02PGAZ:02F5_R.PNT" time="2013-09-09T23:00:00" value="0.684"/>
+<ROW source="02PGAZ:02F5_R.PNT" time="2013-09-09T23:59:59" value="0.684"/>
+<ROW source="02PGAZ:02F5_CO2.PNT" time="2013-09-09T1:00:00" value="0.0006"/>
+<ROW source="02PGAZ:02F5_CO2.PNT" time="2013-09-09T2:00:00" value="0.0006"/>
+<ROW source="02PGAZ:02F5_CO2.PNT" time="2013-09-09T3:00:00" value="0.0006"/>
+<ROW source="02PGAZ:02F5_CO2.PNT" time="2013-09-09T4:00:00" value="0.0006"/>
+<ROW source="02PGAZ:02F5_CO2.PNT" time="2013-09-09T5:00:00" value="0.0006"/>
+<ROW source="02PGAZ:02F5_CO2.PNT" time="2013-09-09T6:00:00" value="0.0006"/>
+<ROW source="02PGAZ:02F5_CO2.PNT" time="2013-09-09T7:00:00" value="0.0006"/>
+<ROW source="02PGAZ:02F5_CO2.PNT" time="2013-09-09T8:00:00" value="0.0006"/>
+<ROW source="02PGAZ:02F5_CO2.PNT" time="2013-09-09T9:00:00" value="0.0006"/>
+<ROW source="02PGAZ:02F5_CO2.PNT" time="2013-09-09T10:00:00" value="0.0006"/>
+<ROW source="02PGAZ:02F5_CO2.PNT" time="2013-09-09T11:00:00" value="0.0006"/>
+<ROW source="02PGAZ:02F5_CO2.PNT" time="2013-09-09T12:00:00" value="0.0006"/>
+<ROW source="02PGAZ:02F5_CO2.PNT" time="2013-09-09T13:00:00" value="0.0006"/>
+<ROW source="02PGAZ:02F5_CO2.PNT" time="2013-09-09T14:00:00" value="0.0006"/>
+<ROW source="02PGAZ:02F5_CO2.PNT" time="2013-09-09T15:00:00" value="0.0006"/>
+<ROW source="02PGAZ:02F5_CO2.PNT" time="2013-09-09T16:00:00" value="0.0006"/>
+<ROW source="02PGAZ:02F5_CO2.PNT" time="2013-09-09T17:00:00" value="0.0006"/>
+<ROW source="02PGAZ:02F5_CO2.PNT" time="2013-09-09T18:00:00" value="0.0006"/>
+<ROW source="02PGAZ:02F5_CO2.PNT" time="2013-09-09T19:00:00" value="0.0006"/>
+<ROW source="02PGAZ:02F5_CO2.PNT" time="2013-09-09T20:00:00" value="0.0006"/>
+<ROW source="02PGAZ:02F5_CO2.PNT" time="2013-09-09T21:00:00" value="0.0006"/>
+<ROW source="02PGAZ:02F5_CO2.PNT" time="2013-09-09T22:00:00" value="0.0006"/>
+<ROW source="02PGAZ:02F5_CO2.PNT" time="2013-09-09T23:00:00" value="0.0006"/>
+<ROW source="02PGAZ:02F5_CO2.PNT" time="2013-09-09T23:59:59" value="0.0006"/>
+<ROW source="02PGAZ:02F5_N2.PNT" time="2013-09-09T1:00:00" value="0.008"/>
+<ROW source="02PGAZ:02F5_N2.PNT" time="2013-09-09T2:00:00" value="0.008"/>
+<ROW source="02PGAZ:02F5_N2.PNT" time="2013-09-09T3:00:00" value="0.008"/>
+<ROW source="02PGAZ:02F5_N2.PNT" time="2013-09-09T4:00:00" value="0.008"/>
+<ROW source="02PGAZ:02F5_N2.PNT" time="2013-09-09T5:00:00" value="0.008"/>
+<ROW source="02PGAZ:02F5_N2.PNT" time="2013-09-09T6:00:00" value="0.008"/>
+<ROW source="02PGAZ:02F5_N2.PNT" time="2013-09-09T7:00:00" value="0.008"/>
+<ROW source="02PGAZ:02F5_N2.PNT" time="2013-09-09T8:00:00" value="0.008"/>
+<ROW source="02PGAZ:02F5_N2.PNT" time="2013-09-09T9:00:00" value="0.008"/>
+<ROW source="02PGAZ:02F5_N2.PNT" time="2013-09-09T10:00:00" value="0.008"/>
+<ROW source="02PGAZ:02F5_N2.PNT" time="2013-09-09T11:00:00" value="0.008"/>
+<ROW source="02PGAZ:02F5_N2.PNT" time="2013-09-09T12:00:00" value="0.008"/>
+<ROW source="02PGAZ:02F5_N2.PNT" time="2013-09-09T13:00:00" value="0.008"/>
+<ROW source="02PGAZ:02F5_N2.PNT" time="2013-09-09T14:00:00" value="0.008"/>
+<ROW source="02PGAZ:02F5_N2.PNT" time="2013-09-09T15:00:00" value="0.008"/>
+<ROW source="02PGAZ:02F5_N2.PNT" time="2013-09-09T16:00:00" value="0.008"/>
+<ROW source="02PGAZ:02F5_N2.PNT" time="2013-09-09T17:00:00" value="0.008"/>
+<ROW source="02PGAZ:02F5_N2.PNT" time="2013-09-09T18:00:00" value="0.008"/>
+<ROW source="02PGAZ:02F5_N2.PNT" time="2013-09-09T19:00:00" value="0.008"/>
+<ROW source="02PGAZ:02F5_N2.PNT" time="2013-09-09T20:00:00" value="0.008"/>
+<ROW source="02PGAZ:02F5_N2.PNT" time="2013-09-09T21:00:00" value="0.008"/>
+<ROW source="02PGAZ:02F5_N2.PNT" time="2013-09-09T22:00:00" value="0.008"/>
+<ROW source="02PGAZ:02F5_N2.PNT" time="2013-09-09T23:00:00" value="0.008"/>
+<ROW source="02PGAZ:02F5_N2.PNT" time="2013-09-09T23:59:59" value="0.008"/>
+<ROW source="02VOZD:02P10A.PNT" time="2013-09-09T1:00:00" value="764.205"/>
+<ROW source="02VOZD:02P10A.PNT" time="2013-09-09T2:00:00" value="763.8"/>
+<ROW source="02VOZD:02P10A.PNT" time="2013-09-09T3:00:00" value="763.396"/>
+<ROW source="02VOZD:02P10A.PNT" time="2013-09-09T4:00:00" value="762.886"/>
+<ROW source="02VOZD:02P10A.PNT" time="2013-09-09T5:00:00" value="762.678"/>
+<ROW source="02VOZD:02P10A.PNT" time="2013-09-09T6:00:00" value="762.173"/>
+<ROW source="02VOZD:02P10A.PNT" time="2013-09-09T7:00:00" value="762.173"/>
+<ROW source="02VOZD:02P10A.PNT" time="2013-09-09T8:00:00" value="762.376"/>
+<ROW source="02VOZD:02P10A.PNT" time="2013-09-09T9:00:00" value="763.186"/>
+<ROW source="02VOZD:02P10A.PNT" time="2013-09-09T10:00:00" value="764.703"/>
+<ROW source="02VOZD:02P10A.PNT" time="2013-09-09T11:00:00" value="765.41"/>
+<ROW source="02VOZD:02P10A.PNT" time="2013-09-09T12:00:00" value="765.815"/>
+<ROW source="02VOZD:02P10A.PNT" time="2013-09-09T13:00:00" value="766.223"/>
+<ROW source="02VOZD:02P10A.PNT" time="2013-09-09T14:00:00" value="766.427"/>
+<ROW source="02VOZD:02P10A.PNT" time="2013-09-09T15:00:00" value="766.427"/>
+<ROW source="02VOZD:02P10A.PNT" time="2013-09-09T16:00:00" value="766.426"/>
+<ROW source="02VOZD:02P10A.PNT" time="2013-09-09T17:00:00" value="766.426"/>
+<ROW source="02VOZD:02P10A.PNT" time="2013-09-09T18:00:00" value="766.326"/>
+<ROW source="02VOZD:02P10A.PNT" time="2013-09-09T19:00:00" value="766.429"/>
+<ROW source="02VOZD:02P10A.PNT" time="2013-09-09T20:00:00" value="766.429"/>
+<ROW source="02VOZD:02P10A.PNT" time="2013-09-09T21:00:00" value="766.124"/>
+<ROW source="02VOZD:02P10A.PNT" time="2013-09-09T22:00:00" value="765.717"/>
+<ROW source="02VOZD:02P10A.PNT" time="2013-09-09T23:00:00" value="765.212"/>
+<ROW source="02VOZD:02P10A.PNT" time="2013-09-09T23:59:59" value="764.809"/>
+</ROWHIST>
+<ROWDATA>
+<ROW tag_id="11" name="02PGAZ_FQD" date_hist="2013-09-09" time_hist="01:00:00" value="7.788"/>
+<ROW tag_id="11" name="02PGAZ_FQD" date_hist="2013-09-09" time_hist="02:00:00" value="15.5961"/>
+<ROW tag_id="11" name="02PGAZ_FQD" date_hist="2013-09-09" time_hist="03:00:00" value="23.4277"/>
+<ROW tag_id="11" name="02PGAZ_FQD" date_hist="2013-09-09" time_hist="04:00:00" value="31.2768"/>
+<ROW tag_id="11" name="02PGAZ_FQD" date_hist="2013-09-09" time_hist="05:00:00" value="39.12"/>
+<ROW tag_id="11" name="02PGAZ_FQD" date_hist="2013-09-09" time_hist="06:00:00" value="46.9656"/>
+<ROW tag_id="11" name="02PGAZ_FQD" date_hist="2013-09-09" time_hist="07:00:00" value="54.8302"/>
+<ROW tag_id="11" name="02PGAZ_FQD" date_hist="2013-09-09" time_hist="08:00:00" value="62.651"/>
+<ROW tag_id="11" name="02PGAZ_FQD" date_hist="2013-09-09" time_hist="09:00:00" value="70.446"/>
+<ROW tag_id="11" name="02PGAZ_FQD" date_hist="2013-09-09" time_hist="10:00:00" value="78.2321"/>
+<ROW tag_id="11" name="02PGAZ_FQD" date_hist="2013-09-09" time_hist="11:00:00" value="85.9546"/>
+<ROW tag_id="11" name="02PGAZ_FQD" date_hist="2013-09-09" time_hist="12:00:00" value="93.6371"/>
+<ROW tag_id="11" name="02PGAZ_FQD" date_hist="2013-09-09" time_hist="13:00:00" value="101.359"/>
+<ROW tag_id="11" name="02PGAZ_FQD" date_hist="2013-09-09" time_hist="14:00:00" value="109.068"/>
+<ROW tag_id="11" name="02PGAZ_FQD" date_hist="2013-09-09" time_hist="15:00:00" value="116.763"/>
+<ROW tag_id="11" name="02PGAZ_FQD" date_hist="2013-09-09" time_hist="16:00:00" value="124.436"/>
+<ROW tag_id="11" name="02PGAZ_FQD" date_hist="2013-09-09" time_hist="17:00:00" value="132.093"/>
+<ROW tag_id="11" name="02PGAZ_FQD" date_hist="2013-09-09" time_hist="18:00:00" value="139.735"/>
+<ROW tag_id="11" name="02PGAZ_FQD" date_hist="2013-09-09" time_hist="19:00:00" value="147.368"/>
+<ROW tag_id="11" name="02PGAZ_FQD" date_hist="2013-09-09" time_hist="20:00:00" value="154.985"/>
+<ROW tag_id="11" name="02PGAZ_FQD" date_hist="2013-09-09" time_hist="21:00:00" value="162.628"/>
+<ROW tag_id="11" name="02PGAZ_FQD" date_hist="2013-09-09" time_hist="22:00:00" value="170.301"/>
+<ROW tag_id="11" name="02PGAZ_FQD" date_hist="2013-09-09" time_hist="23:00:00" value="177.973"/>
+<ROW tag_id="11" name="02PGAZ_FQD" date_hist="2013-09-09" time_hist="23:59:59" value="185.699"/>
+<ROW tag_id="12" name="02JA1_FQD" date_hist="2013-09-09" time_hist="01:00:00" value="15.9696"/>
+<ROW tag_id="12" name="02JA1_FQD" date_hist="2013-09-09" time_hist="02:00:00" value="31.983"/>
+<ROW tag_id="12" name="02JA1_FQD" date_hist="2013-09-09" time_hist="03:00:00" value="48.065"/>
+<ROW tag_id="12" name="02JA1_FQD" date_hist="2013-09-09" time_hist="04:00:00" value="64.0991"/>
+<ROW tag_id="12" name="02JA1_FQD" date_hist="2013-09-09" time_hist="05:00:00" value="80.1629"/>
+<ROW tag_id="12" name="02JA1_FQD" date_hist="2013-09-09" time_hist="06:00:00" value="96.2296"/>
+<ROW tag_id="12" name="02JA1_FQD" date_hist="2013-09-09" time_hist="07:00:00" value="112.285"/>
+<ROW tag_id="12" name="02JA1_FQD" date_hist="2013-09-09" time_hist="08:00:00" value="128.272"/>
+<ROW tag_id="12" name="02JA1_FQD" date_hist="2013-09-09" time_hist="09:00:00" value="144.139"/>
+<ROW tag_id="12" name="02JA1_FQD" date_hist="2013-09-09" time_hist="10:00:00" value="159.991"/>
+<ROW tag_id="12" name="02JA1_FQD" date_hist="2013-09-09" time_hist="11:00:00" value="175.616"/>
+<ROW tag_id="12" name="02JA1_FQD" date_hist="2013-09-09" time_hist="12:00:00" value="191.26"/>
+<ROW tag_id="12" name="02JA1_FQD" date_hist="2013-09-09" time_hist="13:00:00" value="207.381"/>
+<ROW tag_id="12" name="02JA1_FQD" date_hist="2013-09-09" time_hist="14:00:00" value="223.137"/>
+<ROW tag_id="12" name="02JA1_FQD" date_hist="2013-09-09" time_hist="15:00:00" value="238.92"/>
+<ROW tag_id="12" name="02JA1_FQD" date_hist="2013-09-09" time_hist="16:00:00" value="254.646"/>
+<ROW tag_id="12" name="02JA1_FQD" date_hist="2013-09-09" time_hist="17:00:00" value="270.274"/>
+<ROW tag_id="12" name="02JA1_FQD" date_hist="2013-09-09" time_hist="18:00:00" value="285.926"/>
+<ROW tag_id="12" name="02JA1_FQD" date_hist="2013-09-09" time_hist="19:00:00" value="301.568"/>
+<ROW tag_id="12" name="02JA1_FQD" date_hist="2013-09-09" time_hist="20:00:00" value="317.229"/>
+<ROW tag_id="12" name="02JA1_FQD" date_hist="2013-09-09" time_hist="21:00:00" value="333.111"/>
+<ROW tag_id="12" name="02JA1_FQD" date_hist="2013-09-09" time_hist="22:00:00" value="349.023"/>
+<ROW tag_id="12" name="02JA1_FQD" date_hist="2013-09-09" time_hist="23:00:00" value="364.926"/>
+<ROW tag_id="12" name="02JA1_FQD" date_hist="2013-09-09" time_hist="23:59:59" value="380.911"/>
+<ROW tag_id="13" name="02JA2_FQD" date_hist="2013-09-09" time_hist="01:00:00" value="12.6072"/>
+<ROW tag_id="13" name="02JA2_FQD" date_hist="2013-09-09" time_hist="02:00:00" value="25.2391"/>
+<ROW tag_id="13" name="02JA2_FQD" date_hist="2013-09-09" time_hist="03:00:00" value="37.911"/>
+<ROW tag_id="13" name="02JA2_FQD" date_hist="2013-09-09" time_hist="04:00:00" value="50.5687"/>
+<ROW tag_id="13" name="02JA2_FQD" date_hist="2013-09-09" time_hist="05:00:00" value="63.2522"/>
+<ROW tag_id="13" name="02JA2_FQD" date_hist="2013-09-09" time_hist="06:00:00" value="75.9478"/>
+<ROW tag_id="13" name="02JA2_FQD" date_hist="2013-09-09" time_hist="07:00:00" value="88.6593"/>
+<ROW tag_id="13" name="02JA2_FQD" date_hist="2013-09-09" time_hist="08:00:00" value="101.31"/>
+<ROW tag_id="13" name="02JA2_FQD" date_hist="2013-09-09" time_hist="09:00:00" value="113.873"/>
+<ROW tag_id="13" name="02JA2_FQD" date_hist="2013-09-09" time_hist="10:00:00" value="126.424"/>
+<ROW tag_id="13" name="02JA2_FQD" date_hist="2013-09-09" time_hist="11:00:00" value="138.836"/>
+<ROW tag_id="13" name="02JA2_FQD" date_hist="2013-09-09" time_hist="12:00:00" value="151.194"/>
+<ROW tag_id="13" name="02JA2_FQD" date_hist="2013-09-09" time_hist="13:00:00" value="163.954"/>
+<ROW tag_id="13" name="02JA2_FQD" date_hist="2013-09-09" time_hist="14:00:00" value="176.428"/>
+<ROW tag_id="13" name="02JA2_FQD" date_hist="2013-09-09" time_hist="15:00:00" value="188.948"/>
+<ROW tag_id="13" name="02JA2_FQD" date_hist="2013-09-09" time_hist="16:00:00" value="201.404"/>
+<ROW tag_id="13" name="02JA2_FQD" date_hist="2013-09-09" time_hist="17:00:00" value="213.772"/>
+<ROW tag_id="13" name="02JA2_FQD" date_hist="2013-09-09" time_hist="18:00:00" value="226.152"/>
+<ROW tag_id="13" name="02JA2_FQD" date_hist="2013-09-09" time_hist="19:00:00" value="238.529"/>
+<ROW tag_id="13" name="02JA2_FQD" date_hist="2013-09-09" time_hist="20:00:00" value="250.925"/>
+<ROW tag_id="13" name="02JA2_FQD" date_hist="2013-09-09" time_hist="21:00:00" value="263.479"/>
+<ROW tag_id="13" name="02JA2_FQD" date_hist="2013-09-09" time_hist="22:00:00" value="276.023"/>
+<ROW tag_id="13" name="02JA2_FQD" date_hist="2013-09-09" time_hist="23:00:00" value="288.554"/>
+<ROW tag_id="13" name="02JA2_FQD" date_hist="2013-09-09" time_hist="23:59:59" value="301.143"/>
+<ROW tag_id="14" name="02XOB_FQD" date_hist="2013-09-09" time_hist="01:00:00" value="0.1831"/>
+<ROW tag_id="14" name="02XOB_FQD" date_hist="2013-09-09" time_hist="02:00:00" value="0.3673"/>
+<ROW tag_id="14" name="02XOB_FQD" date_hist="2013-09-09" time_hist="03:00:00" value="0.5517"/>
+<ROW tag_id="14" name="02XOB_FQD" date_hist="2013-09-09" time_hist="04:00:00" value="0.7361"/>
+<ROW tag_id="14" name="02XOB_FQD" date_hist="2013-09-09" time_hist="05:00:00" value="0.9205"/>
+<ROW tag_id="14" name="02XOB_FQD" date_hist="2013-09-09" time_hist="06:00:00" value="1.1048"/>
+<ROW tag_id="14" name="02XOB_FQD" date_hist="2013-09-09" time_hist="07:00:00" value="1.2894"/>
+<ROW tag_id="14" name="02XOB_FQD" date_hist="2013-09-09" time_hist="08:00:00" value="1.4728"/>
+<ROW tag_id="14" name="02XOB_FQD" date_hist="2013-09-09" time_hist="09:00:00" value="1.6567"/>
+<ROW tag_id="14" name="02XOB_FQD" date_hist="2013-09-09" time_hist="10:00:00" value="1.8401"/>
+<ROW tag_id="14" name="02XOB_FQD" date_hist="2013-09-09" time_hist="11:00:00" value="2.023"/>
+<ROW tag_id="14" name="02XOB_FQD" date_hist="2013-09-09" time_hist="12:00:00" value="2.2063"/>
+<ROW tag_id="14" name="02XOB_FQD" date_hist="2013-09-09" time_hist="13:00:00" value="2.3902"/>
+<ROW tag_id="14" name="02XOB_FQD" date_hist="2013-09-09" time_hist="14:00:00" value="2.5728"/>
+<ROW tag_id="14" name="02XOB_FQD" date_hist="2013-09-09" time_hist="15:00:00" value="2.7548"/>
+<ROW tag_id="14" name="02XOB_FQD" date_hist="2013-09-09" time_hist="16:00:00" value="2.9354"/>
+<ROW tag_id="14" name="02XOB_FQD" date_hist="2013-09-09" time_hist="17:00:00" value="3.1154"/>
+<ROW tag_id="14" name="02XOB_FQD" date_hist="2013-09-09" time_hist="18:00:00" value="3.2958"/>
+<ROW tag_id="14" name="02XOB_FQD" date_hist="2013-09-09" time_hist="19:00:00" value="3.4763"/>
+<ROW tag_id="14" name="02XOB_FQD" date_hist="2013-09-09" time_hist="20:00:00" value="3.657"/>
+<ROW tag_id="14" name="02XOB_FQD" date_hist="2013-09-09" time_hist="21:00:00" value="3.838"/>
+<ROW tag_id="14" name="02XOB_FQD" date_hist="2013-09-09" time_hist="22:00:00" value="4.0188"/>
+<ROW tag_id="14" name="02XOB_FQD" date_hist="2013-09-09" time_hist="23:00:00" value="4.1994"/>
+<ROW tag_id="14" name="02XOB_FQD" date_hist="2013-09-09" time_hist="23:59:59" value="4.3809"/>
+<ROW tag_id="27" name="02GA_FQD" date_hist="2013-09-09" time_hist="01:00:00" value="0"/>
+<ROW tag_id="27" name="02GA_FQD" date_hist="2013-09-09" time_hist="02:00:00" value="0.0002"/>
+<ROW tag_id="27" name="02GA_FQD" date_hist="2013-09-09" time_hist="03:00:00" value="0.0002"/>
+<ROW tag_id="27" name="02GA_FQD" date_hist="2013-09-09" time_hist="04:00:00" value="0.0002"/>
+<ROW tag_id="27" name="02GA_FQD" date_hist="2013-09-09" time_hist="05:00:00" value="0.0002"/>
+<ROW tag_id="27" name="02GA_FQD" date_hist="2013-09-09" time_hist="06:00:00" value="0.0002"/>
+<ROW tag_id="27" name="02GA_FQD" date_hist="2013-09-09" time_hist="07:00:00" value="0.0002"/>
+<ROW tag_id="27" name="02GA_FQD" date_hist="2013-09-09" time_hist="08:00:00" value="0.0002"/>
+<ROW tag_id="27" name="02GA_FQD" date_hist="2013-09-09" time_hist="09:00:00" value="0.0002"/>
+<ROW tag_id="27" name="02GA_FQD" date_hist="2013-09-09" time_hist="10:00:00" value="0.0002"/>
+<ROW tag_id="27" name="02GA_FQD" date_hist="2013-09-09" time_hist="11:00:00" value="0.0005"/>
+<ROW tag_id="27" name="02GA_FQD" date_hist="2013-09-09" time_hist="12:00:00" value="0.0006"/>
+<ROW tag_id="27" name="02GA_FQD" date_hist="2013-09-09" time_hist="13:00:00" value="1.0261"/>
+<ROW tag_id="27" name="02GA_FQD" date_hist="2013-09-09" time_hist="14:00:00" value="1.1635"/>
+<ROW tag_id="27" name="02GA_FQD" date_hist="2013-09-09" time_hist="15:00:00" value="1.1635"/>
+<ROW tag_id="27" name="02GA_FQD" date_hist="2013-09-09" time_hist="16:00:00" value="1.1635"/>
+<ROW tag_id="27" name="02GA_FQD" date_hist="2013-09-09" time_hist="17:00:00" value="1.1635"/>
+<ROW tag_id="27" name="02GA_FQD" date_hist="2013-09-09" time_hist="18:00:00" value="1.1635"/>
+<ROW tag_id="27" name="02GA_FQD" date_hist="2013-09-09" time_hist="19:00:00" value="1.1635"/>
+<ROW tag_id="27" name="02GA_FQD" date_hist="2013-09-09" time_hist="20:00:00" value="1.1755"/>
+<ROW tag_id="27" name="02GA_FQD" date_hist="2013-09-09" time_hist="21:00:00" value="1.6539"/>
+<ROW tag_id="27" name="02GA_FQD" date_hist="2013-09-09" time_hist="22:00:00" value="2.3462"/>
+<ROW tag_id="27" name="02GA_FQD" date_hist="2013-09-09" time_hist="23:00:00" value="2.7857"/>
+<ROW tag_id="27" name="02GA_FQD" date_hist="2013-09-09" time_hist="23:59:59" value="3.1987"/>
+<ROW tag_id="15" name="02PAR1_TON_FQD" date_hist="2013-09-09" time_hist="01:00:00" value="54.2532"/>
+<ROW tag_id="15" name="02PAR1_TON_FQD" date_hist="2013-09-09" time_hist="02:00:00" value="108.627"/>
+<ROW tag_id="15" name="02PAR1_TON_FQD" date_hist="2013-09-09" time_hist="03:00:00" value="163.157"/>
+<ROW tag_id="15" name="02PAR1_TON_FQD" date_hist="2013-09-09" time_hist="04:00:00" value="217.812"/>
+<ROW tag_id="15" name="02PAR1_TON_FQD" date_hist="2013-09-09" time_hist="05:00:00" value="272.388"/>
+<ROW tag_id="15" name="02PAR1_TON_FQD" date_hist="2013-09-09" time_hist="06:00:00" value="326.972"/>
+<ROW tag_id="15" name="02PAR1_TON_FQD" date_hist="2013-09-09" time_hist="07:00:00" value="381.616"/>
+<ROW tag_id="15" name="02PAR1_TON_FQD" date_hist="2013-09-09" time_hist="08:00:00" value="435.909"/>
+<ROW tag_id="15" name="02PAR1_TON_FQD" date_hist="2013-09-09" time_hist="09:00:00" value="489.926"/>
+<ROW tag_id="15" name="02PAR1_TON_FQD" date_hist="2013-09-09" time_hist="10:00:00" value="543.772"/>
+<ROW tag_id="15" name="02PAR1_TON_FQD" date_hist="2013-09-09" time_hist="11:00:00" value="597.293"/>
+<ROW tag_id="15" name="02PAR1_TON_FQD" date_hist="2013-09-09" time_hist="12:00:00" value="650.72"/>
+<ROW tag_id="15" name="02PAR1_TON_FQD" date_hist="2013-09-09" time_hist="13:00:00" value="703.953"/>
+<ROW tag_id="15" name="02PAR1_TON_FQD" date_hist="2013-09-09" time_hist="14:00:00" value="757.206"/>
+<ROW tag_id="15" name="02PAR1_TON_FQD" date_hist="2013-09-09" time_hist="15:00:00" value="810.492"/>
+<ROW tag_id="15" name="02PAR1_TON_FQD" date_hist="2013-09-09" time_hist="16:00:00" value="863.304"/>
+<ROW tag_id="15" name="02PAR1_TON_FQD" date_hist="2013-09-09" time_hist="17:00:00" value="915.737"/>
+<ROW tag_id="15" name="02PAR1_TON_FQD" date_hist="2013-09-09" time_hist="18:00:00" value="968.093"/>
+<ROW tag_id="15" name="02PAR1_TON_FQD" date_hist="2013-09-09" time_hist="19:00:00" value="1020.321"/>
+<ROW tag_id="15" name="02PAR1_TON_FQD" date_hist="2013-09-09" time_hist="20:00:00" value="1072.58"/>
+<ROW tag_id="15" name="02PAR1_TON_FQD" date_hist="2013-09-09" time_hist="21:00:00" value="1125.143"/>
+<ROW tag_id="15" name="02PAR1_TON_FQD" date_hist="2013-09-09" time_hist="22:00:00" value="1177.871"/>
+<ROW tag_id="15" name="02PAR1_TON_FQD" date_hist="2013-09-09" time_hist="23:00:00" value="1230.605"/>
+<ROW tag_id="15" name="02PAR1_TON_FQD" date_hist="2013-09-09" time_hist="23:59:59" value="1283.668"/>
+<ROW tag_id="17" name="02PAR1_GCAL_FQD" date_hist="2013-09-09" time_hist="01:00:00" value="37.2445"/>
+<ROW tag_id="17" name="02PAR1_GCAL_FQD" date_hist="2013-09-09" time_hist="02:00:00" value="74.571"/>
+<ROW tag_id="17" name="02PAR1_GCAL_FQD" date_hist="2013-09-09" time_hist="03:00:00" value="112.004"/>
+<ROW tag_id="17" name="02PAR1_GCAL_FQD" date_hist="2013-09-09" time_hist="04:00:00" value="149.522"/>
+<ROW tag_id="17" name="02PAR1_GCAL_FQD" date_hist="2013-09-09" time_hist="05:00:00" value="186.987"/>
+<ROW tag_id="17" name="02PAR1_GCAL_FQD" date_hist="2013-09-09" time_hist="06:00:00" value="224.455"/>
+<ROW tag_id="17" name="02PAR1_GCAL_FQD" date_hist="2013-09-09" time_hist="07:00:00" value="261.964"/>
+<ROW tag_id="17" name="02PAR1_GCAL_FQD" date_hist="2013-09-09" time_hist="08:00:00" value="299.235"/>
+<ROW tag_id="17" name="02PAR1_GCAL_FQD" date_hist="2013-09-09" time_hist="09:00:00" value="336.319"/>
+<ROW tag_id="17" name="02PAR1_GCAL_FQD" date_hist="2013-09-09" time_hist="10:00:00" value="373.288"/>
+<ROW tag_id="17" name="02PAR1_GCAL_FQD" date_hist="2013-09-09" time_hist="11:00:00" value="410.038"/>
+<ROW tag_id="17" name="02PAR1_GCAL_FQD" date_hist="2013-09-09" time_hist="12:00:00" value="446.725"/>
+<ROW tag_id="17" name="02PAR1_GCAL_FQD" date_hist="2013-09-09" time_hist="13:00:00" value="483.285"/>
+<ROW tag_id="17" name="02PAR1_GCAL_FQD" date_hist="2013-09-09" time_hist="14:00:00" value="519.859"/>
+<ROW tag_id="17" name="02PAR1_GCAL_FQD" date_hist="2013-09-09" time_hist="15:00:00" value="556.456"/>
+<ROW tag_id="17" name="02PAR1_GCAL_FQD" date_hist="2013-09-09" time_hist="16:00:00" value="592.73"/>
+<ROW tag_id="17" name="02PAR1_GCAL_FQD" date_hist="2013-09-09" time_hist="17:00:00" value="628.746"/>
+<ROW tag_id="17" name="02PAR1_GCAL_FQD" date_hist="2013-09-09" time_hist="18:00:00" value="664.71"/>
+<ROW tag_id="17" name="02PAR1_GCAL_FQD" date_hist="2013-09-09" time_hist="19:00:00" value="700.585"/>
+<ROW tag_id="17" name="02PAR1_GCAL_FQD" date_hist="2013-09-09" time_hist="20:00:00" value="736.48"/>
+<ROW tag_id="17" name="02PAR1_GCAL_FQD" date_hist="2013-09-09" time_hist="21:00:00" value="772.581"/>
+<ROW tag_id="17" name="02PAR1_GCAL_FQD" date_hist="2013-09-09" time_hist="22:00:00" value="808.791"/>
+<ROW tag_id="17" name="02PAR1_GCAL_FQD" date_hist="2013-09-09" time_hist="23:00:00" value="845.006"/>
+<ROW tag_id="17" name="02PAR1_GCAL_FQD" date_hist="2013-09-09" time_hist="23:59:59" value="881.445"/>
+<ROW tag_id="16" name="02PAR2_TON_FQD" date_hist="2013-09-09" time_hist="01:00:00" value="53.2545"/>
+<ROW tag_id="16" name="02PAR2_TON_FQD" date_hist="2013-09-09" time_hist="02:00:00" value="106.611"/>
+<ROW tag_id="16" name="02PAR2_TON_FQD" date_hist="2013-09-09" time_hist="03:00:00" value="160.126"/>
+<ROW tag_id="16" name="02PAR2_TON_FQD" date_hist="2013-09-09" time_hist="04:00:00" value="213.775"/>
+<ROW tag_id="16" name="02PAR2_TON_FQD" date_hist="2013-09-09" time_hist="05:00:00" value="267.374"/>
+<ROW tag_id="16" name="02PAR2_TON_FQD" date_hist="2013-09-09" time_hist="06:00:00" value="320.96"/>
+<ROW tag_id="16" name="02PAR2_TON_FQD" date_hist="2013-09-09" time_hist="07:00:00" value="374.631"/>
+<ROW tag_id="16" name="02PAR2_TON_FQD" date_hist="2013-09-09" time_hist="08:00:00" value="427.96"/>
+<ROW tag_id="16" name="02PAR2_TON_FQD" date_hist="2013-09-09" time_hist="09:00:00" value="481.018"/>
+<ROW tag_id="16" name="02PAR2_TON_FQD" date_hist="2013-09-09" time_hist="10:00:00" value="534.001"/>
+<ROW tag_id="16" name="02PAR2_TON_FQD" date_hist="2013-09-09" time_hist="11:00:00" value="586.625"/>
+<ROW tag_id="16" name="02PAR2_TON_FQD" date_hist="2013-09-09" time_hist="12:00:00" value="639.09"/>
+<ROW tag_id="16" name="02PAR2_TON_FQD" date_hist="2013-09-09" time_hist="13:00:00" value="691.338"/>
+<ROW tag_id="16" name="02PAR2_TON_FQD" date_hist="2013-09-09" time_hist="14:00:00" value="743.765"/>
+<ROW tag_id="16" name="02PAR2_TON_FQD" date_hist="2013-09-09" time_hist="15:00:00" value="796.246"/>
+<ROW tag_id="16" name="02PAR2_TON_FQD" date_hist="2013-09-09" time_hist="16:00:00" value="848.17"/>
+<ROW tag_id="16" name="02PAR2_TON_FQD" date_hist="2013-09-09" time_hist="17:00:00" value="899.618"/>
+<ROW tag_id="16" name="02PAR2_TON_FQD" date_hist="2013-09-09" time_hist="18:00:00" value="950.988"/>
+<ROW tag_id="16" name="02PAR2_TON_FQD" date_hist="2013-09-09" time_hist="19:00:00" value="1002.194"/>
+<ROW tag_id="16" name="02PAR2_TON_FQD" date_hist="2013-09-09" time_hist="20:00:00" value="1053.406"/>
+<ROW tag_id="16" name="02PAR2_TON_FQD" date_hist="2013-09-09" time_hist="21:00:00" value="1104.908"/>
+<ROW tag_id="16" name="02PAR2_TON_FQD" date_hist="2013-09-09" time_hist="22:00:00" value="1156.594"/>
+<ROW tag_id="16" name="02PAR2_TON_FQD" date_hist="2013-09-09" time_hist="23:00:00" value="1208.275"/>
+<ROW tag_id="16" name="02PAR2_TON_FQD" date_hist="2013-09-09" time_hist="23:59:59" value="1260.295"/>
+<ROW tag_id="18" name="02PAR2_GCAL_FQD" date_hist="2013-09-09" time_hist="01:00:00" value="36.5559"/>
+<ROW tag_id="18" name="02PAR2_GCAL_FQD" date_hist="2013-09-09" time_hist="02:00:00" value="73.1809"/>
+<ROW tag_id="18" name="02PAR2_GCAL_FQD" date_hist="2013-09-09" time_hist="03:00:00" value="109.915"/>
+<ROW tag_id="18" name="02PAR2_GCAL_FQD" date_hist="2013-09-09" time_hist="04:00:00" value="146.74"/>
+<ROW tag_id="18" name="02PAR2_GCAL_FQD" date_hist="2013-09-09" time_hist="05:00:00" value="183.532"/>
+<ROW tag_id="18" name="02PAR2_GCAL_FQD" date_hist="2013-09-09" time_hist="06:00:00" value="220.313"/>
+<ROW tag_id="18" name="02PAR2_GCAL_FQD" date_hist="2013-09-09" time_hist="07:00:00" value="257.153"/>
+<ROW tag_id="18" name="02PAR2_GCAL_FQD" date_hist="2013-09-09" time_hist="08:00:00" value="293.762"/>
+<ROW tag_id="18" name="02PAR2_GCAL_FQD" date_hist="2013-09-09" time_hist="09:00:00" value="330.186"/>
+<ROW tag_id="18" name="02PAR2_GCAL_FQD" date_hist="2013-09-09" time_hist="10:00:00" value="366.559"/>
+<ROW tag_id="18" name="02PAR2_GCAL_FQD" date_hist="2013-09-09" time_hist="11:00:00" value="402.688"/>
+<ROW tag_id="18" name="02PAR2_GCAL_FQD" date_hist="2013-09-09" time_hist="12:00:00" value="438.71"/>
+<ROW tag_id="18" name="02PAR2_GCAL_FQD" date_hist="2013-09-09" time_hist="13:00:00" value="474.587"/>
+<ROW tag_id="18" name="02PAR2_GCAL_FQD" date_hist="2013-09-09" time_hist="14:00:00" value="510.589"/>
+<ROW tag_id="18" name="02PAR2_GCAL_FQD" date_hist="2013-09-09" time_hist="15:00:00" value="546.627"/>
+<ROW tag_id="18" name="02PAR2_GCAL_FQD" date_hist="2013-09-09" time_hist="16:00:00" value="582.286"/>
+<ROW tag_id="18" name="02PAR2_GCAL_FQD" date_hist="2013-09-09" time_hist="17:00:00" value="617.621"/>
+<ROW tag_id="18" name="02PAR2_GCAL_FQD" date_hist="2013-09-09" time_hist="18:00:00" value="652.903"/>
+<ROW tag_id="18" name="02PAR2_GCAL_FQD" date_hist="2013-09-09" time_hist="19:00:00" value="688.073"/>
+<ROW tag_id="18" name="02PAR2_GCAL_FQD" date_hist="2013-09-09" time_hist="20:00:00" value="723.244"/>
+<ROW tag_id="18" name="02PAR2_GCAL_FQD" date_hist="2013-09-09" time_hist="21:00:00" value="758.613"/>
+<ROW tag_id="18" name="02PAR2_GCAL_FQD" date_hist="2013-09-09" time_hist="22:00:00" value="794.104"/>
+<ROW tag_id="18" name="02PAR2_GCAL_FQD" date_hist="2013-09-09" time_hist="23:00:00" value="829.595"/>
+<ROW tag_id="18" name="02PAR2_GCAL_FQD" date_hist="2013-09-09" time_hist="23:59:59" value="865.316"/>
+<ROW tag_id="19" name="02PGAZ_PD" date_hist="2013-09-09" time_hist="01:00:00" value="992.419"/>
+<ROW tag_id="19" name="02PGAZ_PD" date_hist="2013-09-09" time_hist="02:00:00" value="995.011"/>
+<ROW tag_id="19" name="02PGAZ_PD" date_hist="2013-09-09" time_hist="03:00:00" value="1001.93"/>
+<ROW tag_id="19" name="02PGAZ_PD" date_hist="2013-09-09" time_hist="04:00:00" value="1004.562"/>
+<ROW tag_id="19" name="02PGAZ_PD" date_hist="2013-09-09" time_hist="05:00:00" value="1005.334"/>
+<ROW tag_id="19" name="02PGAZ_PD" date_hist="2013-09-09" time_hist="06:00:00" value="1018.487"/>
+<ROW tag_id="19" name="02PGAZ_PD" date_hist="2013-09-09" time_hist="07:00:00" value="1011.645"/>
+<ROW tag_id="19" name="02PGAZ_PD" date_hist="2013-09-09" time_hist="08:00:00" value="1018.99"/>
+<ROW tag_id="19" name="02PGAZ_PD" date_hist="2013-09-09" time_hist="09:00:00" value="1012.978"/>
+<ROW tag_id="19" name="02PGAZ_PD" date_hist="2013-09-09" time_hist="10:00:00" value="1014.179"/>
+<ROW tag_id="19" name="02PGAZ_PD" date_hist="2013-09-09" time_hist="11:00:00" value="1005.57"/>
+<ROW tag_id="19" name="02PGAZ_PD" date_hist="2013-09-09" time_hist="12:00:00" value="1025.385"/>
+<ROW tag_id="19" name="02PGAZ_PD" date_hist="2013-09-09" time_hist="13:00:00" value="1046.906"/>
+<ROW tag_id="19" name="02PGAZ_PD" date_hist="2013-09-09" time_hist="14:00:00" value="1036.136"/>
+<ROW tag_id="19" name="02PGAZ_PD" date_hist="2013-09-09" time_hist="15:00:00" value="1019.404"/>
+<ROW tag_id="19" name="02PGAZ_PD" date_hist="2013-09-09" time_hist="16:00:00" value="1007.656"/>
+<ROW tag_id="19" name="02PGAZ_PD" date_hist="2013-09-09" time_hist="17:00:00" value="997.544"/>
+<ROW tag_id="19" name="02PGAZ_PD" date_hist="2013-09-09" time_hist="18:00:00" value="997.835"/>
+<ROW tag_id="19" name="02PGAZ_PD" date_hist="2013-09-09" time_hist="19:00:00" value="992.254"/>
+<ROW tag_id="19" name="02PGAZ_PD" date_hist="2013-09-09" time_hist="20:00:00" value="990.981"/>
+<ROW tag_id="19" name="02PGAZ_PD" date_hist="2013-09-09" time_hist="21:00:00" value="999.425"/>
+<ROW tag_id="19" name="02PGAZ_PD" date_hist="2013-09-09" time_hist="22:00:00" value="999.267"/>
+<ROW tag_id="19" name="02PGAZ_PD" date_hist="2013-09-09" time_hist="23:00:00" value="1005.676"/>
+<ROW tag_id="19" name="02PGAZ_PD" date_hist="2013-09-09" time_hist="23:59:59" value="1003.222"/>
+<ROW tag_id="20" name="02PGAZ_P" date_hist="2013-09-09" time_hist="01:00:00" value="10.8859"/>
+<ROW tag_id="20" name="02PGAZ_P" date_hist="2013-09-09" time_hist="02:00:00" value="10.8859"/>
+<ROW tag_id="20" name="02PGAZ_P" date_hist="2013-09-09" time_hist="03:00:00" value="10.8859"/>
+<ROW tag_id="20" name="02PGAZ_P" date_hist="2013-09-09" time_hist="04:00:00" value="10.8696"/>
+<ROW tag_id="20" name="02PGAZ_P" date_hist="2013-09-09" time_hist="05:00:00" value="10.8213"/>
+<ROW tag_id="20" name="02PGAZ_P" date_hist="2013-09-09" time_hist="06:00:00" value="10.7725"/>
+<ROW tag_id="20" name="02PGAZ_P" date_hist="2013-09-09" time_hist="07:00:00" value="10.7238"/>
+<ROW tag_id="20" name="02PGAZ_P" date_hist="2013-09-09" time_hist="08:00:00" value="10.6908"/>
+<ROW tag_id="20" name="02PGAZ_P" date_hist="2013-09-09" time_hist="09:00:00" value="10.8212"/>
+<ROW tag_id="20" name="02PGAZ_P" date_hist="2013-09-09" time_hist="10:00:00" value="10.8696"/>
+<ROW tag_id="20" name="02PGAZ_P" date_hist="2013-09-09" time_hist="11:00:00" value="10.8537"/>
+<ROW tag_id="20" name="02PGAZ_P" date_hist="2013-09-09" time_hist="12:00:00" value="10.789"/>
+<ROW tag_id="20" name="02PGAZ_P" date_hist="2013-09-09" time_hist="13:00:00" value="10.6918"/>
+<ROW tag_id="20" name="02PGAZ_P" date_hist="2013-09-09" time_hist="14:00:00" value="10.6757"/>
+<ROW tag_id="20" name="02PGAZ_P" date_hist="2013-09-09" time_hist="15:00:00" value="10.7892"/>
+<ROW tag_id="20" name="02PGAZ_P" date_hist="2013-09-09" time_hist="16:00:00" value="10.8381"/>
+<ROW tag_id="20" name="02PGAZ_P" date_hist="2013-09-09" time_hist="17:00:00" value="10.8875"/>
+<ROW tag_id="20" name="02PGAZ_P" date_hist="2013-09-09" time_hist="18:00:00" value="10.8875"/>
+<ROW tag_id="20" name="02PGAZ_P" date_hist="2013-09-09" time_hist="19:00:00" value="10.8388"/>
+<ROW tag_id="20" name="02PGAZ_P" date_hist="2013-09-09" time_hist="20:00:00" value="10.7575"/>
+<ROW tag_id="20" name="02PGAZ_P" date_hist="2013-09-09" time_hist="21:00:00" value="10.7089"/>
+<ROW tag_id="20" name="02PGAZ_P" date_hist="2013-09-09" time_hist="22:00:00" value="10.6925"/>
+<ROW tag_id="20" name="02PGAZ_P" date_hist="2013-09-09" time_hist="23:00:00" value="10.6925"/>
+<ROW tag_id="20" name="02PGAZ_P" date_hist="2013-09-09" time_hist="23:59:59" value="10.7246"/>
+<ROW tag_id="21" name="02PGAZ_T" date_hist="2013-09-09" time_hist="01:00:00" value="8.3996"/>
+<ROW tag_id="21" name="02PGAZ_T" date_hist="2013-09-09" time_hist="02:00:00" value="8.4998"/>
+<ROW tag_id="21" name="02PGAZ_T" date_hist="2013-09-09" time_hist="03:00:00" value="8.2991"/>
+<ROW tag_id="21" name="02PGAZ_T" date_hist="2013-09-09" time_hist="04:00:00" value="7.9982"/>
+<ROW tag_id="21" name="02PGAZ_T" date_hist="2013-09-09" time_hist="05:00:00" value="7.6979"/>
+<ROW tag_id="21" name="02PGAZ_T" date_hist="2013-09-09" time_hist="06:00:00" value="7.9983"/>
+<ROW tag_id="21" name="02PGAZ_T" date_hist="2013-09-09" time_hist="07:00:00" value="7.8988"/>
+<ROW tag_id="21" name="02PGAZ_T" date_hist="2013-09-09" time_hist="08:00:00" value="9.3007"/>
+<ROW tag_id="21" name="02PGAZ_T" date_hist="2013-09-09" time_hist="09:00:00" value="12.1107"/>
+<ROW tag_id="21" name="02PGAZ_T" date_hist="2013-09-09" time_hist="10:00:00" value="17.3362"/>
+<ROW tag_id="21" name="02PGAZ_T" date_hist="2013-09-09" time_hist="11:00:00" value="19.443"/>
+<ROW tag_id="21" name="02PGAZ_T" date_hist="2013-09-09" time_hist="12:00:00" value="22.5498"/>
+<ROW tag_id="21" name="02PGAZ_T" date_hist="2013-09-09" time_hist="13:00:00" value="23.7533"/>
+<ROW tag_id="21" name="02PGAZ_T" date_hist="2013-09-09" time_hist="14:00:00" value="23.5528"/>
+<ROW tag_id="21" name="02PGAZ_T" date_hist="2013-09-09" time_hist="15:00:00" value="21.348"/>
+<ROW tag_id="21" name="02PGAZ_T" date_hist="2013-09-09" time_hist="16:00:00" value="21.6502"/>
+<ROW tag_id="21" name="02PGAZ_T" date_hist="2013-09-09" time_hist="17:00:00" value="21.6504"/>
+<ROW tag_id="21" name="02PGAZ_T" date_hist="2013-09-09" time_hist="18:00:00" value="21.5501"/>
+<ROW tag_id="21" name="02PGAZ_T" date_hist="2013-09-09" time_hist="19:00:00" value="20.0473"/>
+<ROW tag_id="21" name="02PGAZ_T" date_hist="2013-09-09" time_hist="20:00:00" value="17.6407"/>
+<ROW tag_id="21" name="02PGAZ_T" date_hist="2013-09-09" time_hist="21:00:00" value="15.5356"/>
+<ROW tag_id="21" name="02PGAZ_T" date_hist="2013-09-09" time_hist="22:00:00" value="14.834"/>
+<ROW tag_id="21" name="02PGAZ_T" date_hist="2013-09-09" time_hist="23:00:00" value="14.1324"/>
+<ROW tag_id="21" name="02PGAZ_T" date_hist="2013-09-09" time_hist="23:59:59" value="13.1303"/>
+<ROW tag_id="22" name="02PGAZ_F" date_hist="2013-09-09" time_hist="01:00:00" value="7796.795"/>
+<ROW tag_id="22" name="02PGAZ_F" date_hist="2013-09-09" time_hist="02:00:00" value="7814.315"/>
+<ROW tag_id="22" name="02PGAZ_F" date_hist="2013-09-09" time_hist="03:00:00" value="7839.781"/>
+<ROW tag_id="22" name="02PGAZ_F" date_hist="2013-09-09" time_hist="04:00:00" value="7843.726"/>
+<ROW tag_id="22" name="02PGAZ_F" date_hist="2013-09-09" time_hist="05:00:00" value="7833.84"/>
+<ROW tag_id="22" name="02PGAZ_F" date_hist="2013-09-09" time_hist="06:00:00" value="7866.98"/>
+<ROW tag_id="22" name="02PGAZ_F" date_hist="2013-09-09" time_hist="07:00:00" value="7830.868"/>
+<ROW tag_id="22" name="02PGAZ_F" date_hist="2013-09-09" time_hist="08:00:00" value="7816.334"/>
+<ROW tag_id="22" name="02PGAZ_F" date_hist="2013-09-09" time_hist="09:00:00" value="7807.444"/>
+<ROW tag_id="22" name="02PGAZ_F" date_hist="2013-09-09" time_hist="10:00:00" value="7763.459"/>
+<ROW tag_id="22" name="02PGAZ_F" date_hist="2013-09-09" time_hist="11:00:00" value="7687.109"/>
+<ROW tag_id="22" name="02PGAZ_F" date_hist="2013-09-09" time_hist="12:00:00" value="7683.976"/>
+<ROW tag_id="22" name="02PGAZ_F" date_hist="2013-09-09" time_hist="13:00:00" value="7719.538"/>
+<ROW tag_id="22" name="02PGAZ_F" date_hist="2013-09-09" time_hist="14:00:00" value="7679.112"/>
+<ROW tag_id="22" name="02PGAZ_F" date_hist="2013-09-09" time_hist="15:00:00" value="7686.61"/>
+<ROW tag_id="22" name="02PGAZ_F" date_hist="2013-09-09" time_hist="16:00:00" value="7647.624"/>
+<ROW tag_id="22" name="02PGAZ_F" date_hist="2013-09-09" time_hist="17:00:00" value="7643.652"/>
+<ROW tag_id="22" name="02PGAZ_F" date_hist="2013-09-09" time_hist="18:00:00" value="7637.393"/>
+<ROW tag_id="22" name="02PGAZ_F" date_hist="2013-09-09" time_hist="19:00:00" value="7611.823"/>
+<ROW tag_id="22" name="02PGAZ_F" date_hist="2013-09-09" time_hist="20:00:00" value="7611.061"/>
+<ROW tag_id="22" name="02PGAZ_F" date_hist="2013-09-09" time_hist="21:00:00" value="7655.027"/>
+<ROW tag_id="22" name="02PGAZ_F" date_hist="2013-09-09" time_hist="22:00:00" value="7668.725"/>
+<ROW tag_id="22" name="02PGAZ_F" date_hist="2013-09-09" time_hist="23:00:00" value="7708.004"/>
+<ROW tag_id="22" name="02PGAZ_F" date_hist="2013-09-09" time_hist="23:59:59" value="7708.418"/>
+<ROW tag_id="23" name="02PGAZ_R" date_hist="2013-09-09" time_hist="01:00:00" value="0.684"/>
+<ROW tag_id="23" name="02PGAZ_R" date_hist="2013-09-09" time_hist="02:00:00" value="0.684"/>
+<ROW tag_id="23" name="02PGAZ_R" date_hist="2013-09-09" time_hist="03:00:00" value="0.684"/>
+<ROW tag_id="23" name="02PGAZ_R" date_hist="2013-09-09" time_hist="04:00:00" value="0.684"/>
+<ROW tag_id="23" name="02PGAZ_R" date_hist="2013-09-09" time_hist="05:00:00" value="0.684"/>
+<ROW tag_id="23" name="02PGAZ_R" date_hist="2013-09-09" time_hist="06:00:00" value="0.684"/>
+<ROW tag_id="23" name="02PGAZ_R" date_hist="2013-09-09" time_hist="07:00:00" value="0.684"/>
+<ROW tag_id="23" name="02PGAZ_R" date_hist="2013-09-09" time_hist="08:00:00" value="0.684"/>
+<ROW tag_id="23" name="02PGAZ_R" date_hist="2013-09-09" time_hist="09:00:00" value="0.684"/>
+<ROW tag_id="23" name="02PGAZ_R" date_hist="2013-09-09" time_hist="10:00:00" value="0.684"/>
+<ROW tag_id="23" name="02PGAZ_R" date_hist="2013-09-09" time_hist="11:00:00" value="0.684"/>
+<ROW tag_id="23" name="02PGAZ_R" date_hist="2013-09-09" time_hist="12:00:00" value="0.684"/>
+<ROW tag_id="23" name="02PGAZ_R" date_hist="2013-09-09" time_hist="13:00:00" value="0.684"/>
+<ROW tag_id="23" name="02PGAZ_R" date_hist="2013-09-09" time_hist="14:00:00" value="0.684"/>
+<ROW tag_id="23" name="02PGAZ_R" date_hist="2013-09-09" time_hist="15:00:00" value="0.684"/>
+<ROW tag_id="23" name="02PGAZ_R" date_hist="2013-09-09" time_hist="16:00:00" value="0.684"/>
+<ROW tag_id="23" name="02PGAZ_R" date_hist="2013-09-09" time_hist="17:00:00" value="0.684"/>
+<ROW tag_id="23" name="02PGAZ_R" date_hist="2013-09-09" time_hist="18:00:00" value="0.684"/>
+<ROW tag_id="23" name="02PGAZ_R" date_hist="2013-09-09" time_hist="19:00:00" value="0.684"/>
+<ROW tag_id="23" name="02PGAZ_R" date_hist="2013-09-09" time_hist="20:00:00" value="0.684"/>
+<ROW tag_id="23" name="02PGAZ_R" date_hist="2013-09-09" time_hist="21:00:00" value="0.684"/>
+<ROW tag_id="23" name="02PGAZ_R" date_hist="2013-09-09" time_hist="22:00:00" value="0.684"/>
+<ROW tag_id="23" name="02PGAZ_R" date_hist="2013-09-09" time_hist="23:00:00" value="0.684"/>
+<ROW tag_id="23" name="02PGAZ_R" date_hist="2013-09-09" time_hist="23:59:59" value="0.684"/>
+<ROW tag_id="24" name="02PGAZ_CO2" date_hist="2013-09-09" time_hist="01:00:00" value="0.0006"/>
+<ROW tag_id="24" name="02PGAZ_CO2" date_hist="2013-09-09" time_hist="02:00:00" value="0.0006"/>
+<ROW tag_id="24" name="02PGAZ_CO2" date_hist="2013-09-09" time_hist="03:00:00" value="0.0006"/>
+<ROW tag_id="24" name="02PGAZ_CO2" date_hist="2013-09-09" time_hist="04:00:00" value="0.0006"/>
+<ROW tag_id="24" name="02PGAZ_CO2" date_hist="2013-09-09" time_hist="05:00:00" value="0.0006"/>
+<ROW tag_id="24" name="02PGAZ_CO2" date_hist="2013-09-09" time_hist="06:00:00" value="0.0006"/>
+<ROW tag_id="24" name="02PGAZ_CO2" date_hist="2013-09-09" time_hist="07:00:00" value="0.0006"/>
+<ROW tag_id="24" name="02PGAZ_CO2" date_hist="2013-09-09" time_hist="08:00:00" value="0.0006"/>
+<ROW tag_id="24" name="02PGAZ_CO2" date_hist="2013-09-09" time_hist="09:00:00" value="0.0006"/>
+<ROW tag_id="24" name="02PGAZ_CO2" date_hist="2013-09-09" time_hist="10:00:00" value="0.0006"/>
+<ROW tag_id="24" name="02PGAZ_CO2" date_hist="2013-09-09" time_hist="11:00:00" value="0.0006"/>
+<ROW tag_id="24" name="02PGAZ_CO2" date_hist="2013-09-09" time_hist="12:00:00" value="0.0006"/>
+<ROW tag_id="24" name="02PGAZ_CO2" date_hist="2013-09-09" time_hist="13:00:00" value="0.0006"/>
+<ROW tag_id="24" name="02PGAZ_CO2" date_hist="2013-09-09" time_hist="14:00:00" value="0.0006"/>
+<ROW tag_id="24" name="02PGAZ_CO2" date_hist="2013-09-09" time_hist="15:00:00" value="0.0006"/>
+<ROW tag_id="24" name="02PGAZ_CO2" date_hist="2013-09-09" time_hist="16:00:00" value="0.0006"/>
+<ROW tag_id="24" name="02PGAZ_CO2" date_hist="2013-09-09" time_hist="17:00:00" value="0.0006"/>
+<ROW tag_id="24" name="02PGAZ_CO2" date_hist="2013-09-09" time_hist="18:00:00" value="0.0006"/>
+<ROW tag_id="24" name="02PGAZ_CO2" date_hist="2013-09-09" time_hist="19:00:00" value="0.0006"/>
+<ROW tag_id="24" name="02PGAZ_CO2" date_hist="2013-09-09" time_hist="20:00:00" value="0.0006"/>
+<ROW tag_id="24" name="02PGAZ_CO2" date_hist="2013-09-09" time_hist="21:00:00" value="0.0006"/>
+<ROW tag_id="24" name="02PGAZ_CO2" date_hist="2013-09-09" time_hist="22:00:00" value="0.0006"/>
+<ROW tag_id="24" name="02PGAZ_CO2" date_hist="2013-09-09" time_hist="23:00:00" value="0.0006"/>
+<ROW tag_id="24" name="02PGAZ_CO2" date_hist="2013-09-09" time_hist="23:59:59" value="0.0006"/>
+<ROW tag_id="25" name="02PGAZ_N2" date_hist="2013-09-09" time_hist="01:00:00" value="0.008"/>
+<ROW tag_id="25" name="02PGAZ_N2" date_hist="2013-09-09" time_hist="02:00:00" value="0.008"/>
+<ROW tag_id="25" name="02PGAZ_N2" date_hist="2013-09-09" time_hist="03:00:00" value="0.008"/>
+<ROW tag_id="25" name="02PGAZ_N2" date_hist="2013-09-09" time_hist="04:00:00" value="0.008"/>
+<ROW tag_id="25" name="02PGAZ_N2" date_hist="2013-09-09" time_hist="05:00:00" value="0.008"/>
+<ROW tag_id="25" name="02PGAZ_N2" date_hist="2013-09-09" time_hist="06:00:00" value="0.008"/>
+<ROW tag_id="25" name="02PGAZ_N2" date_hist="2013-09-09" time_hist="07:00:00" value="0.008"/>
+<ROW tag_id="25" name="02PGAZ_N2" date_hist="2013-09-09" time_hist="08:00:00" value="0.008"/>
+<ROW tag_id="25" name="02PGAZ_N2" date_hist="2013-09-09" time_hist="09:00:00" value="0.008"/>
+<ROW tag_id="25" name="02PGAZ_N2" date_hist="2013-09-09" time_hist="10:00:00" value="0.008"/>
+<ROW tag_id="25" name="02PGAZ_N2" date_hist="2013-09-09" time_hist="11:00:00" value="0.008"/>
+<ROW tag_id="25" name="02PGAZ_N2" date_hist="2013-09-09" time_hist="12:00:00" value="0.008"/>
+<ROW tag_id="25" name="02PGAZ_N2" date_hist="2013-09-09" time_hist="13:00:00" value="0.008"/>
+<ROW tag_id="25" name="02PGAZ_N2" date_hist="2013-09-09" time_hist="14:00:00" value="0.008"/>
+<ROW tag_id="25" name="02PGAZ_N2" date_hist="2013-09-09" time_hist="15:00:00" value="0.008"/>
+<ROW tag_id="25" name="02PGAZ_N2" date_hist="2013-09-09" time_hist="16:00:00" value="0.008"/>
+<ROW tag_id="25" name="02PGAZ_N2" date_hist="2013-09-09" time_hist="17:00:00" value="0.008"/>
+<ROW tag_id="25" name="02PGAZ_N2" date_hist="2013-09-09" time_hist="18:00:00" value="0.008"/>
+<ROW tag_id="25" name="02PGAZ_N2" date_hist="2013-09-09" time_hist="19:00:00" value="0.008"/>
+<ROW tag_id="25" name="02PGAZ_N2" date_hist="2013-09-09" time_hist="20:00:00" value="0.008"/>
+<ROW tag_id="25" name="02PGAZ_N2" date_hist="2013-09-09" time_hist="21:00:00" value="0.008"/>
+<ROW tag_id="25" name="02PGAZ_N2" date_hist="2013-09-09" time_hist="22:00:00" value="0.008"/>
+<ROW tag_id="25" name="02PGAZ_N2" date_hist="2013-09-09" time_hist="23:00:00" value="0.008"/>
+<ROW tag_id="25" name="02PGAZ_N2" date_hist="2013-09-09" time_hist="23:59:59" value="0.008"/>
+<ROW tag_id="26" name="02PBAR" date_hist="2013-09-09" time_hist="01:00:00" value="764.205"/>
+<ROW tag_id="26" name="02PBAR" date_hist="2013-09-09" time_hist="02:00:00" value="763.8"/>
+<ROW tag_id="26" name="02PBAR" date_hist="2013-09-09" time_hist="03:00:00" value="763.396"/>
+<ROW tag_id="26" name="02PBAR" date_hist="2013-09-09" time_hist="04:00:00" value="762.886"/>
+<ROW tag_id="26" name="02PBAR" date_hist="2013-09-09" time_hist="05:00:00" value="762.678"/>
+<ROW tag_id="26" name="02PBAR" date_hist="2013-09-09" time_hist="06:00:00" value="762.173"/>
+<ROW tag_id="26" name="02PBAR" date_hist="2013-09-09" time_hist="07:00:00" value="762.173"/>
+<ROW tag_id="26" name="02PBAR" date_hist="2013-09-09" time_hist="08:00:00" value="762.376"/>
+<ROW tag_id="26" name="02PBAR" date_hist="2013-09-09" time_hist="09:00:00" value="763.186"/>
+<ROW tag_id="26" name="02PBAR" date_hist="2013-09-09" time_hist="10:00:00" value="764.703"/>
+<ROW tag_id="26" name="02PBAR" date_hist="2013-09-09" time_hist="11:00:00" value="765.41"/>
+<ROW tag_id="26" name="02PBAR" date_hist="2013-09-09" time_hist="12:00:00" value="765.815"/>
+<ROW tag_id="26" name="02PBAR" date_hist="2013-09-09" time_hist="13:00:00" value="766.223"/>
+<ROW tag_id="26" name="02PBAR" date_hist="2013-09-09" time_hist="14:00:00" value="766.427"/>
+<ROW tag_id="26" name="02PBAR" date_hist="2013-09-09" time_hist="15:00:00" value="766.427"/>
+<ROW tag_id="26" name="02PBAR" date_hist="2013-09-09" time_hist="16:00:00" value="766.426"/>
+<ROW tag_id="26" name="02PBAR" date_hist="2013-09-09" time_hist="17:00:00" value="766.426"/>
+<ROW tag_id="26" name="02PBAR" date_hist="2013-09-09" time_hist="18:00:00" value="766.326"/>
+<ROW tag_id="26" name="02PBAR" date_hist="2013-09-09" time_hist="19:00:00" value="766.429"/>
+<ROW tag_id="26" name="02PBAR" date_hist="2013-09-09" time_hist="20:00:00" value="766.429"/>
+<ROW tag_id="26" name="02PBAR" date_hist="2013-09-09" time_hist="21:00:00" value="766.124"/>
+<ROW tag_id="26" name="02PBAR" date_hist="2013-09-09" time_hist="22:00:00" value="765.717"/>
+<ROW tag_id="26" name="02PBAR" date_hist="2013-09-09" time_hist="23:00:00" value="765.212"/>
+<ROW tag_id="26" name="02PBAR" date_hist="2013-09-09" time_hist="23:59:59" value="764.809"/>
+</ROWDATA>
+<DEBUGS>
+<DEBUG time="14:28:41" action="Connect to MySQL" Host="localhost" Name="hist_m5" Login="root" Password="admin"/>
+<DEBUG time="14:28:41" action="Set names" Query="SET NAMES 'cp1251'"/>
+<DEBUG time="14:28:41" action="Select" Query="SELECT * FROM `tags` WHERE (alias='02PGAZ_FQD')"/>
+<DEBUG time="14:28:41" action="Connect to Hist" DSN="rtp_day_hist00" Server="52AW00" DBType="Sample" Login="" Password=""/>
+<DEBUG time="14:28:51" action="Select" Query="SELECT Source, Time, Value FROM Sample/hist00.Current&#10;         &#9;&#9;   WHERE (Source = '02PGAZ:02NG_FQD.OUT' AND  Time BETWEEN {ts '2013-09-09 01:00:00'} and {ts '2013-09-10 00:00:00'})"/>
+<DEBUG time="14:28:51" action="Select" Query="SELECT * FROM `tags` WHERE (alias='02JA1_FQD')"/>
+<DEBUG time="14:28:51" action="Select" Query="SELECT Source, Time, Value FROM Sample/hist00.Current&#10;         &#9;&#9;   WHERE (Source = '02AMIAK:02JAM1_FQD.OUT' AND  Time BETWEEN {ts '2013-09-09 01:00:00'} and {ts '2013-09-10 00:00:00'})"/>
+<DEBUG time="14:28:51" action="Select" Query="SELECT * FROM `tags` WHERE (alias='02JA2_FQD')"/>
+<DEBUG time="14:28:52" action="Select" Query="SELECT Source, Time, Value FROM Sample/hist00.Current&#10;         &#9;&#9;   WHERE (Source = '02AMIAK:02JAM2_FQD.OUT' AND  Time BETWEEN {ts '2013-09-09 01:00:00'} and {ts '2013-09-10 00:00:00'})"/>
+<DEBUG time="14:28:52" action="Select" Query="SELECT * FROM `tags` WHERE (alias='02XOB_FQD')"/>
+<DEBUG time="14:28:52" action="Select" Query="SELECT Source, Time, Value FROM Sample/hist00.Current&#10;         &#9;&#9;   WHERE (Source = '02VODA_XOB:02UMV_FQD.OUT' AND  Time BETWEEN {ts '2013-09-09 01:00:00'} and {ts '2013-09-10 00:00:00'})"/>
+<DEBUG time="14:28:52" action="Select" Query="SELECT * FROM `tags` WHERE (alias='02GA_FQD')"/>
+<DEBUG time="14:28:52" action="Select" Query="SELECT Source, Time, Value FROM Sample/hist00.Current&#10;         &#9;&#9;   WHERE (Source = '02AMIAK:02NH3_FQDM.PNT' AND  Time BETWEEN {ts '2013-09-09 01:00:00'} and {ts '2013-09-10 00:00:00'})"/>
+<DEBUG time="14:28:52" action="Select" Query="SELECT * FROM `tags` WHERE (alias='02PAR1_TON_FQD')"/>
+<DEBUG time="14:28:52" action="Select" Query="SELECT Source, Time, Value FROM Sample/hist00.Current&#10;         &#9;&#9;   WHERE (Source = '02PAR:02PARF1_FQD.OUT' AND  Time BETWEEN {ts '2013-09-09 01:00:00'} and {ts '2013-09-10 00:00:00'})"/>
+<DEBUG time="14:28:52" action="Select" Query="SELECT * FROM `tags` WHERE (alias='02PAR1_GCAL_FQD')"/>
+<DEBUG time="14:28:52" action="Select" Query="SELECT Source, Time, Value FROM Sample/hist00.Current&#10;         &#9;&#9;   WHERE (Source = '02PAR:02PARG1_FQD.OUT' AND  Time BETWEEN {ts '2013-09-09 01:00:00'} and {ts '2013-09-10 00:00:00'})"/>
+<DEBUG time="14:28:52" action="Select" Query="SELECT * FROM `tags` WHERE (alias='02PAR2_TON_FQD')"/>
+<DEBUG time="14:28:52" action="Select" Query="SELECT Source, Time, Value FROM Sample/hist00.Current&#10;         &#9;&#9;   WHERE (Source = '02PAR:02PARF2_FQD.OUT' AND  Time BETWEEN {ts '2013-09-09 01:00:00'} and {ts '2013-09-10 00:00:00'})"/>
+<DEBUG time="14:28:52" action="Select" Query="SELECT * FROM `tags` WHERE (alias='02PAR2_GCAL_FQD')"/>
+<DEBUG time="14:28:52" action="Select" Query="SELECT Source, Time, Value FROM Sample/hist00.Current&#10;         &#9;&#9;   WHERE (Source = '02PAR:02PARG2_FQD.OUT' AND  Time BETWEEN {ts '2013-09-09 01:00:00'} and {ts '2013-09-10 00:00:00'})"/>
+<DEBUG time="14:28:52" action="Select" Query="SELECT * FROM `tags` WHERE (alias='02PGAZ_PD')"/>
+<DEBUG time="14:28:52" action="Select" Query="SELECT Source, Time, Value FROM Sample/hist00.Current&#10;         &#9;&#9;   WHERE (Source = '02PGAZ:02PD5.PNT' AND  Time BETWEEN {ts '2013-09-09 01:00:00'} and {ts '2013-09-10 00:00:00'})"/>
+<DEBUG time="14:28:52" action="Select" Query="SELECT * FROM `tags` WHERE (alias='02PGAZ_P')"/>
+<DEBUG time="14:28:52" action="Select" Query="SELECT Source, Time, Value FROM Sample/hist00.Current&#10;         &#9;&#9;   WHERE (Source = '02PGAZ:02P5.PNT' AND  Time BETWEEN {ts '2013-09-09 01:00:00'} and {ts '2013-09-10 00:00:00'})"/>
+<DEBUG time="14:28:52" action="Select" Query="SELECT * FROM `tags` WHERE (alias='02PGAZ_T')"/>
+<DEBUG time="14:28:52" action="Select" Query="SELECT Source, Time, Value FROM Sample/hist00.Current&#10;         &#9;&#9;   WHERE (Source = '02PGAZ:02T16.PNT' AND  Time BETWEEN {ts '2013-09-09 01:00:00'} and {ts '2013-09-10 00:00:00'})"/>
+<DEBUG time="14:28:52" action="Select" Query="SELECT * FROM `tags` WHERE (alias='02PGAZ_F')"/>
+<DEBUG time="14:28:52" action="Select" Query="SELECT Source, Time, Value FROM Sample/hist00.Current&#10;         &#9;&#9;   WHERE (Source = '02PGAZ:02F5.PNT' AND  Time BETWEEN {ts '2013-09-09 01:00:00'} and {ts '2013-09-10 00:00:00'})"/>
+<DEBUG time="14:28:52" action="Select" Query="SELECT * FROM `tags` WHERE (alias='02PGAZ_R')"/>
+<DEBUG time="14:28:52" action="Select" Query="SELECT Source, Time, Value FROM Sample/hist00.Current&#10;         &#9;&#9;   WHERE (Source = '02PGAZ:02F5_R.PNT' AND  Time BETWEEN {ts '2013-09-09 01:00:00'} and {ts '2013-09-10 00:00:00'})"/>
+<DEBUG time="14:28:52" action="Select" Query="SELECT * FROM `tags` WHERE (alias='02PGAZ_CO2')"/>
+<DEBUG time="14:28:52" action="Select" Query="SELECT Source, Time, Value FROM Sample/hist00.Current&#10;         &#9;&#9;   WHERE (Source = '02PGAZ:02F5_CO2.PNT' AND  Time BETWEEN {ts '2013-09-09 01:00:00'} and {ts '2013-09-10 00:00:00'})"/>
+<DEBUG time="14:28:52" action="Select" Query="SELECT * FROM `tags` WHERE (alias='02PGAZ_N2')"/>
+<DEBUG time="14:28:52" action="Select" Query="SELECT Source, Time, Value FROM Sample/hist00.Current&#10;         &#9;&#9;   WHERE (Source = '02PGAZ:02F5_N2.PNT' AND  Time BETWEEN {ts '2013-09-09 01:00:00'} and {ts '2013-09-10 00:00:00'})"/>
+<DEBUG time="14:28:52" action="Select" Query="SELECT * FROM `tags` WHERE (alias='02PBAR')"/>
+<DEBUG time="14:28:52" action="Select" Query="SELECT Source, Time, Value FROM Sample/hist00.Current&#10;         &#9;&#9;   WHERE (Source = '02VOZD:02P10A.PNT' AND  Time BETWEEN {ts '2013-09-09 01:00:00'} and {ts '2013-09-10 00:00:00'})"/>
+<DEBUG time="14:28:52" action="Select" Query="SELECT * FROM `tags` WHERE (alias='02PGAZ_FM')"/>
+<DEBUG time="14:28:52" action="Select" Query="SELECT Source, Time, Value FROM Sample/hist00.Current&#10;         &#9;&#9;   WHERE (Source = '02PGAZ:02F5M.PNT' AND  Time BETWEEN {ts '2013-09-09 01:00:00'} and {ts '2013-09-10 00:00:00'})"/>
+<DEBUG time="14:28:52" action="Select" Query="SELECT * FROM `tags` WHERE (alias='02PGAZ_FQD')"/>
+<DEBUG time="14:28:52" action="Select" Query="SELECT * FROM `tags` WHERE (alias='02JA1_FQD')"/>
+<DEBUG time="14:28:52" action="Select" Query="SELECT * FROM `tags` WHERE (alias='02JA2_FQD')"/>
+<DEBUG time="14:28:52" action="Select" Query="SELECT * FROM `tags` WHERE (alias='02XOB_FQD')"/>
+<DEBUG time="14:28:52" action="Select" Query="SELECT * FROM `tags` WHERE (alias='02GA_FQD')"/>
+<DEBUG time="14:28:52" action="Select" Query="SELECT * FROM `tags` WHERE (alias='02PAR1_TON_FQD')"/>
+<DEBUG time="14:28:52" action="Select" Query="SELECT * FROM `tags` WHERE (alias='02PAR1_GCAL_FQD')"/>
+<DEBUG time="14:28:52" action="Select" Query="SELECT * FROM `tags` WHERE (alias='02PAR2_TON_FQD')"/>
+<DEBUG time="14:28:52" action="Select" Query="SELECT * FROM `tags` WHERE (alias='02PAR2_GCAL_FQD')"/>
+<DEBUG time="14:28:52" action="Select" Query="SELECT * FROM `tags` WHERE (alias='02PGAZ_PD')"/>
+<DEBUG time="14:28:52" action="Select" Query="SELECT * FROM `tags` WHERE (alias='02PGAZ_P')"/>
+<DEBUG time="14:28:52" action="Select" Query="SELECT * FROM `tags` WHERE (alias='02PGAZ_T')"/>
+<DEBUG time="14:28:53" action="Select" Query="SELECT * FROM `tags` WHERE (alias='02PGAZ_F')"/>
+<DEBUG time="14:28:53" action="Select" Query="SELECT * FROM `tags` WHERE (alias='02PGAZ_R')"/>
+<DEBUG time="14:28:53" action="Select" Query="SELECT * FROM `tags` WHERE (alias='02PGAZ_CO2')"/>
+<DEBUG time="14:28:53" action="Select" Query="SELECT * FROM `tags` WHERE (alias='02PGAZ_N2')"/>
+<DEBUG time="14:28:53" action="Select" Query="SELECT * FROM `tags` WHERE (alias='02PBAR')"/>
+<DEBUG time="14:28:53" action="Select" Query="SELECT *&#10;                           FROM `data_day`&#10;                           WHERE `name`='02PGAZ_FQD' AND `date_hist`='2013-09-09'"/>
+<DEBUG time="14:28:53" action="Select" Query="SELECT *&#10;                           FROM `data_day`&#10;                           WHERE `name`='02JA1_FQD' AND `date_hist`='2013-09-09'"/>
+<DEBUG time="14:28:53" action="Select" Query="SELECT *&#10;                           FROM `data_day`&#10;                           WHERE `name`='02JA2_FQD' AND `date_hist`='2013-09-09'"/>
+<DEBUG time="14:28:53" action="Select" Query="SELECT *&#10;                           FROM `data_day`&#10;                           WHERE `name`='02XOB_FQD' AND `date_hist`='2013-09-09'"/>
+<DEBUG time="14:28:53" action="Select" Query="SELECT *&#10;                           FROM `data_day`&#10;                           WHERE `name`='02GA_FQD' AND `date_hist`='2013-09-09'"/>
+<DEBUG time="14:28:53" action="Select" Query="SELECT *&#10;                           FROM `data_day`&#10;                           WHERE `name`='02PAR1_TON_FQD' AND `date_hist`='2013-09-09'"/>
+<DEBUG time="14:28:53" action="Select" Query="SELECT *&#10;                           FROM `data_day`&#10;                           WHERE `name`='02PAR1_GCAL_FQD' AND `date_hist`='2013-09-09'"/>
+<DEBUG time="14:28:53" action="Select" Query="SELECT *&#10;                           FROM `data_day`&#10;                           WHERE `name`='02PAR2_TON_FQD' AND `date_hist`='2013-09-09'"/>
+<DEBUG time="14:28:53" action="Select" Query="SELECT *&#10;                           FROM `data_day`&#10;                           WHERE `name`='02PAR2_GCAL_FQD' AND `date_hist`='2013-09-09'"/>
+<DEBUG time="14:28:53" action="Select" Query="SELECT *&#10;                           FROM `data_day`&#10;                           WHERE `name`='02PGAZ_PD' AND `date_hist`='2013-09-09'"/>
+<DEBUG time="14:28:53" action="Select" Query="SELECT *&#10;                           FROM `data_day`&#10;                           WHERE `name`='02PGAZ_P' AND `date_hist`='2013-09-09'"/>
+<DEBUG time="14:28:53" action="Select" Query="SELECT *&#10;                           FROM `data_day`&#10;                           WHERE `name`='02PGAZ_T' AND `date_hist`='2013-09-09'"/>
+<DEBUG time="14:28:53" action="Select" Query="SELECT *&#10;                           FROM `data_day`&#10;                           WHERE `name`='02PGAZ_F' AND `date_hist`='2013-09-09'"/>
+<DEBUG time="14:28:53" action="Select" Query="SELECT *&#10;                           FROM `data_day`&#10;                           WHERE `name`='02PGAZ_R' AND `date_hist`='2013-09-09'"/>
+<DEBUG time="14:28:53" action="Select" Query="SELECT *&#10;                           FROM `data_day`&#10;                           WHERE `name`='02PGAZ_CO2' AND `date_hist`='2013-09-09'"/>
+<DEBUG time="14:28:53" action="Select" Query="SELECT *&#10;                           FROM `data_day`&#10;                           WHERE `name`='02PGAZ_N2' AND `date_hist`='2013-09-09'"/>
+<DEBUG time="14:28:53" action="Select" Query="SELECT *&#10;                           FROM `data_day`&#10;                           WHERE `name`='02PBAR' AND `date_hist`='2013-09-09'"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('11','02PGAZ_FQD','2013-09-09','01:00:00','7.788')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('11','02PGAZ_FQD','2013-09-09','02:00:00','15.5961')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('11','02PGAZ_FQD','2013-09-09','03:00:00','23.4277')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('11','02PGAZ_FQD','2013-09-09','04:00:00','31.2768')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('11','02PGAZ_FQD','2013-09-09','05:00:00','39.12')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('11','02PGAZ_FQD','2013-09-09','06:00:00','46.9656')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('11','02PGAZ_FQD','2013-09-09','07:00:00','54.8302')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('11','02PGAZ_FQD','2013-09-09','08:00:00','62.651')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('11','02PGAZ_FQD','2013-09-09','09:00:00','70.446')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('11','02PGAZ_FQD','2013-09-09','10:00:00','78.2321')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('11','02PGAZ_FQD','2013-09-09','11:00:00','85.9546')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('11','02PGAZ_FQD','2013-09-09','12:00:00','93.6371')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('11','02PGAZ_FQD','2013-09-09','13:00:00','101.359')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('11','02PGAZ_FQD','2013-09-09','14:00:00','109.068')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('11','02PGAZ_FQD','2013-09-09','15:00:00','116.763')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('11','02PGAZ_FQD','2013-09-09','16:00:00','124.436')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('11','02PGAZ_FQD','2013-09-09','17:00:00','132.093')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('11','02PGAZ_FQD','2013-09-09','18:00:00','139.735')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('11','02PGAZ_FQD','2013-09-09','19:00:00','147.368')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('11','02PGAZ_FQD','2013-09-09','20:00:00','154.985')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('11','02PGAZ_FQD','2013-09-09','21:00:00','162.628')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('11','02PGAZ_FQD','2013-09-09','22:00:00','170.301')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('11','02PGAZ_FQD','2013-09-09','23:00:00','177.973')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('11','02PGAZ_FQD','2013-09-09','23:59:59','185.699')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('12','02JA1_FQD','2013-09-09','01:00:00','15.9696')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('12','02JA1_FQD','2013-09-09','02:00:00','31.983')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('12','02JA1_FQD','2013-09-09','03:00:00','48.065')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('12','02JA1_FQD','2013-09-09','04:00:00','64.0991')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('12','02JA1_FQD','2013-09-09','05:00:00','80.1629')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('12','02JA1_FQD','2013-09-09','06:00:00','96.2296')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('12','02JA1_FQD','2013-09-09','07:00:00','112.285')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('12','02JA1_FQD','2013-09-09','08:00:00','128.272')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('12','02JA1_FQD','2013-09-09','09:00:00','144.139')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('12','02JA1_FQD','2013-09-09','10:00:00','159.991')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('12','02JA1_FQD','2013-09-09','11:00:00','175.616')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('12','02JA1_FQD','2013-09-09','12:00:00','191.26')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('12','02JA1_FQD','2013-09-09','13:00:00','207.381')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('12','02JA1_FQD','2013-09-09','14:00:00','223.137')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('12','02JA1_FQD','2013-09-09','15:00:00','238.92')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('12','02JA1_FQD','2013-09-09','16:00:00','254.646')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('12','02JA1_FQD','2013-09-09','17:00:00','270.274')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('12','02JA1_FQD','2013-09-09','18:00:00','285.926')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('12','02JA1_FQD','2013-09-09','19:00:00','301.568')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('12','02JA1_FQD','2013-09-09','20:00:00','317.229')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('12','02JA1_FQD','2013-09-09','21:00:00','333.111')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('12','02JA1_FQD','2013-09-09','22:00:00','349.023')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('12','02JA1_FQD','2013-09-09','23:00:00','364.926')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('12','02JA1_FQD','2013-09-09','23:59:59','380.911')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('13','02JA2_FQD','2013-09-09','01:00:00','12.6072')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('13','02JA2_FQD','2013-09-09','02:00:00','25.2391')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('13','02JA2_FQD','2013-09-09','03:00:00','37.911')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('13','02JA2_FQD','2013-09-09','04:00:00','50.5687')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('13','02JA2_FQD','2013-09-09','05:00:00','63.2522')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('13','02JA2_FQD','2013-09-09','06:00:00','75.9478')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('13','02JA2_FQD','2013-09-09','07:00:00','88.6593')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('13','02JA2_FQD','2013-09-09','08:00:00','101.31')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('13','02JA2_FQD','2013-09-09','09:00:00','113.873')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('13','02JA2_FQD','2013-09-09','10:00:00','126.424')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('13','02JA2_FQD','2013-09-09','11:00:00','138.836')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('13','02JA2_FQD','2013-09-09','12:00:00','151.194')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('13','02JA2_FQD','2013-09-09','13:00:00','163.954')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('13','02JA2_FQD','2013-09-09','14:00:00','176.428')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('13','02JA2_FQD','2013-09-09','15:00:00','188.948')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('13','02JA2_FQD','2013-09-09','16:00:00','201.404')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('13','02JA2_FQD','2013-09-09','17:00:00','213.772')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('13','02JA2_FQD','2013-09-09','18:00:00','226.152')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('13','02JA2_FQD','2013-09-09','19:00:00','238.529')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('13','02JA2_FQD','2013-09-09','20:00:00','250.925')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('13','02JA2_FQD','2013-09-09','21:00:00','263.479')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('13','02JA2_FQD','2013-09-09','22:00:00','276.023')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('13','02JA2_FQD','2013-09-09','23:00:00','288.554')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('13','02JA2_FQD','2013-09-09','23:59:59','301.143')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('14','02XOB_FQD','2013-09-09','01:00:00','0.1831')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('14','02XOB_FQD','2013-09-09','02:00:00','0.3673')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('14','02XOB_FQD','2013-09-09','03:00:00','0.5517')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('14','02XOB_FQD','2013-09-09','04:00:00','0.7361')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('14','02XOB_FQD','2013-09-09','05:00:00','0.9205')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('14','02XOB_FQD','2013-09-09','06:00:00','1.1048')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('14','02XOB_FQD','2013-09-09','07:00:00','1.2894')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('14','02XOB_FQD','2013-09-09','08:00:00','1.4728')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('14','02XOB_FQD','2013-09-09','09:00:00','1.6567')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('14','02XOB_FQD','2013-09-09','10:00:00','1.8401')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('14','02XOB_FQD','2013-09-09','11:00:00','2.023')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('14','02XOB_FQD','2013-09-09','12:00:00','2.2063')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('14','02XOB_FQD','2013-09-09','13:00:00','2.3902')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('14','02XOB_FQD','2013-09-09','14:00:00','2.5728')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('14','02XOB_FQD','2013-09-09','15:00:00','2.7548')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('14','02XOB_FQD','2013-09-09','16:00:00','2.9354')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('14','02XOB_FQD','2013-09-09','17:00:00','3.1154')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('14','02XOB_FQD','2013-09-09','18:00:00','3.2958')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('14','02XOB_FQD','2013-09-09','19:00:00','3.4763')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('14','02XOB_FQD','2013-09-09','20:00:00','3.657')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('14','02XOB_FQD','2013-09-09','21:00:00','3.838')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('14','02XOB_FQD','2013-09-09','22:00:00','4.0188')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('14','02XOB_FQD','2013-09-09','23:00:00','4.1994')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('14','02XOB_FQD','2013-09-09','23:59:59','4.3809')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('27','02GA_FQD','2013-09-09','01:00:00','0')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('27','02GA_FQD','2013-09-09','02:00:00','0.0002')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('27','02GA_FQD','2013-09-09','03:00:00','0.0002')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('27','02GA_FQD','2013-09-09','04:00:00','0.0002')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('27','02GA_FQD','2013-09-09','05:00:00','0.0002')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('27','02GA_FQD','2013-09-09','06:00:00','0.0002')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('27','02GA_FQD','2013-09-09','07:00:00','0.0002')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('27','02GA_FQD','2013-09-09','08:00:00','0.0002')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('27','02GA_FQD','2013-09-09','09:00:00','0.0002')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('27','02GA_FQD','2013-09-09','10:00:00','0.0002')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('27','02GA_FQD','2013-09-09','11:00:00','0.0005')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('27','02GA_FQD','2013-09-09','12:00:00','0.0006')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('27','02GA_FQD','2013-09-09','13:00:00','1.0261')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('27','02GA_FQD','2013-09-09','14:00:00','1.1635')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('27','02GA_FQD','2013-09-09','15:00:00','1.1635')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('27','02GA_FQD','2013-09-09','16:00:00','1.1635')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('27','02GA_FQD','2013-09-09','17:00:00','1.1635')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('27','02GA_FQD','2013-09-09','18:00:00','1.1635')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('27','02GA_FQD','2013-09-09','19:00:00','1.1635')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('27','02GA_FQD','2013-09-09','20:00:00','1.1755')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('27','02GA_FQD','2013-09-09','21:00:00','1.6539')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('27','02GA_FQD','2013-09-09','22:00:00','2.3462')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('27','02GA_FQD','2013-09-09','23:00:00','2.7857')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('27','02GA_FQD','2013-09-09','23:59:59','3.1987')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('15','02PAR1_TON_FQD','2013-09-09','01:00:00','54.2532')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('15','02PAR1_TON_FQD','2013-09-09','02:00:00','108.627')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('15','02PAR1_TON_FQD','2013-09-09','03:00:00','163.157')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('15','02PAR1_TON_FQD','2013-09-09','04:00:00','217.812')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('15','02PAR1_TON_FQD','2013-09-09','05:00:00','272.388')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('15','02PAR1_TON_FQD','2013-09-09','06:00:00','326.972')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('15','02PAR1_TON_FQD','2013-09-09','07:00:00','381.616')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('15','02PAR1_TON_FQD','2013-09-09','08:00:00','435.909')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('15','02PAR1_TON_FQD','2013-09-09','09:00:00','489.926')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('15','02PAR1_TON_FQD','2013-09-09','10:00:00','543.772')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('15','02PAR1_TON_FQD','2013-09-09','11:00:00','597.293')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('15','02PAR1_TON_FQD','2013-09-09','12:00:00','650.72')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('15','02PAR1_TON_FQD','2013-09-09','13:00:00','703.953')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('15','02PAR1_TON_FQD','2013-09-09','14:00:00','757.206')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('15','02PAR1_TON_FQD','2013-09-09','15:00:00','810.492')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('15','02PAR1_TON_FQD','2013-09-09','16:00:00','863.304')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('15','02PAR1_TON_FQD','2013-09-09','17:00:00','915.737')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('15','02PAR1_TON_FQD','2013-09-09','18:00:00','968.093')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('15','02PAR1_TON_FQD','2013-09-09','19:00:00','1020.321')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('15','02PAR1_TON_FQD','2013-09-09','20:00:00','1072.58')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('15','02PAR1_TON_FQD','2013-09-09','21:00:00','1125.143')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('15','02PAR1_TON_FQD','2013-09-09','22:00:00','1177.871')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('15','02PAR1_TON_FQD','2013-09-09','23:00:00','1230.605')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('15','02PAR1_TON_FQD','2013-09-09','23:59:59','1283.668')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('17','02PAR1_GCAL_FQD','2013-09-09','01:00:00','37.2445')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('17','02PAR1_GCAL_FQD','2013-09-09','02:00:00','74.571')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('17','02PAR1_GCAL_FQD','2013-09-09','03:00:00','112.004')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('17','02PAR1_GCAL_FQD','2013-09-09','04:00:00','149.522')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('17','02PAR1_GCAL_FQD','2013-09-09','05:00:00','186.987')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('17','02PAR1_GCAL_FQD','2013-09-09','06:00:00','224.455')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('17','02PAR1_GCAL_FQD','2013-09-09','07:00:00','261.964')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('17','02PAR1_GCAL_FQD','2013-09-09','08:00:00','299.235')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('17','02PAR1_GCAL_FQD','2013-09-09','09:00:00','336.319')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('17','02PAR1_GCAL_FQD','2013-09-09','10:00:00','373.288')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('17','02PAR1_GCAL_FQD','2013-09-09','11:00:00','410.038')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('17','02PAR1_GCAL_FQD','2013-09-09','12:00:00','446.725')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('17','02PAR1_GCAL_FQD','2013-09-09','13:00:00','483.285')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('17','02PAR1_GCAL_FQD','2013-09-09','14:00:00','519.859')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('17','02PAR1_GCAL_FQD','2013-09-09','15:00:00','556.456')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('17','02PAR1_GCAL_FQD','2013-09-09','16:00:00','592.73')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('17','02PAR1_GCAL_FQD','2013-09-09','17:00:00','628.746')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('17','02PAR1_GCAL_FQD','2013-09-09','18:00:00','664.71')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('17','02PAR1_GCAL_FQD','2013-09-09','19:00:00','700.585')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('17','02PAR1_GCAL_FQD','2013-09-09','20:00:00','736.48')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('17','02PAR1_GCAL_FQD','2013-09-09','21:00:00','772.581')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('17','02PAR1_GCAL_FQD','2013-09-09','22:00:00','808.791')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('17','02PAR1_GCAL_FQD','2013-09-09','23:00:00','845.006')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('17','02PAR1_GCAL_FQD','2013-09-09','23:59:59','881.445')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('16','02PAR2_TON_FQD','2013-09-09','01:00:00','53.2545')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('16','02PAR2_TON_FQD','2013-09-09','02:00:00','106.611')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('16','02PAR2_TON_FQD','2013-09-09','03:00:00','160.126')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('16','02PAR2_TON_FQD','2013-09-09','04:00:00','213.775')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('16','02PAR2_TON_FQD','2013-09-09','05:00:00','267.374')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('16','02PAR2_TON_FQD','2013-09-09','06:00:00','320.96')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('16','02PAR2_TON_FQD','2013-09-09','07:00:00','374.631')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('16','02PAR2_TON_FQD','2013-09-09','08:00:00','427.96')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('16','02PAR2_TON_FQD','2013-09-09','09:00:00','481.018')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('16','02PAR2_TON_FQD','2013-09-09','10:00:00','534.001')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('16','02PAR2_TON_FQD','2013-09-09','11:00:00','586.625')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('16','02PAR2_TON_FQD','2013-09-09','12:00:00','639.09')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('16','02PAR2_TON_FQD','2013-09-09','13:00:00','691.338')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('16','02PAR2_TON_FQD','2013-09-09','14:00:00','743.765')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('16','02PAR2_TON_FQD','2013-09-09','15:00:00','796.246')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('16','02PAR2_TON_FQD','2013-09-09','16:00:00','848.17')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('16','02PAR2_TON_FQD','2013-09-09','17:00:00','899.618')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('16','02PAR2_TON_FQD','2013-09-09','18:00:00','950.988')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('16','02PAR2_TON_FQD','2013-09-09','19:00:00','1002.194')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('16','02PAR2_TON_FQD','2013-09-09','20:00:00','1053.406')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('16','02PAR2_TON_FQD','2013-09-09','21:00:00','1104.908')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('16','02PAR2_TON_FQD','2013-09-09','22:00:00','1156.594')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('16','02PAR2_TON_FQD','2013-09-09','23:00:00','1208.275')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('16','02PAR2_TON_FQD','2013-09-09','23:59:59','1260.295')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('18','02PAR2_GCAL_FQD','2013-09-09','01:00:00','36.5559')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('18','02PAR2_GCAL_FQD','2013-09-09','02:00:00','73.1809')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('18','02PAR2_GCAL_FQD','2013-09-09','03:00:00','109.915')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('18','02PAR2_GCAL_FQD','2013-09-09','04:00:00','146.74')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('18','02PAR2_GCAL_FQD','2013-09-09','05:00:00','183.532')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('18','02PAR2_GCAL_FQD','2013-09-09','06:00:00','220.313')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('18','02PAR2_GCAL_FQD','2013-09-09','07:00:00','257.153')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('18','02PAR2_GCAL_FQD','2013-09-09','08:00:00','293.762')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('18','02PAR2_GCAL_FQD','2013-09-09','09:00:00','330.186')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('18','02PAR2_GCAL_FQD','2013-09-09','10:00:00','366.559')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('18','02PAR2_GCAL_FQD','2013-09-09','11:00:00','402.688')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('18','02PAR2_GCAL_FQD','2013-09-09','12:00:00','438.71')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('18','02PAR2_GCAL_FQD','2013-09-09','13:00:00','474.587')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('18','02PAR2_GCAL_FQD','2013-09-09','14:00:00','510.589')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('18','02PAR2_GCAL_FQD','2013-09-09','15:00:00','546.627')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('18','02PAR2_GCAL_FQD','2013-09-09','16:00:00','582.286')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('18','02PAR2_GCAL_FQD','2013-09-09','17:00:00','617.621')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('18','02PAR2_GCAL_FQD','2013-09-09','18:00:00','652.903')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('18','02PAR2_GCAL_FQD','2013-09-09','19:00:00','688.073')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('18','02PAR2_GCAL_FQD','2013-09-09','20:00:00','723.244')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('18','02PAR2_GCAL_FQD','2013-09-09','21:00:00','758.613')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('18','02PAR2_GCAL_FQD','2013-09-09','22:00:00','794.104')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('18','02PAR2_GCAL_FQD','2013-09-09','23:00:00','829.595')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('18','02PAR2_GCAL_FQD','2013-09-09','23:59:59','865.316')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('19','02PGAZ_PD','2013-09-09','01:00:00','992.419')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('19','02PGAZ_PD','2013-09-09','02:00:00','995.011')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('19','02PGAZ_PD','2013-09-09','03:00:00','1001.93')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('19','02PGAZ_PD','2013-09-09','04:00:00','1004.562')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('19','02PGAZ_PD','2013-09-09','05:00:00','1005.334')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('19','02PGAZ_PD','2013-09-09','06:00:00','1018.487')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('19','02PGAZ_PD','2013-09-09','07:00:00','1011.645')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('19','02PGAZ_PD','2013-09-09','08:00:00','1018.99')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('19','02PGAZ_PD','2013-09-09','09:00:00','1012.978')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('19','02PGAZ_PD','2013-09-09','10:00:00','1014.179')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('19','02PGAZ_PD','2013-09-09','11:00:00','1005.57')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('19','02PGAZ_PD','2013-09-09','12:00:00','1025.385')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('19','02PGAZ_PD','2013-09-09','13:00:00','1046.906')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('19','02PGAZ_PD','2013-09-09','14:00:00','1036.136')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('19','02PGAZ_PD','2013-09-09','15:00:00','1019.404')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('19','02PGAZ_PD','2013-09-09','16:00:00','1007.656')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('19','02PGAZ_PD','2013-09-09','17:00:00','997.544')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('19','02PGAZ_PD','2013-09-09','18:00:00','997.835')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('19','02PGAZ_PD','2013-09-09','19:00:00','992.254')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('19','02PGAZ_PD','2013-09-09','20:00:00','990.981')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('19','02PGAZ_PD','2013-09-09','21:00:00','999.425')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('19','02PGAZ_PD','2013-09-09','22:00:00','999.267')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('19','02PGAZ_PD','2013-09-09','23:00:00','1005.676')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('19','02PGAZ_PD','2013-09-09','23:59:59','1003.222')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('20','02PGAZ_P','2013-09-09','01:00:00','10.8859')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('20','02PGAZ_P','2013-09-09','02:00:00','10.8859')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('20','02PGAZ_P','2013-09-09','03:00:00','10.8859')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('20','02PGAZ_P','2013-09-09','04:00:00','10.8696')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('20','02PGAZ_P','2013-09-09','05:00:00','10.8213')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('20','02PGAZ_P','2013-09-09','06:00:00','10.7725')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('20','02PGAZ_P','2013-09-09','07:00:00','10.7238')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('20','02PGAZ_P','2013-09-09','08:00:00','10.6908')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('20','02PGAZ_P','2013-09-09','09:00:00','10.8212')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('20','02PGAZ_P','2013-09-09','10:00:00','10.8696')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('20','02PGAZ_P','2013-09-09','11:00:00','10.8537')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('20','02PGAZ_P','2013-09-09','12:00:00','10.789')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('20','02PGAZ_P','2013-09-09','13:00:00','10.6918')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('20','02PGAZ_P','2013-09-09','14:00:00','10.6757')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('20','02PGAZ_P','2013-09-09','15:00:00','10.7892')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('20','02PGAZ_P','2013-09-09','16:00:00','10.8381')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('20','02PGAZ_P','2013-09-09','17:00:00','10.8875')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('20','02PGAZ_P','2013-09-09','18:00:00','10.8875')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('20','02PGAZ_P','2013-09-09','19:00:00','10.8388')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('20','02PGAZ_P','2013-09-09','20:00:00','10.7575')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('20','02PGAZ_P','2013-09-09','21:00:00','10.7089')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('20','02PGAZ_P','2013-09-09','22:00:00','10.6925')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('20','02PGAZ_P','2013-09-09','23:00:00','10.6925')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('20','02PGAZ_P','2013-09-09','23:59:59','10.7246')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('21','02PGAZ_T','2013-09-09','01:00:00','8.3996')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('21','02PGAZ_T','2013-09-09','02:00:00','8.4998')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('21','02PGAZ_T','2013-09-09','03:00:00','8.2991')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('21','02PGAZ_T','2013-09-09','04:00:00','7.9982')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('21','02PGAZ_T','2013-09-09','05:00:00','7.6979')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('21','02PGAZ_T','2013-09-09','06:00:00','7.9983')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('21','02PGAZ_T','2013-09-09','07:00:00','7.8988')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('21','02PGAZ_T','2013-09-09','08:00:00','9.3007')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('21','02PGAZ_T','2013-09-09','09:00:00','12.1107')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('21','02PGAZ_T','2013-09-09','10:00:00','17.3362')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('21','02PGAZ_T','2013-09-09','11:00:00','19.443')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('21','02PGAZ_T','2013-09-09','12:00:00','22.5498')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('21','02PGAZ_T','2013-09-09','13:00:00','23.7533')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('21','02PGAZ_T','2013-09-09','14:00:00','23.5528')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('21','02PGAZ_T','2013-09-09','15:00:00','21.348')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('21','02PGAZ_T','2013-09-09','16:00:00','21.6502')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('21','02PGAZ_T','2013-09-09','17:00:00','21.6504')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('21','02PGAZ_T','2013-09-09','18:00:00','21.5501')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('21','02PGAZ_T','2013-09-09','19:00:00','20.0473')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('21','02PGAZ_T','2013-09-09','20:00:00','17.6407')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('21','02PGAZ_T','2013-09-09','21:00:00','15.5356')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('21','02PGAZ_T','2013-09-09','22:00:00','14.834')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('21','02PGAZ_T','2013-09-09','23:00:00','14.1324')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('21','02PGAZ_T','2013-09-09','23:59:59','13.1303')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('22','02PGAZ_F','2013-09-09','01:00:00','7796.795')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('22','02PGAZ_F','2013-09-09','02:00:00','7814.315')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('22','02PGAZ_F','2013-09-09','03:00:00','7839.781')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('22','02PGAZ_F','2013-09-09','04:00:00','7843.726')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('22','02PGAZ_F','2013-09-09','05:00:00','7833.84')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('22','02PGAZ_F','2013-09-09','06:00:00','7866.98')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('22','02PGAZ_F','2013-09-09','07:00:00','7830.868')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('22','02PGAZ_F','2013-09-09','08:00:00','7816.334')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('22','02PGAZ_F','2013-09-09','09:00:00','7807.444')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('22','02PGAZ_F','2013-09-09','10:00:00','7763.459')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('22','02PGAZ_F','2013-09-09','11:00:00','7687.109')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('22','02PGAZ_F','2013-09-09','12:00:00','7683.976')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('22','02PGAZ_F','2013-09-09','13:00:00','7719.538')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('22','02PGAZ_F','2013-09-09','14:00:00','7679.112')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('22','02PGAZ_F','2013-09-09','15:00:00','7686.61')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('22','02PGAZ_F','2013-09-09','16:00:00','7647.624')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('22','02PGAZ_F','2013-09-09','17:00:00','7643.652')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('22','02PGAZ_F','2013-09-09','18:00:00','7637.393')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('22','02PGAZ_F','2013-09-09','19:00:00','7611.823')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('22','02PGAZ_F','2013-09-09','20:00:00','7611.061')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('22','02PGAZ_F','2013-09-09','21:00:00','7655.027')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('22','02PGAZ_F','2013-09-09','22:00:00','7668.725')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('22','02PGAZ_F','2013-09-09','23:00:00','7708.004')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('22','02PGAZ_F','2013-09-09','23:59:59','7708.418')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('23','02PGAZ_R','2013-09-09','01:00:00','0.684')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('23','02PGAZ_R','2013-09-09','02:00:00','0.684')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('23','02PGAZ_R','2013-09-09','03:00:00','0.684')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('23','02PGAZ_R','2013-09-09','04:00:00','0.684')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('23','02PGAZ_R','2013-09-09','05:00:00','0.684')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('23','02PGAZ_R','2013-09-09','06:00:00','0.684')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('23','02PGAZ_R','2013-09-09','07:00:00','0.684')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('23','02PGAZ_R','2013-09-09','08:00:00','0.684')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('23','02PGAZ_R','2013-09-09','09:00:00','0.684')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('23','02PGAZ_R','2013-09-09','10:00:00','0.684')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('23','02PGAZ_R','2013-09-09','11:00:00','0.684')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('23','02PGAZ_R','2013-09-09','12:00:00','0.684')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('23','02PGAZ_R','2013-09-09','13:00:00','0.684')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('23','02PGAZ_R','2013-09-09','14:00:00','0.684')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('23','02PGAZ_R','2013-09-09','15:00:00','0.684')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('23','02PGAZ_R','2013-09-09','16:00:00','0.684')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('23','02PGAZ_R','2013-09-09','17:00:00','0.684')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('23','02PGAZ_R','2013-09-09','18:00:00','0.684')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('23','02PGAZ_R','2013-09-09','19:00:00','0.684')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('23','02PGAZ_R','2013-09-09','20:00:00','0.684')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('23','02PGAZ_R','2013-09-09','21:00:00','0.684')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('23','02PGAZ_R','2013-09-09','22:00:00','0.684')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('23','02PGAZ_R','2013-09-09','23:00:00','0.684')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('23','02PGAZ_R','2013-09-09','23:59:59','0.684')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('24','02PGAZ_CO2','2013-09-09','01:00:00','0.0006')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('24','02PGAZ_CO2','2013-09-09','02:00:00','0.0006')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('24','02PGAZ_CO2','2013-09-09','03:00:00','0.0006')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('24','02PGAZ_CO2','2013-09-09','04:00:00','0.0006')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('24','02PGAZ_CO2','2013-09-09','05:00:00','0.0006')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('24','02PGAZ_CO2','2013-09-09','06:00:00','0.0006')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('24','02PGAZ_CO2','2013-09-09','07:00:00','0.0006')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('24','02PGAZ_CO2','2013-09-09','08:00:00','0.0006')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('24','02PGAZ_CO2','2013-09-09','09:00:00','0.0006')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('24','02PGAZ_CO2','2013-09-09','10:00:00','0.0006')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('24','02PGAZ_CO2','2013-09-09','11:00:00','0.0006')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('24','02PGAZ_CO2','2013-09-09','12:00:00','0.0006')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('24','02PGAZ_CO2','2013-09-09','13:00:00','0.0006')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('24','02PGAZ_CO2','2013-09-09','14:00:00','0.0006')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('24','02PGAZ_CO2','2013-09-09','15:00:00','0.0006')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('24','02PGAZ_CO2','2013-09-09','16:00:00','0.0006')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('24','02PGAZ_CO2','2013-09-09','17:00:00','0.0006')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('24','02PGAZ_CO2','2013-09-09','18:00:00','0.0006')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('24','02PGAZ_CO2','2013-09-09','19:00:00','0.0006')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('24','02PGAZ_CO2','2013-09-09','20:00:00','0.0006')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('24','02PGAZ_CO2','2013-09-09','21:00:00','0.0006')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('24','02PGAZ_CO2','2013-09-09','22:00:00','0.0006')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('24','02PGAZ_CO2','2013-09-09','23:00:00','0.0006')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('24','02PGAZ_CO2','2013-09-09','23:59:59','0.0006')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('25','02PGAZ_N2','2013-09-09','01:00:00','0.008')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('25','02PGAZ_N2','2013-09-09','02:00:00','0.008')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('25','02PGAZ_N2','2013-09-09','03:00:00','0.008')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('25','02PGAZ_N2','2013-09-09','04:00:00','0.008')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('25','02PGAZ_N2','2013-09-09','05:00:00','0.008')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('25','02PGAZ_N2','2013-09-09','06:00:00','0.008')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('25','02PGAZ_N2','2013-09-09','07:00:00','0.008')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('25','02PGAZ_N2','2013-09-09','08:00:00','0.008')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('25','02PGAZ_N2','2013-09-09','09:00:00','0.008')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('25','02PGAZ_N2','2013-09-09','10:00:00','0.008')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('25','02PGAZ_N2','2013-09-09','11:00:00','0.008')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('25','02PGAZ_N2','2013-09-09','12:00:00','0.008')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('25','02PGAZ_N2','2013-09-09','13:00:00','0.008')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('25','02PGAZ_N2','2013-09-09','14:00:00','0.008')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('25','02PGAZ_N2','2013-09-09','15:00:00','0.008')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('25','02PGAZ_N2','2013-09-09','16:00:00','0.008')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('25','02PGAZ_N2','2013-09-09','17:00:00','0.008')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('25','02PGAZ_N2','2013-09-09','18:00:00','0.008')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('25','02PGAZ_N2','2013-09-09','19:00:00','0.008')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('25','02PGAZ_N2','2013-09-09','20:00:00','0.008')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('25','02PGAZ_N2','2013-09-09','21:00:00','0.008')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('25','02PGAZ_N2','2013-09-09','22:00:00','0.008')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('25','02PGAZ_N2','2013-09-09','23:00:00','0.008')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('25','02PGAZ_N2','2013-09-09','23:59:59','0.008')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('26','02PBAR','2013-09-09','01:00:00','764.205')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('26','02PBAR','2013-09-09','02:00:00','763.8')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('26','02PBAR','2013-09-09','03:00:00','763.396')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('26','02PBAR','2013-09-09','04:00:00','762.886')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('26','02PBAR','2013-09-09','05:00:00','762.678')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('26','02PBAR','2013-09-09','06:00:00','762.173')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('26','02PBAR','2013-09-09','07:00:00','762.173')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('26','02PBAR','2013-09-09','08:00:00','762.376')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('26','02PBAR','2013-09-09','09:00:00','763.186')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('26','02PBAR','2013-09-09','10:00:00','764.703')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('26','02PBAR','2013-09-09','11:00:00','765.41')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('26','02PBAR','2013-09-09','12:00:00','765.815')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('26','02PBAR','2013-09-09','13:00:00','766.223')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('26','02PBAR','2013-09-09','14:00:00','766.427')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('26','02PBAR','2013-09-09','15:00:00','766.427')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('26','02PBAR','2013-09-09','16:00:00','766.426')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('26','02PBAR','2013-09-09','17:00:00','766.426')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('26','02PBAR','2013-09-09','18:00:00','766.326')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('26','02PBAR','2013-09-09','19:00:00','766.429')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('26','02PBAR','2013-09-09','20:00:00','766.429')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('26','02PBAR','2013-09-09','21:00:00','766.124')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('26','02PBAR','2013-09-09','22:00:00','765.717')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('26','02PBAR','2013-09-09','23:00:00','765.212')"/>
+<DEBUG time="14:28:53" action="Insert" Query="INSERT INTO `data_day` (`tag_id`,`name`,`date_hist`,`time_hist`,`value`) VALUES ('26','02PBAR','2013-09-09','23:59:59','764.809')"/>
+<DEBUG time="14:28:53" action="Select" Query="SELECT *&#10;                           FROM `data_day`&#10;                           GROUP BY `date_hist`&#10;                           ORDER BY `date_hist` DESC"/>
+<DEBUG time="14:28:53" action="Delete" Query="DELETE FROM `data_day`&#10;                           WHERE `date_hist`IN('2012-10-07','2010-07-25','2010-07-24','2010-07-23','2010-07-22','2010-07-21','2010-07-20','2010-07-19','2010-07-18','2010-07-17')"/>
+</DEBUGS>
+</DATAPACKET>
