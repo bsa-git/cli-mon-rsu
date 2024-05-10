@@ -10,5 +10,5 @@ Installation
 Clone or download [cli-mon-rsu](https://github.com/bsa-git/cli-mon-rsu) project with git.
 
 Description
-----------------------------
-The application is made according to the software template model-display-control (MVC). The data was obtained from the history of the control system using the ODBC driver.
+-----------
+The application is made according to the software template Model-View-Control (MVC). The data was obtained from the history of the control system using the ODBC driver.
