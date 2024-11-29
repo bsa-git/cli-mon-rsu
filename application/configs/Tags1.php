@@ -84,7 +84,7 @@ class Tags1 {
         "02SKLAD:01L26_SUM.PNT" => "02SKLAD_01L26",
         "02SKLAD:02L26_SUM.PNT" => "02SKLAD_02L26",
         "02SKLAD:02L26_CALSUM.RO03" => "02SKLAD_SUM",
-	"02SKLAD:02HNO3_R.PNT" => "02HNO3_R",
+	      "02SKLAD:02HNO3_R.PNT" => "02HNO3_R",
         //VZ KIP
         "02SBS_OC:02PS10.PNT" => "02PS10",
         //AZVS
@@ -99,15 +99,15 @@ class Tags1 {
         "02SKLAD:02Q20.PNT" => "02HNO3_Q20",
         "02SKLAD:02T20.PNT" => "02HNO3_T20",
         "02SKLAD:02HNO3_2_FV.PNT" => "02HNO3_F20_2_FV",
-	"02SKLAD:02HNO3_1_FV.PNT" => "02HNO3_F20_1_FV",
-	"02SKLAD:02HNO3_1_MNG.PNT" => "02HNO3_1_MNG",
-	"02SKLAD:02HNO3_2_MNG.PNT" => "02HNO3_2_MNG",
-	"02SKLAD:02T1010.PNT" => "02T1010",
-	"02SKLAD:02D1010.PNT" => "02D1010",
-	"02SKLAD:02Q20_1_M9.PNT" => "02Q20_1_M9",
-	"02SKLAD:02T2010.PNT" => "02T2010",
-	"02SKLAD:02D2010.PNT" => "02D2010",
-	"02SKLAD:02Q20_2_M9.PNT" => "02Q20_2_M9",
+	      "02SKLAD:02HNO3_1_FV.PNT" => "02HNO3_F20_1_FV",
+        "02SKLAD:02HNO3_1_MNG.PNT" => "02HNO3_1_MNG",
+        "02SKLAD:02HNO3_2_MNG.PNT" => "02HNO3_2_MNG",
+        "02SKLAD:02T1010.PNT" => "02T1010",
+        "02SKLAD:02D1010.PNT" => "02D1010",
+        "02SKLAD:02Q20_1_M9.PNT" => "02Q20_1_M9",
+        "02SKLAD:02T2010.PNT" => "02T2010",
+        "02SKLAD:02D2010.PNT" => "02D2010",
+        "02SKLAD:02Q20_2_M9.PNT" => "02Q20_2_M9",
         //============ AGR 1/2 =========//
         //PS-180
         "12SBS_AO:12PS180.PNT" => "12VZ_PS180",
@@ -328,7 +328,7 @@ class Tags1 {
         "02SKLAD_01L26" => array("value_unit" => "м3", "scale_min" => 500, "scale_max" => 800),
         "02SKLAD_02L26" => array("value_unit" => "м3", "scale_min" => 1000, "scale_max" => 1500),
         "02SKLAD_SUM" => array("value_unit" => "м3", "scale_min" => 1500, "scale_max" => 2300),
-	"02SKLAD_HNO3_R" => array("value_unit" => "т/м3", "scale_min" => 1.25, "scale_max" => 1.35),
+	      "02SKLAD_HNO3_R" => array("value_unit" => "т/м3", "scale_min" => 1.25, "scale_max" => 1.35),
         //VODA XOB
         "02XOB_T1" => array("value_unit" => "град.С", "scale_min" => 70, "scale_max" => 90),
         "02XOB_P4" => array("value_unit" => "кг/см2", "scale_min" => 5, "scale_max" => 8),
@@ -351,15 +351,15 @@ class Tags1 {
         "02HNO3_Q20" => array("value_unit" => "%", "scale_min" => 55, "scale_max" => 57),
         "02HNO3_T20" => array("value_unit" => "град.С", "scale_min" => 40, "scale_max" => 47),
         "02HNO3_F20_2_FV" => array("value_unit" => "м3/ч", "scale_min" => 50, "scale_max" => 80),
-	"02HNO3_F20_1_FV" => array("value_unit" => "м3/ч", "scale_min" => 50, "scale_max" => 80),
-	"02HNO3_1_MNG" => array("value_unit" => "т.мнг/ч", "scale_min" => 40, "scale_max" => 80),
-	"02HNO3_2_MNG" => array("value_unit" => "т.мнг/ч", "scale_min" => 40, "scale_max" => 80),
-	"02T1010" => array("value_unit" => "град.С", "scale_min" => 20, "scale_max" => 50),
-	"02D1010" => array("value_unit" => "т/м3", "scale_min" => 1.3, "scale_max" => 1.4),
-	"02Q20_1_M9" => array("value_unit" => "%", "scale_min" => 50, "scale_max" => 58),
-	"02T2010" => array("value_unit" => "град.С", "scale_min" => 20, "scale_max" => 50),
-	"02D2010" => array("value_unit" => "т/м3", "scale_min" => 1.3, "scale_max" => 1.4),
-	"02Q20_2_M9" => array("value_unit" => "%", "scale_min" => 50, "scale_max" => 58),
+        "02HNO3_F20_1_FV" => array("value_unit" => "м3/ч", "scale_min" => 50, "scale_max" => 80),
+        "02HNO3_1_MNG" => array("value_unit" => "т.мнг/ч", "scale_min" => 40, "scale_max" => 80),
+        "02HNO3_2_MNG" => array("value_unit" => "т.мнг/ч", "scale_min" => 40, "scale_max" => 80),
+        "02T1010" => array("value_unit" => "град.С", "scale_min" => 20, "scale_max" => 50),
+        "02D1010" => array("value_unit" => "т/м3", "scale_min" => 1.3, "scale_max" => 1.4),
+        "02Q20_1_M9" => array("value_unit" => "%", "scale_min" => 50, "scale_max" => 58),
+        "02T2010" => array("value_unit" => "град.С", "scale_min" => 20, "scale_max" => 50),
+        "02D2010" => array("value_unit" => "т/м3", "scale_min" => 1.3, "scale_max" => 1.4),
+        "02Q20_2_M9" => array("value_unit" => "%", "scale_min" => 50, "scale_max" => 58),
         //============ AGR 1/2 =========//
         //PS-180
         "12VZ_PS180" => array("value_unit" => "кг/см2", "scale_min" => 2, "scale_max" => 3),
@@ -577,7 +577,7 @@ class Tags1 {
         "02SKLAD_01L26" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02SKLAD_01L26", "name_alias" => "L SKLAD-1", "tag_param" => "L", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "м3", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 1000, "comment" => "Уровень HNO3 склад 1 отд."),
         "02SKLAD_02L26" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02SKLAD_02L26", "name_alias" => "L SKLAD-1", "tag_param" => "L", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "м3", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 1800, "comment" => "Уровень HNO3 склад 2 отд."),
         "02SKLAD_SUM" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02SKLAD_SUM", "name_alias" => "L SKLAD-1", "tag_param" => "L", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "м3", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 2800, "comment" => "Уровень HNO3 склад 1,2 отд."),
-	"02SKLAD_HNO3_R" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02SKLAD_HNO3_R", "name_alias" => "R HNO3", "tag_param" => "L", "name_param" => "Плотность", "value_type" => "CURRENT", "value_unit" => "т/м3", "scale_min" => 1.2, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 1.4, "comment" => "Плотность HNO3 склад 2 отд."),
+	      "02SKLAD_HNO3_R" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02SKLAD_HNO3_R", "name_alias" => "R HNO3", "tag_param" => "L", "name_param" => "Плотность", "value_type" => "CURRENT", "value_unit" => "т/м3", "scale_min" => 1.2, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 1.4, "comment" => "Плотность HNO3 склад 2 отд."),
         //M9(Кислота в цех М9)
         "02HNO3_Q20" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02HNO3_Q20", "name_alias" => "Q HNO3", "tag_param" => "Q", "name_param" => "Концентрация", "value_type" => "CURRENT", "value_unit" => "%", "scale_min" => 45, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 60, "comment" => "Концентрация HNO3 в хранилище"),
         "02HNO3_T20" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02HNO3_T20", "name_alias" => "T HNO3", "tag_param" => "T", "name_param" => "Температура", "value_type" => "CURRENT", "value_unit" => "град.С", "scale_min" => -50, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 60, "comment" => "Температура HNO3 в хранилище"),
@@ -589,15 +589,15 @@ class Tags1 {
         "02HNO3_F20_2" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02HNO3_F20_2", "name_alias" => "F HNO3 20/2", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "т/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 100, "comment" => "Расход HNO3 в 2 кол."),
         "02HNO3_F20_2_FV" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02HNO3_F20_2_FV", "name_alias" => "F HNO3 20/2_V", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "м3/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 100, "comment" => "Расход HNO3 в 2 кол."),
         "02HNO3_F20_1_FV" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02HNO3_F20_1_FV", "name_alias" => "F HNO3 20/1_V", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "м3/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 100, "comment" => "Расход HNO3 в 1 кол."),
-	"02HNO3_1_MNG" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02HNO3_1_MNG", "name_alias" => "F HNO3 20/1_MNG", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "т.мнг/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 125, "comment" => "Расход HNO3 в 1 кол."),
-	"02HNO3_2_MNG" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02HNO3_2_MNG", "name_alias" => "F HNO3 20/2_MNG", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "т.мнг/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 125, "comment" => "Расход HNO3 в 2 кол."),
-	"02T1010" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02T1010", "name_alias" => "T HNO3 1010", "tag_param" => "T", "name_param" => "Температура", "value_type" => "CURRENT", "value_unit" => "град.С", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 100, "comment" => "Температура HNO3 в 1 кол."),
-	"02D1010" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02D1010", "name_alias" => "D HNO3 1010", "tag_param" => "D", "name_param" => "Плотность", "value_type" => "CURRENT", "value_unit" => "т/м3", "scale_min" => 1.3, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 1.4, "comment" => "Плотность HNO3 в 1 кол."),
-	"02Q20_1_M9" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02Q20_1_M9", "name_alias" => "Q HNO3 20/1", "tag_param" => "Q", "name_param" => "Концентрация", "value_type" => "CURRENT", "value_unit" => "%", "scale_min" => 45, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 60, "comment" => "Концентрация HNO3 в 1 кол."),
-	"02T2010" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02T2010", "name_alias" => "T HNO3 2010", "tag_param" => "T", "name_param" => "Температура", "value_type" => "CURRENT", "value_unit" => "град.С", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 100, "comment" => "Температура HNO3 в 2 кол."),
-	"02D2010" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02D2010", "name_alias" => "D HNO3 2010", "tag_param" => "D", "name_param" => "Плотность", "value_type" => "CURRENT", "value_unit" => "т/м3", "scale_min" => 1.3, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 1.4, "comment" => "Плотность HNO3 в 2 кол."),
-	"02Q20_2_M9" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02Q20_2_M9", "name_alias" => "Q HNO3 20/2", "tag_param" => "Q", "name_param" => "Концентрация", "value_type" => "CURRENT", "value_unit" => "%", "scale_min" => 45, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 60, "comment" => "Концентрация HNO3 в 2 кол."),	
-	//VODA XOB
+        "02HNO3_1_MNG" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02HNO3_1_MNG", "name_alias" => "F HNO3 20/1_MNG", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "т.мнг/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 125, "comment" => "Расход HNO3 в 1 кол."),
+        "02HNO3_2_MNG" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02HNO3_2_MNG", "name_alias" => "F HNO3 20/2_MNG", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "т.мнг/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 125, "comment" => "Расход HNO3 в 2 кол."),
+        "02T1010" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02T1010", "name_alias" => "T HNO3 1010", "tag_param" => "T", "name_param" => "Температура", "value_type" => "CURRENT", "value_unit" => "град.С", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 100, "comment" => "Температура HNO3 в 1 кол."),
+        "02D1010" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02D1010", "name_alias" => "D HNO3 1010", "tag_param" => "D", "name_param" => "Плотность", "value_type" => "CURRENT", "value_unit" => "т/м3", "scale_min" => 1.3, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 1.4, "comment" => "Плотность HNO3 в 1 кол."),
+        "02Q20_1_M9" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02Q20_1_M9", "name_alias" => "Q HNO3 20/1", "tag_param" => "Q", "name_param" => "Концентрация", "value_type" => "CURRENT", "value_unit" => "%", "scale_min" => 45, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 60, "comment" => "Концентрация HNO3 в 1 кол."),
+        "02T2010" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02T2010", "name_alias" => "T HNO3 2010", "tag_param" => "T", "name_param" => "Температура", "value_type" => "CURRENT", "value_unit" => "град.С", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 100, "comment" => "Температура HNO3 в 2 кол."),
+        "02D2010" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02D2010", "name_alias" => "D HNO3 2010", "tag_param" => "D", "name_param" => "Плотность", "value_type" => "CURRENT", "value_unit" => "т/м3", "scale_min" => 1.3, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 1.4, "comment" => "Плотность HNO3 в 2 кол."),
+        "02Q20_2_M9" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02Q20_2_M9", "name_alias" => "Q HNO3 20/2", "tag_param" => "Q", "name_param" => "Концентрация", "value_type" => "CURRENT", "value_unit" => "%", "scale_min" => 45, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 60, "comment" => "Концентрация HNO3 в 2 кол."),	
+        //VODA XOB
         "02XOB_T1" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02XOB_T1", "name_alias" => "T XOB", "tag_param" => "T", "name_param" => "Температура", "value_type" => "CURRENT", "value_unit" => "град.С", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 100, "comment" => "Температура хим.очищенной воды"),
         "02XOB_P4" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02XOB_P4", "name_alias" => "P XOB", "tag_param" => "P", "name_param" => "Давление", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 10, "comment" => "Давление хим.очищенной воды"),
         "02XOB_F1" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02XOB_F1", "name_alias" => "F XOB", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "м3/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 260, "comment" => "Расход хим.очищенной воды"),
@@ -792,7 +792,6 @@ class Tags1 {
         //EA_RD
         "72EA_RD" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "72EA_RD", "name_alias" => "VT EA RD", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "кВт", "scale_min" => -1500, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 1500, "comment" => "Мощность РД"),
     );
-
 }
 
 ?>
