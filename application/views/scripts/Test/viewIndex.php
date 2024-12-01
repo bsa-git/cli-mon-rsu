@@ -1,7 +1,7 @@
 <?php
 
 /**
- * IndexView для Index действия контроллера Index
+ * IndexView РґР»СЏ Index РґРµР№СЃС‚РІРёСЏ РєРѕРЅС‚СЂРѕР»Р»РµСЂР° Index
  *
  *
  * @package    bx-azot
@@ -12,10 +12,10 @@ class View_TestIndex {
     private  $_arrParams;
 
     /**--------------------------------
-     * Конструктор
+     * РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ
      *
-     * @param  array $aParams   //Масив параметров
-     * @return IndexView        //Обьект класса -> IndexView
+     * @param  array $aParams   //РњР°СЃРёРІ РїР°СЂР°РјРµС‚СЂРѕРІ
+     * @return IndexView        //РћР±СЊРµРєС‚ РєР»Р°СЃСЃР° -> IndexView
      */
     function __construct(array $aParams = null) {
         $this->_arrParams = $aParams;
@@ -23,13 +23,13 @@ class View_TestIndex {
     }
 
     /**------------------------------------
-     * Отобразить данные
+     * РћС‚РѕР±СЂР°Р·РёС‚СЊ РґР°РЅРЅС‹Рµ
      *
      * @return  string
      */
     public function render() {
         //--------------------
-        //Получим все параметры запроса
+        //РџРѕР»СѓС‡РёРј РІСЃРµ РїР°СЂР°РјРµС‚СЂС‹ Р·Р°РїСЂРѕСЃР°
         echo 'c = test a = index';
         
     }

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * View äëÿ current_values äåéñòâèÿ êîíòğîëëåğà hist
+ * View Ğ´Ğ»Ñ current_values Ğ´ĞµĞ¹ÑÑ‚Ğ²Ğ¸Ñ ĞºĞ¾Ğ½Ñ‚Ñ€Ğ¾Ğ»Ğ»ĞµÑ€Ğ° hist
  *
  *
  * @package    cli-azot-m5
@@ -12,10 +12,10 @@ class View_HistCurrentValues {
     private  $arrObjects;
 
     /**--------------------------------
-     * Êîíñòğóêòîğ
+     * ĞšĞ¾Ğ½ÑÑ‚Ñ€ÑƒĞºÑ‚Ğ¾Ñ€
      *
-     * @param  array $aParams   //Ìàñèâ ïàğàìåòğîâ
-     * @return IndexView        //Îáüåêò êëàññà -> IndexView
+     * @param  array $aParams   //ĞœĞ°ÑĞ¸Ğ² Ğ¿Ğ°Ñ€Ğ°Ğ¼ĞµÑ‚Ñ€Ğ¾Ğ²
+     * @return IndexView        //ĞĞ±ÑŒĞµĞºÑ‚ ĞºĞ»Ğ°ÑÑĞ° -> IndexView
      */
     function __construct(array $aParams = null, array $aParams2 = null) {
         $this->arrHistCurrentDataObj = $aParams;
@@ -23,7 +23,7 @@ class View_HistCurrentValues {
     }
 
     /**------------------------------------
-     * Îòîáğàçèòü äàííûå
+     * ĞÑ‚Ğ¾Ğ±Ñ€Ğ°Ğ·Ğ¸Ñ‚ÑŒ Ğ´Ğ°Ğ½Ğ½Ñ‹Ğµ
      *
      * @return  string
      */
@@ -32,7 +32,7 @@ class View_HistCurrentValues {
         $LFCR = PHP_EOL;
         $time = "";
         //--------------------
-        //Ïîëó÷èì âñå ïàğàìåòğû çàïğîñà
+        //ĞŸĞ¾Ğ»ÑƒÑ‡Ğ¸Ğ¼ Ğ²ÑĞµ Ğ¿Ğ°Ñ€Ğ°Ğ¼ĞµÑ‚Ñ€Ñ‹ Ğ·Ğ°Ğ¿Ñ€Ğ¾ÑĞ°
         foreach($this->arrHistCurrentDataObj as $oObject) {
             if($oObject->time != $time){
                 $time = $oObject->time;
@@ -40,22 +40,22 @@ class View_HistCurrentValues {
             echo $oObject->source." - ".$oObject->value.$LFCR;
         }
 
-        //Ñîõğàíèì èíô. î ğåçóëüòàòàõ çàïğîñà â ëîã. ôàéë
+        //Ğ¡Ğ¾Ñ…Ñ€Ğ°Ğ½Ğ¸Ğ¼ Ğ¸Ğ½Ñ„. Ğ¾ Ñ€ĞµĞ·ÑƒĞ»ÑŒÑ‚Ğ°Ñ‚Ğ°Ñ… Ğ·Ğ°Ğ¿Ñ€Ğ¾ÑĞ° Ğ² Ğ»Ğ¾Ğ³. Ñ„Ğ°Ğ¹Ğ»
         $debug = myConfig::$arrSystem["debug"];
         if($debug){
 
-            //Ïîëó÷èì íàçâàíèå ëîã. ôàéëà
+            //ĞŸĞ¾Ğ»ÑƒÑ‡Ğ¸Ğ¼ Ğ½Ğ°Ğ·Ğ²Ğ°Ğ½Ğ¸Ğµ Ğ»Ğ¾Ğ³. Ñ„Ğ°Ğ¹Ğ»Ğ°
             $logFile = strBox::getNameLogFileXML("HistCurrentData");
 
-            //Ïîëó÷èì çíà÷åíèÿ îáüåêòà â âèäå äâóõìåğíîãî ìàññèâà
+            //ĞŸĞ¾Ğ»ÑƒÑ‡Ğ¸Ğ¼ Ğ·Ğ½Ğ°Ñ‡ĞµĞ½Ğ¸Ñ Ğ¾Ğ±ÑŒĞµĞºÑ‚Ğ° Ğ² Ğ²Ğ¸Ğ´Ğµ Ğ´Ğ²ÑƒÑ…Ğ¼ĞµÑ€Ğ½Ğ¾Ğ³Ğ¾ Ğ¼Ğ°ÑÑĞ¸Ğ²Ğ°
             $arrHistCurrentData = sysBox::ArrObjects2ArrKeysValues($this->arrHistCurrentDataObj);
             $arrCurrentData = sysBox::ArrObjects2ArrKeysValues($this->arrCurrentDataObj);
 
-            //Ñîõğàíèì äàííûå â ëîã. ôàéëå
+            //Ğ¡Ğ¾Ñ…Ñ€Ğ°Ğ½Ğ¸Ğ¼ Ğ´Ğ°Ğ½Ğ½Ñ‹Ğµ Ğ² Ğ»Ğ¾Ğ³. Ñ„Ğ°Ğ¹Ğ»Ğµ
             $myParams = array(
-                "title"=>"Ïîëó÷èòü òåêóùèå äàííûå èç èñòîğèè è ñîõğàíèòü èõ â áàçå äàííûõ",
+                "title"=>"ĞŸĞ¾Ğ»ÑƒÑ‡Ğ¸Ñ‚ÑŒ Ñ‚ĞµĞºÑƒÑ‰Ğ¸Ğµ Ğ´Ğ°Ğ½Ğ½Ñ‹Ğµ Ğ¸Ğ· Ğ¸ÑÑ‚Ğ¾Ñ€Ğ¸Ğ¸ Ğ¸ ÑĞ¾Ñ…Ñ€Ğ°Ğ½Ğ¸Ñ‚ÑŒ Ğ¸Ñ… Ğ² Ğ±Ğ°Ğ·Ğµ Ğ´Ğ°Ğ½Ğ½Ñ‹Ñ…",
                 "result"=>1,
-                "message"=>"OK...Òåêóùèå äàííûå ïîëó÷åíû çà ($time)",
+                "message"=>"OK...Ğ¢ĞµĞºÑƒÑ‰Ğ¸Ğµ Ğ´Ğ°Ğ½Ğ½Ñ‹Ğµ Ğ¿Ğ¾Ğ»ÑƒÑ‡ĞµĞ½Ñ‹ Ğ·Ğ° ($time)",
                 "template"=>"histdata1.xml",
                 "rowdata"=>$arrCurrentData,
                 "histdata"=>$arrHistCurrentData,

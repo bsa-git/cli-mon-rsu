@@ -1,28 +1,28 @@
 <?
 try {
-    //Îïðåäåëèì ïóòü ê DOCUMENT_ROOT
+    //ÐžÐ¿Ñ€ÐµÐ´ÐµÐ»Ð¸Ð¼ Ð¿ÑƒÑ‚ÑŒ Ðº DOCUMENT_ROOT
     $rootDocument = realpath(dirname(__FILE__) . '/../');
     
     defined('ROOT_DOCUMENT')
             || define('ROOT_DOCUMENT', $rootDocument);
     
-    //Âñòàâèì ìîäóëü htmbox.inc.php
+    //Ð’ÑÑ‚Ð°Ð²Ð¸Ð¼ Ð¼Ð¾Ð´ÑƒÐ»ÑŒ htmbox.inc.php
     require_once($rootDocument."/application/plugins/htmBox.inc.php");
 
-    //Óñòàíîâèì require_once
+    //Ð£ÑÑ‚Ð°Ð½Ð¾Ð²Ð¸Ð¼ require_once
     htmBox::getIncludes('inc');
     myConfig::$arrSystem["cmd"] = 0;
 
-    //Ïîëó÷èì ìàññèâ âõîäíûõ ïàðàìåòðîâ
+    //ÐŸÐ¾Ð»ÑƒÑ‡Ð¸Ð¼ Ð¼Ð°ÑÑÐ¸Ð² Ð²Ñ…Ð¾Ð´Ð½Ñ‹Ñ… Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ð¾Ð²
     $strParams = $_SERVER['argv'][1];
     $arrParams = array();
     parse_str($strParams, $arrParams);
 
-    //Äåéñòâèÿ ïðè çàãðóçêå
+    //Ð”ÐµÐ¹ÑÑ‚Ð²Ð¸Ñ Ð¿Ñ€Ð¸ Ð·Ð°Ð³Ñ€ÑƒÐ·ÐºÐµ
     $bootstrap = new Bootstrap();
     $bootstrap->init();
 
-    //Îïðåäåëèì âõîäíûå ïàðàìåòðû
+    //ÐžÐ¿Ñ€ÐµÐ´ÐµÐ»Ð¸Ð¼ Ð²Ñ…Ð¾Ð´Ð½Ñ‹Ðµ Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ñ‹
     if (array_key_exists("c", $arrParams)) {
         $controller = $arrParams["c"];
     }else{
@@ -34,16 +34,16 @@ try {
         $action = 'index';
     }
 
-    //Óñòàíîâèì GET ïàðàìåòðû äëÿ äåéñòâèÿ êîíòðîëëåðà
+    //Ð£ÑÑ‚Ð°Ð½Ð¾Ð²Ð¸Ð¼ GET Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ñ‹ Ð´Ð»Ñ Ð´ÐµÐ¹ÑÑ‚Ð²Ð¸Ñ ÐºÐ¾Ð½Ñ‚Ñ€Ð¾Ð»Ð»ÐµÑ€Ð°
     sysBox::setDebugInfo("params", $arrParams);
 
-    //Ââûïîëíèì äåéñòâèå êîíòðîëëåðà
+    //Ð’Ð²Ñ‹Ð¿Ð¾Ð»Ð½Ð¸Ð¼ Ð´ÐµÐ¹ÑÑ‚Ð²Ð¸Ðµ ÐºÐ¾Ð½Ñ‚Ñ€Ð¾Ð»Ð»ÐµÑ€Ð°
     sysBox::runControllMetod($controller, $action);
 }
 catch(Exception $ex) {
   echo  strBox::msgUser('ERR_SYS', array($ex->getMessage()));
 }
-// Ñîåäèíèìñÿ ê îñíîâíîé áàçå äàííûõ
+// Ð¡Ð¾ÐµÐ´Ð¸Ð½Ð¸Ð¼ÑÑ Ðº Ð¾ÑÐ½Ð¾Ð²Ð½Ð¾Ð¹ Ð±Ð°Ð·Ðµ Ð´Ð°Ð½Ð½Ñ‹Ñ…
 //$DB->Connect($DBHost, $DBName, $DBLogin, $DBPassword);
 ?>
 

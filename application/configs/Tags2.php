@@ -1,23 +1,23 @@
 <?php
 
 /**
- * Конфигурационный файл
+ * РљРѕРЅС„РёРіСѓСЂР°С†РёРѕРЅРЅС‹Р№ С„Р°Р№Р»
  *
- * @author Бескоровайный Сергей
+ * @author Р‘РµСЃРєРѕСЂРѕРІР°Р№РЅС‹Р№ РЎРµСЂРіРµР№
  */
 /* * =================================================================
- * Класс Tags2 для позиций в истории
+ * РљР»Р°СЃСЃ Tags2 РґР»СЏ РїРѕР·РёС†РёР№ РІ РёСЃС‚РѕСЂРёРё
  *
  * @package    cli-azot-m5
  * @subpackage Tags2
  */
 class Tags2 {
 
-    /** Конфигурация суточных позиций
+    /** РљРѕРЅС„РёРіСѓСЂР°С†РёСЏ СЃСѓС‚РѕС‡РЅС‹С… РїРѕР·РёС†РёР№
      * @var array
      */
     static $arrDayTags = array(
-        //Суточные расходы
+        //РЎСѓС‚РѕС‡РЅС‹Рµ СЂР°СЃС…РѕРґС‹
         "01PGAZ:01NG_FQD.OUT" => "01PGAZ_FQD",
         "01AMIAK:01JAM1_FQD.OUT" => "01JA1_FQD",
         "01AMIAK:01JAM2_FQD.OUT" => "01JA2_FQD",
@@ -39,7 +39,7 @@ class Tags2 {
         "01PGAZ:01F5M.PNT" => "01PGAZ_FM"
     );
 
-    /* Конфигурация текущих позиций
+    /* РљРѕРЅС„РёРіСѓСЂР°С†РёСЏ С‚РµРєСѓС‰РёС… РїРѕР·РёС†РёР№
      * @var array
      */
     static $arrCurrentTags = array(
@@ -130,188 +130,188 @@ class Tags2 {
         "31RD:31EA_RD.PNT" => "31EA_RD",
     );
 
-    /* Конфигурация текущих тестовых позиций
-     * и диапазон их рабочих значений
+    /* РљРѕРЅС„РёРіСѓСЂР°С†РёСЏ С‚РµРєСѓС‰РёС… С‚РµСЃС‚РѕРІС‹С… РїРѕР·РёС†РёР№
+     * Рё РґРёР°РїР°Р·РѕРЅ РёС… СЂР°Р±РѕС‡РёС… Р·РЅР°С‡РµРЅРёР№
      * @var array
      */
     static $arrCurrentTest_Tags = array(
         //============ OC =========//
         //NH3
-        "01NH3_T4" => array("value_unit" => "град.С", "scale_min" => 70, "scale_max" => 90),
-        "01NH3_P4" => array("value_unit" => "кг/см2", "scale_min" => 2, "scale_max" => 3),
-        "01NH3_F4" => array("value_unit" => "м3/ч", "scale_min" => 1300, "scale_max" => 1500),
+        "01NH3_T4" => array("value_unit" => "РіСЂР°Рґ.РЎ", "scale_min" => 70, "scale_max" => 90),
+        "01NH3_P4" => array("value_unit" => "РєРі/СЃРј2", "scale_min" => 2, "scale_max" => 3),
+        "01NH3_F4" => array("value_unit" => "Рј3/С‡", "scale_min" => 1300, "scale_max" => 1500),
         //PGAZ
-        "01PGAZ_T16" => array("value_unit" => "град.С", "scale_min" => -5, "scale_max" => 10),
-        "01PGAZ_P5" => array("value_unit" => "кг/см2", "scale_min" => 8, "scale_max" => 10),
-        "01PGAZ_F5" => array("value_unit" => "м3/ч", "scale_min" => 2500, "scale_max" => 3000),
+        "01PGAZ_T16" => array("value_unit" => "РіСЂР°Рґ.РЎ", "scale_min" => -5, "scale_max" => 10),
+        "01PGAZ_P5" => array("value_unit" => "РєРі/СЃРј2", "scale_min" => 8, "scale_max" => 10),
+        "01PGAZ_F5" => array("value_unit" => "Рј3/С‡", "scale_min" => 2500, "scale_max" => 3000),
         //JAM-1
-        "01JAM_T21_1" => array("value_unit" => "град.С", "scale_min" => 0, "scale_max" => 10),
-        "01JAM_P21_1" => array("value_unit" => "кг/см2", "scale_min" => 10, "scale_max" => 15), //10..15
-        "01JAM_F21_1" => array("value_unit" => "т/ч", "scale_min" => 5, "scale_max" => 15),
+        "01JAM_T21_1" => array("value_unit" => "РіСЂР°Рґ.РЎ", "scale_min" => 0, "scale_max" => 10),
+        "01JAM_P21_1" => array("value_unit" => "РєРі/СЃРј2", "scale_min" => 10, "scale_max" => 15), //10..15
+        "01JAM_F21_1" => array("value_unit" => "С‚/С‡", "scale_min" => 5, "scale_max" => 15),
         //PAR-1
-        "01PAR_T2_1" => array("value_unit" => "град.С", "scale_min" => 200, "scale_max" => 250),
-        "01PAR_P2_1" => array("value_unit" => "кг/см2", "scale_min" => 15, "scale_max" => 20),
-        "01PAR_F2_1" => array("value_unit" => "т/ч", "scale_min" => 10, "scale_max" => 15),
+        "01PAR_T2_1" => array("value_unit" => "РіСЂР°Рґ.РЎ", "scale_min" => 200, "scale_max" => 250),
+        "01PAR_P2_1" => array("value_unit" => "РєРі/СЃРј2", "scale_min" => 15, "scale_max" => 20),
+        "01PAR_F2_1" => array("value_unit" => "С‚/С‡", "scale_min" => 10, "scale_max" => 15),
         //PAR-2
-        "01PAR_T2_2" => array("value_unit" => "град.С", "scale_min" => 200, "scale_max" => 250),
-        "01PAR_P2_2" => array("value_unit" => "кг/см2", "scale_min" => 15, "scale_max" => 20),
-        "01PAR_F2_2" => array("value_unit" => "т/ч", "scale_min" => 10, "scale_max" => 15),
+        "01PAR_T2_2" => array("value_unit" => "РіСЂР°Рґ.РЎ", "scale_min" => 200, "scale_max" => 250),
+        "01PAR_P2_2" => array("value_unit" => "РєРі/СЃРј2", "scale_min" => 15, "scale_max" => 20),
+        "01PAR_F2_2" => array("value_unit" => "С‚/С‡", "scale_min" => 10, "scale_max" => 15),
         //SKLAD
-        "01SKLAD_01L26" => array("value_unit" => "м3", "scale_min" => 500, "scale_max" => 800),
+        "01SKLAD_01L26" => array("value_unit" => "Рј3", "scale_min" => 500, "scale_max" => 800),
         //VODA XOB
-        "01XOB_T1" => array("value_unit" => "град.С", "scale_min" => 70, "scale_max" => 90),
-        "01XOB_P4" => array("value_unit" => "кг/см2", "scale_min" => 5, "scale_max" => 8),
-        "01XOB_F1" => array("value_unit" => "м3/ч", "scale_min" => 50, "scale_max" => 80),
+        "01XOB_T1" => array("value_unit" => "РіСЂР°Рґ.РЎ", "scale_min" => 70, "scale_max" => 90),
+        "01XOB_P4" => array("value_unit" => "РєРі/СЃРј2", "scale_min" => 5, "scale_max" => 8),
+        "01XOB_F1" => array("value_unit" => "Рј3/С‡", "scale_min" => 50, "scale_max" => 80),
         //VODA OB
-        "01OB_T1_1" => array("value_unit" => "град.С", "scale_min" => 20, "scale_max" => 30),
-        "01OB_T1_2" => array("value_unit" => "град.С", "scale_min" => 10, "scale_max" => 40),
-        "01OB_P5_1" => array("value_unit" => "кг/см2", "scale_min" => 5, "scale_max" => 8),
+        "01OB_T1_1" => array("value_unit" => "РіСЂР°Рґ.РЎ", "scale_min" => 20, "scale_max" => 30),
+        "01OB_T1_2" => array("value_unit" => "РіСЂР°Рґ.РЎ", "scale_min" => 10, "scale_max" => 40),
+        "01OB_P5_1" => array("value_unit" => "РєРі/СЃРј2", "scale_min" => 5, "scale_max" => 8),
         //VZ KIP
-        "01PS10" => array("value_unit" => "кг/см2", "scale_min" => 6, "scale_max" => 9),
+        "01PS10" => array("value_unit" => "РєРі/СЃРј2", "scale_min" => 6, "scale_max" => 9),
 
         //============ AGR 2/1 =========//
         //PS-180
-        "21VZ_PS180" => array("value_unit" => "кг/см2", "scale_min" => 2, "scale_max" => 3),
+        "21VZ_PS180" => array("value_unit" => "РєРі/СЃРј2", "scale_min" => 2, "scale_max" => 3),
         //P181
-        "21VZ_P181" => array("value_unit" => "кг/см2", "scale_min" => 3, "scale_max" => 7),
+        "21VZ_P181" => array("value_unit" => "РєРі/СЃРј2", "scale_min" => 3, "scale_max" => 7),
         //P127A
-        "21VZ_P127A" => array("value_unit" => "кг/см2", "scale_min" => 3, "scale_max" => 7),
+        "21VZ_P127A" => array("value_unit" => "РєРі/СЃРј2", "scale_min" => 3, "scale_max" => 7),
         //TS174
-        "21VZ_TS174" => array("value_unit" => "град.С", "scale_min" => 400, "scale_max" => 600),
+        "21VZ_TS174" => array("value_unit" => "РіСЂР°Рґ.РЎ", "scale_min" => 400, "scale_max" => 600),
         //TS102
-        "21TS102" => array("value_unit" => "град.С", "scale_min" => 800, "scale_max" => 1000),
+        "21TS102" => array("value_unit" => "РіСЂР°Рґ.РЎ", "scale_min" => 800, "scale_max" => 1000),
         //F102
-        "21VZ_F102" => array("value_unit" => "м3/ч", "scale_min" => 40000, "scale_max" => 60000),
+        "21VZ_F102" => array("value_unit" => "Рј3/С‡", "scale_min" => 40000, "scale_max" => 60000),
         //F103
-        "21VZ_F103" => array("value_unit" => "м3/ч", "scale_min" => 10000, "scale_max" => 18000),
+        "21VZ_F103" => array("value_unit" => "Рј3/С‡", "scale_min" => 10000, "scale_max" => 18000),
         //F101
-        "21NH3_F101" => array("value_unit" => "м3/ч", "scale_min" => 5000, "scale_max" => 7000),
+        "21NH3_F101" => array("value_unit" => "Рј3/С‡", "scale_min" => 5000, "scale_max" => 7000),
         //F106
-        "21NH3_F106" => array("value_unit" => "м3/ч", "scale_min" => 100, "scale_max" => 140),
+        "21NH3_F106" => array("value_unit" => "Рј3/С‡", "scale_min" => 100, "scale_max" => 140),
         //F105
-        "21HNO3_F105" => array("value_unit" => "м3/ч", "scale_min" => 15, "scale_max" => 25),
+        "21HNO3_F105" => array("value_unit" => "Рј3/С‡", "scale_min" => 15, "scale_max" => 25),
         //F171
-        "21NG_F171" => array("value_unit" => "м3/ч", "scale_min" => 800, "scale_max" => 1000),
+        "21NG_F171" => array("value_unit" => "Рј3/С‡", "scale_min" => 800, "scale_max" => 1000),
         //EA_RD
-        "21EA_RD" => array("value_unit" => "кВт", "scale_min" => 400, "scale_max" => 500),
+        "21EA_RD" => array("value_unit" => "РєР’С‚", "scale_min" => 400, "scale_max" => 500),
 
         //============ AGR 3/1 =========//
         //PS-180
-        "31VZ_PS180" => array("value_unit" => "кг/см2", "scale_min" => 2, "scale_max" => 3),
+        "31VZ_PS180" => array("value_unit" => "РєРі/СЃРј2", "scale_min" => 2, "scale_max" => 3),
         //P181
-        "31VZ_P181" => array("value_unit" => "кг/см2", "scale_min" => 3, "scale_max" => 7),
+        "31VZ_P181" => array("value_unit" => "РєРі/СЃРј2", "scale_min" => 3, "scale_max" => 7),
         //P127A
-        "31VZ_P127A" => array("value_unit" => "кг/см2", "scale_min" => 3, "scale_max" => 7),
+        "31VZ_P127A" => array("value_unit" => "РєРі/СЃРј2", "scale_min" => 3, "scale_max" => 7),
         //TS174
-        "31VZ_TS174" => array("value_unit" => "град.С", "scale_min" => 400, "scale_max" => 600),
+        "31VZ_TS174" => array("value_unit" => "РіСЂР°Рґ.РЎ", "scale_min" => 400, "scale_max" => 600),
         //TS102
-        "31TS102" => array("value_unit" => "град.С", "scale_min" => 800, "scale_max" => 1000),
+        "31TS102" => array("value_unit" => "РіСЂР°Рґ.РЎ", "scale_min" => 800, "scale_max" => 1000),
         //F102
-        "31VZ_F102" => array("value_unit" => "м3/ч", "scale_min" => 40000, "scale_max" => 60000),
+        "31VZ_F102" => array("value_unit" => "Рј3/С‡", "scale_min" => 40000, "scale_max" => 60000),
         //F103
-        "31VZ_F103" => array("value_unit" => "м3/ч", "scale_min" => 10000, "scale_max" => 18000),
+        "31VZ_F103" => array("value_unit" => "Рј3/С‡", "scale_min" => 10000, "scale_max" => 18000),
         //F101
-        "31NH3_F101" => array("value_unit" => "м3/ч", "scale_min" => 5000, "scale_max" => 7000),
+        "31NH3_F101" => array("value_unit" => "Рј3/С‡", "scale_min" => 5000, "scale_max" => 7000),
         //F106
-        "31NH3_F106" => array("value_unit" => "м3/ч", "scale_min" => 100, "scale_max" => 140),
+        "31NH3_F106" => array("value_unit" => "Рј3/С‡", "scale_min" => 100, "scale_max" => 140),
         //F105
-        "31HNO3_F105" => array("value_unit" => "м3/ч", "scale_min" => 15, "scale_max" => 25),
+        "31HNO3_F105" => array("value_unit" => "Рј3/С‡", "scale_min" => 15, "scale_max" => 25),
         //F171
-        "31NG_F171" => array("value_unit" => "м3/ч", "scale_min" => 800, "scale_max" => 1000),
+        "31NG_F171" => array("value_unit" => "Рј3/С‡", "scale_min" => 800, "scale_max" => 1000),
         //EA_RD
-        "31EA_RD" => array("value_unit" => "кВт", "scale_min" => 400, "scale_max" => 500),
+        "31EA_RD" => array("value_unit" => "РєР’С‚", "scale_min" => 400, "scale_max" => 500),
     );
     
-    /* Конфигурация текущих позиций
-     * для базы данных в таблице "tags"
+    /* РљРѕРЅС„РёРіСѓСЂР°С†РёСЏ С‚РµРєСѓС‰РёС… РїРѕР·РёС†РёР№
+     * РґР»СЏ Р±Р°Р·С‹ РґР°РЅРЅС‹С… РІ С‚Р°Р±Р»РёС†Рµ "tags"
      * @var array
      */
     static $arrCurrentDB_Tags = array(
         //============ OC =========//
         //NH3
-        "01NH3_T4" => array("topic" => "m5", "name_topic" => "Цех М-5 (I-отд.)", "alias" => "01NH3_T4", "name_alias" => "T NH3", "tag_param" => "T", "name_param" => "Температура", "value_type" => "CURRENT", "value_unit" => "град.С", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 200, "comment" => "Температура газ. NH3"),
-        "01NH3_P4" => array("topic" => "m5", "name_topic" => "Цех М-5 (I-отд.)", "alias" => "01NH3_P4", "name_alias" => "P NH3", "tag_param" => "P", "name_param" => "Давление", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 10, "comment" => "Давление газ. NH3"),
-        "01NH3_F4" => array("topic" => "m5", "name_topic" => "Цех М-5 (I-отд.)", "alias" => "01NH3_F4", "name_alias" => "F NH3", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "м3/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 20000, "comment" => "Расход газ. NH3"),
+        "01NH3_T4" => array("topic" => "m5", "name_topic" => "Р¦РµС… Рњ-5 (I-РѕС‚Рґ.)", "alias" => "01NH3_T4", "name_alias" => "T NH3", "tag_param" => "T", "name_param" => "РўРµРјРїРµСЂР°С‚СѓСЂР°", "value_type" => "CURRENT", "value_unit" => "РіСЂР°Рґ.РЎ", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 200, "comment" => "РўРµРјРїРµСЂР°С‚СѓСЂР° РіР°Р·. NH3"),
+        "01NH3_P4" => array("topic" => "m5", "name_topic" => "Р¦РµС… Рњ-5 (I-РѕС‚Рґ.)", "alias" => "01NH3_P4", "name_alias" => "P NH3", "tag_param" => "P", "name_param" => "Р”Р°РІР»РµРЅРёРµ", "value_type" => "CURRENT", "value_unit" => "РєРі/СЃРј2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 10, "comment" => "Р”Р°РІР»РµРЅРёРµ РіР°Р·. NH3"),
+        "01NH3_F4" => array("topic" => "m5", "name_topic" => "Р¦РµС… Рњ-5 (I-РѕС‚Рґ.)", "alias" => "01NH3_F4", "name_alias" => "F NH3", "tag_param" => "F", "name_param" => "Р Р°СЃС…РѕРґ", "value_type" => "CURRENT", "value_unit" => "Рј3/С‡", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 20000, "comment" => "Р Р°СЃС…РѕРґ РіР°Р·. NH3"),
         //PGAZ
-        "01PGAZ_T16" => array("topic" => "m5", "name_topic" => "Цех М-5 (I-отд.)", "alias" => "01PGAZ_T16", "name_alias" => "T PGAZ", "tag_param" => "T", "name_param" => "Температура", "value_type" => "CURRENT", "value_unit" => "град.С", "scale_min" => -50, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 50, "comment" => "Температура природного газа"),
-        "01PGAZ_P5" => array("topic" => "m5", "name_topic" => "Цех М-5 (I-отд.)", "alias" => "01PGAZ_P5", "name_alias" => "P PGAZ", "tag_param" => "P", "name_param" => "Давление", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 16, "comment" => "Давление природного газа"),
-        "01PGAZ_F5" => array("topic" => "m5", "name_topic" => "Цех М-5 (I-отд.)", "alias" => "01PGAZ_F5", "name_alias" => "F PGAZ", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "м3/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 3200, "comment" => "Расход природного газа"),
+        "01PGAZ_T16" => array("topic" => "m5", "name_topic" => "Р¦РµС… Рњ-5 (I-РѕС‚Рґ.)", "alias" => "01PGAZ_T16", "name_alias" => "T PGAZ", "tag_param" => "T", "name_param" => "РўРµРјРїРµСЂР°С‚СѓСЂР°", "value_type" => "CURRENT", "value_unit" => "РіСЂР°Рґ.РЎ", "scale_min" => -50, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 50, "comment" => "РўРµРјРїРµСЂР°С‚СѓСЂР° РїСЂРёСЂРѕРґРЅРѕРіРѕ РіР°Р·Р°"),
+        "01PGAZ_P5" => array("topic" => "m5", "name_topic" => "Р¦РµС… Рњ-5 (I-РѕС‚Рґ.)", "alias" => "01PGAZ_P5", "name_alias" => "P PGAZ", "tag_param" => "P", "name_param" => "Р”Р°РІР»РµРЅРёРµ", "value_type" => "CURRENT", "value_unit" => "РєРі/СЃРј2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 16, "comment" => "Р”Р°РІР»РµРЅРёРµ РїСЂРёСЂРѕРґРЅРѕРіРѕ РіР°Р·Р°"),
+        "01PGAZ_F5" => array("topic" => "m5", "name_topic" => "Р¦РµС… Рњ-5 (I-РѕС‚Рґ.)", "alias" => "01PGAZ_F5", "name_alias" => "F PGAZ", "tag_param" => "F", "name_param" => "Р Р°СЃС…РѕРґ", "value_type" => "CURRENT", "value_unit" => "Рј3/С‡", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 3200, "comment" => "Р Р°СЃС…РѕРґ РїСЂРёСЂРѕРґРЅРѕРіРѕ РіР°Р·Р°"),
         //JAM-1
-        "01JAM_T21_1" => array("topic" => "m5", "name_topic" => "Цех М-5 (I-отд.)", "alias" => "01JAM_T21_1", "name_alias" => "T JAM-1", "tag_param" => "T", "name_param" => "Температура", "value_type" => "CURRENT", "value_unit" => "град.С", "scale_min" => -50, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 50, "comment" => "Температура ЖА-1"),
-        "01JAM_P21_1" => array("topic" => "m5", "name_topic" => "Цех М-5 (I-отд.)", "alias" => "01JAM_P21_1", "name_alias" => "P JAM-1", "tag_param" => "P", "name_param" => "Давление", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 25, "comment" => "Давление ЖА-1"),
-        "01JAM_F21_1" => array("topic" => "m5", "name_topic" => "Цех М-5 (I-отд.)", "alias" => "01JAM_F21_1", "name_alias" => "F JAM-1", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "т/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 16, "comment" => "Расход ЖА-1"),
+        "01JAM_T21_1" => array("topic" => "m5", "name_topic" => "Р¦РµС… Рњ-5 (I-РѕС‚Рґ.)", "alias" => "01JAM_T21_1", "name_alias" => "T JAM-1", "tag_param" => "T", "name_param" => "РўРµРјРїРµСЂР°С‚СѓСЂР°", "value_type" => "CURRENT", "value_unit" => "РіСЂР°Рґ.РЎ", "scale_min" => -50, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 50, "comment" => "РўРµРјРїРµСЂР°С‚СѓСЂР° Р–Рђ-1"),
+        "01JAM_P21_1" => array("topic" => "m5", "name_topic" => "Р¦РµС… Рњ-5 (I-РѕС‚Рґ.)", "alias" => "01JAM_P21_1", "name_alias" => "P JAM-1", "tag_param" => "P", "name_param" => "Р”Р°РІР»РµРЅРёРµ", "value_type" => "CURRENT", "value_unit" => "РєРі/СЃРј2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 25, "comment" => "Р”Р°РІР»РµРЅРёРµ Р–Рђ-1"),
+        "01JAM_F21_1" => array("topic" => "m5", "name_topic" => "Р¦РµС… Рњ-5 (I-РѕС‚Рґ.)", "alias" => "01JAM_F21_1", "name_alias" => "F JAM-1", "tag_param" => "F", "name_param" => "Р Р°СЃС…РѕРґ", "value_type" => "CURRENT", "value_unit" => "С‚/С‡", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 16, "comment" => "Р Р°СЃС…РѕРґ Р–Рђ-1"),
         //PAR-1
-        "01PAR_T2_1" => array("topic" => "m5", "name_topic" => "Цех М-5 (I-отд.)", "alias" => "01PAR_T2_1", "name_alias" => "T PAR-1", "tag_param" => "T", "name_param" => "Температура", "value_type" => "CURRENT", "value_unit" => "град.С", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 400, "comment" => "Температура ПАР16-1"),
-        "01PAR_P2_1" => array("topic" => "m5", "name_topic" => "Цех М-5 (I-отд.)", "alias" => "01PAR_P2_1", "name_alias" => "P PAR-1", "tag_param" => "P", "name_param" => "Давление", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 25, "comment" => "Давление ПАР16-1"),
-        "01PAR_F2_1" => array("topic" => "m5", "name_topic" => "Цех М-5 (I-отд.)", "alias" => "01PAR_F2_1", "name_alias" => "F PAR-1", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "т/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 20, "comment" => "Расход ПАР16-1"),
+        "01PAR_T2_1" => array("topic" => "m5", "name_topic" => "Р¦РµС… Рњ-5 (I-РѕС‚Рґ.)", "alias" => "01PAR_T2_1", "name_alias" => "T PAR-1", "tag_param" => "T", "name_param" => "РўРµРјРїРµСЂР°С‚СѓСЂР°", "value_type" => "CURRENT", "value_unit" => "РіСЂР°Рґ.РЎ", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 400, "comment" => "РўРµРјРїРµСЂР°С‚СѓСЂР° РџРђР 16-1"),
+        "01PAR_P2_1" => array("topic" => "m5", "name_topic" => "Р¦РµС… Рњ-5 (I-РѕС‚Рґ.)", "alias" => "01PAR_P2_1", "name_alias" => "P PAR-1", "tag_param" => "P", "name_param" => "Р”Р°РІР»РµРЅРёРµ", "value_type" => "CURRENT", "value_unit" => "РєРі/СЃРј2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 25, "comment" => "Р”Р°РІР»РµРЅРёРµ РџРђР 16-1"),
+        "01PAR_F2_1" => array("topic" => "m5", "name_topic" => "Р¦РµС… Рњ-5 (I-РѕС‚Рґ.)", "alias" => "01PAR_F2_1", "name_alias" => "F PAR-1", "tag_param" => "F", "name_param" => "Р Р°СЃС…РѕРґ", "value_type" => "CURRENT", "value_unit" => "С‚/С‡", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 20, "comment" => "Р Р°СЃС…РѕРґ РџРђР 16-1"),
         //PAR-2
-        "01PAR_T2_2" => array("topic" => "m5", "name_topic" => "Цех М-5 (I-отд.)", "alias" => "01PAR_T2_2", "name_alias" => "T PAR-2", "tag_param" => "T", "name_param" => "Температура", "value_type" => "CURRENT", "value_unit" => "град.С", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 400, "comment" => "Температура ПАР16-2"),
-        "01PAR_P2_2" => array("topic" => "m5", "name_topic" => "Цех М-5 (I-отд.)", "alias" => "01PAR_P2_2", "name_alias" => "P PAR-2", "tag_param" => "P", "name_param" => "Давление", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 25, "comment" => "Давление ПАР16-2"),
-        "01PAR_F2_2" => array("topic" => "m5", "name_topic" => "Цех М-5 (I-отд.)", "alias" => "01PAR_F2_2", "name_alias" => "F PAR-2", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "т/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 20, "comment" => "Расход ПАР16-2"),
+        "01PAR_T2_2" => array("topic" => "m5", "name_topic" => "Р¦РµС… Рњ-5 (I-РѕС‚Рґ.)", "alias" => "01PAR_T2_2", "name_alias" => "T PAR-2", "tag_param" => "T", "name_param" => "РўРµРјРїРµСЂР°С‚СѓСЂР°", "value_type" => "CURRENT", "value_unit" => "РіСЂР°Рґ.РЎ", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 400, "comment" => "РўРµРјРїРµСЂР°С‚СѓСЂР° РџРђР 16-2"),
+        "01PAR_P2_2" => array("topic" => "m5", "name_topic" => "Р¦РµС… Рњ-5 (I-РѕС‚Рґ.)", "alias" => "01PAR_P2_2", "name_alias" => "P PAR-2", "tag_param" => "P", "name_param" => "Р”Р°РІР»РµРЅРёРµ", "value_type" => "CURRENT", "value_unit" => "РєРі/СЃРј2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 25, "comment" => "Р”Р°РІР»РµРЅРёРµ РџРђР 16-2"),
+        "01PAR_F2_2" => array("topic" => "m5", "name_topic" => "Р¦РµС… Рњ-5 (I-РѕС‚Рґ.)", "alias" => "01PAR_F2_2", "name_alias" => "F PAR-2", "tag_param" => "F", "name_param" => "Р Р°СЃС…РѕРґ", "value_type" => "CURRENT", "value_unit" => "С‚/С‡", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 20, "comment" => "Р Р°СЃС…РѕРґ РџРђР 16-2"),
         //SKLAD
-        "01SKLAD_01L26" => array("topic" => "m5", "name_topic" => "Цех М-5 (I-отд.)", "alias" => "01SKLAD_01L26", "name_alias" => "L SKLAD-1", "tag_param" => "L", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "м3", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 1000, "comment" => "Уровень HNO3 склад 1 отд."),
+        "01SKLAD_01L26" => array("topic" => "m5", "name_topic" => "Р¦РµС… Рњ-5 (I-РѕС‚Рґ.)", "alias" => "01SKLAD_01L26", "name_alias" => "L SKLAD-1", "tag_param" => "L", "name_param" => "Р Р°СЃС…РѕРґ", "value_type" => "CURRENT", "value_unit" => "Рј3", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 1000, "comment" => "РЈСЂРѕРІРµРЅСЊ HNO3 СЃРєР»Р°Рґ 1 РѕС‚Рґ."),
         //VODA XOB
-        "01XOB_T1" => array("topic" => "m5", "name_topic" => "Цех М-5 (I-отд.)", "alias" => "01XOB_T1", "name_alias" => "T XOB", "tag_param" => "T", "name_param" => "Температура", "value_type" => "CURRENT", "value_unit" => "град.С", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 100, "comment" => "Температура хим.очищенной воды"),
-        "01XOB_P4" => array("topic" => "m5", "name_topic" => "Цех М-5 (I-отд.)", "alias" => "01XOB_P4", "name_alias" => "P XOB", "tag_param" => "P", "name_param" => "Давление", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 10, "comment" => "Давление хим.очищенной воды"),
-        "01XOB_F1" => array("topic" => "m5", "name_topic" => "Цех М-5 (I-отд.)", "alias" => "01XOB_F1", "name_alias" => "F XOB", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "м3/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 100, "comment" => "Расход хим.очищенной воды"),
+        "01XOB_T1" => array("topic" => "m5", "name_topic" => "Р¦РµС… Рњ-5 (I-РѕС‚Рґ.)", "alias" => "01XOB_T1", "name_alias" => "T XOB", "tag_param" => "T", "name_param" => "РўРµРјРїРµСЂР°С‚СѓСЂР°", "value_type" => "CURRENT", "value_unit" => "РіСЂР°Рґ.РЎ", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 100, "comment" => "РўРµРјРїРµСЂР°С‚СѓСЂР° С…РёРј.РѕС‡РёС‰РµРЅРЅРѕР№ РІРѕРґС‹"),
+        "01XOB_P4" => array("topic" => "m5", "name_topic" => "Р¦РµС… Рњ-5 (I-РѕС‚Рґ.)", "alias" => "01XOB_P4", "name_alias" => "P XOB", "tag_param" => "P", "name_param" => "Р”Р°РІР»РµРЅРёРµ", "value_type" => "CURRENT", "value_unit" => "РєРі/СЃРј2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 10, "comment" => "Р”Р°РІР»РµРЅРёРµ С…РёРј.РѕС‡РёС‰РµРЅРЅРѕР№ РІРѕРґС‹"),
+        "01XOB_F1" => array("topic" => "m5", "name_topic" => "Р¦РµС… Рњ-5 (I-РѕС‚Рґ.)", "alias" => "01XOB_F1", "name_alias" => "F XOB", "tag_param" => "F", "name_param" => "Р Р°СЃС…РѕРґ", "value_type" => "CURRENT", "value_unit" => "Рј3/С‡", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 100, "comment" => "Р Р°СЃС…РѕРґ С…РёРј.РѕС‡РёС‰РµРЅРЅРѕР№ РІРѕРґС‹"),
         //VODA OB
-        "01OB_T1_1" => array("topic" => "m5", "name_topic" => "Цех М-5 (I-отд.)", "alias" => "01OB_T1_1", "name_alias" => "T OB-1", "tag_param" => "T", "name_param" => "Температура", "value_type" => "CURRENT", "value_unit" => "град.С", "scale_min" => -50, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 50, "comment" => "Температура оборотной воды 1"),
-        "01OB_T1_2" => array("topic" => "m5", "name_topic" => "Цех М-5 (I-отд.)", "alias" => "01OB_T1_2", "name_alias" => "T OB-2", "tag_param" => "T", "name_param" => "Температура", "value_type" => "CURRENT", "value_unit" => "град.С", "scale_min" => -50, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 50, "comment" => "Температура Ооборотной воды 2"),
-        "01OB_P5_1" => array("topic" => "m5", "name_topic" => "Цех М-5 (I-отд.)", "alias" => "01OB_P5_1", "name_alias" => "P OB", "tag_param" => "P", "name_param" => "Давление", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 10, "comment" => "Давление оборотной воды"),
+        "01OB_T1_1" => array("topic" => "m5", "name_topic" => "Р¦РµС… Рњ-5 (I-РѕС‚Рґ.)", "alias" => "01OB_T1_1", "name_alias" => "T OB-1", "tag_param" => "T", "name_param" => "РўРµРјРїРµСЂР°С‚СѓСЂР°", "value_type" => "CURRENT", "value_unit" => "РіСЂР°Рґ.РЎ", "scale_min" => -50, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 50, "comment" => "РўРµРјРїРµСЂР°С‚СѓСЂР° РѕР±РѕСЂРѕС‚РЅРѕР№ РІРѕРґС‹ 1"),
+        "01OB_T1_2" => array("topic" => "m5", "name_topic" => "Р¦РµС… Рњ-5 (I-РѕС‚Рґ.)", "alias" => "01OB_T1_2", "name_alias" => "T OB-2", "tag_param" => "T", "name_param" => "РўРµРјРїРµСЂР°С‚СѓСЂР°", "value_type" => "CURRENT", "value_unit" => "РіСЂР°Рґ.РЎ", "scale_min" => -50, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 50, "comment" => "РўРµРјРїРµСЂР°С‚СѓСЂР° РћРѕР±РѕСЂРѕС‚РЅРѕР№ РІРѕРґС‹ 2"),
+        "01OB_P5_1" => array("topic" => "m5", "name_topic" => "Р¦РµС… Рњ-5 (I-РѕС‚Рґ.)", "alias" => "01OB_P5_1", "name_alias" => "P OB", "tag_param" => "P", "name_param" => "Р”Р°РІР»РµРЅРёРµ", "value_type" => "CURRENT", "value_unit" => "РєРі/СЃРј2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 10, "comment" => "Р”Р°РІР»РµРЅРёРµ РѕР±РѕСЂРѕС‚РЅРѕР№ РІРѕРґС‹"),
         //VZ KIP
-        "01PS10" => array("topic" => "m5", "name_topic" => "Цех М-5 (I-отд.)", "alias" => "01PS10", "name_alias" => "P VZ-KIP", "tag_param" => "P", "name_param" => "Давление", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 10, "comment" => "Давление воздуха КИП"),
+        "01PS10" => array("topic" => "m5", "name_topic" => "Р¦РµС… Рњ-5 (I-РѕС‚Рґ.)", "alias" => "01PS10", "name_alias" => "P VZ-KIP", "tag_param" => "P", "name_param" => "Р”Р°РІР»РµРЅРёРµ", "value_type" => "CURRENT", "value_unit" => "РєРі/СЃРј2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 10, "comment" => "Р”Р°РІР»РµРЅРёРµ РІРѕР·РґСѓС…Р° РљРРџ"),
         
         //============ AGR 2/1 =========//
         //PS-180
-        "21VZ_PS180" => array("topic" => "m5", "name_topic" => "Цех М-5 (I-отд.)", "alias" => "21VZ_PS180", "name_alias" => "P VZ KOMR", "tag_param" => "P", "name_param" => "Давление", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 3, "comment" => "Давление воздуха из компрессора"),
+        "21VZ_PS180" => array("topic" => "m5", "name_topic" => "Р¦РµС… Рњ-5 (I-РѕС‚Рґ.)", "alias" => "21VZ_PS180", "name_alias" => "P VZ KOMR", "tag_param" => "P", "name_param" => "Р”Р°РІР»РµРЅРёРµ", "value_type" => "CURRENT", "value_unit" => "РєРі/СЃРј2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 3, "comment" => "Р”Р°РІР»РµРЅРёРµ РІРѕР·РґСѓС…Р° РёР· РєРѕРјРїСЂРµСЃСЃРѕСЂР°"),
         //P181
-        "21VZ_P181" => array("topic" => "m5", "name_topic" => "Цех М-5 (I-отд.)", "alias" => "21VZ_P181", "name_alias" => "P VZ NAGN", "tag_param" => "P", "name_param" => "Давление", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 10, "comment" => "Давление воздуха за нагнетателем"),
+        "21VZ_P181" => array("topic" => "m5", "name_topic" => "Р¦РµС… Рњ-5 (I-РѕС‚Рґ.)", "alias" => "21VZ_P181", "name_alias" => "P VZ NAGN", "tag_param" => "P", "name_param" => "Р”Р°РІР»РµРЅРёРµ", "value_type" => "CURRENT", "value_unit" => "РєРі/СЃРј2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 10, "comment" => "Р”Р°РІР»РµРЅРёРµ РІРѕР·РґСѓС…Р° Р·Р° РЅР°РіРЅРµС‚Р°С‚РµР»РµРј"),
         //P127A
-        "21VZ_P127A" => array("topic" => "m5", "name_topic" => "Цех М-5 (I-отд.)", "alias" => "21VZ_P127A", "name_alias" => "P VZ SMES", "tag_param" => "P", "name_param" => "Давление", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 10, "comment" => "Давление воздуха в смеситель"),
+        "21VZ_P127A" => array("topic" => "m5", "name_topic" => "Р¦РµС… Рњ-5 (I-РѕС‚Рґ.)", "alias" => "21VZ_P127A", "name_alias" => "P VZ SMES", "tag_param" => "P", "name_param" => "Р”Р°РІР»РµРЅРёРµ", "value_type" => "CURRENT", "value_unit" => "РєРі/СЃРј2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 10, "comment" => "Р”Р°РІР»РµРЅРёРµ РІРѕР·РґСѓС…Р° РІ СЃРјРµСЃРёС‚РµР»СЊ"),
         //TS174
-        "21VZ_TS174" => array("topic" => "m5", "name_topic" => "Цех М-5 (I-отд.)", "alias" => "21VZ_TS174", "name_alias" => "T VZ TURB", "tag_param" => "T", "name_param" => "Температура", "value_type" => "CURRENT", "value_unit" => "град.С", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 1100, "comment" => "Температура воздуха перед турбиной"),
+        "21VZ_TS174" => array("topic" => "m5", "name_topic" => "Р¦РµС… Рњ-5 (I-РѕС‚Рґ.)", "alias" => "21VZ_TS174", "name_alias" => "T VZ TURB", "tag_param" => "T", "name_param" => "РўРµРјРїРµСЂР°С‚СѓСЂР°", "value_type" => "CURRENT", "value_unit" => "РіСЂР°Рґ.РЎ", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 1100, "comment" => "РўРµРјРїРµСЂР°С‚СѓСЂР° РІРѕР·РґСѓС…Р° РїРµСЂРµРґ С‚СѓСЂР±РёРЅРѕР№"),
         //TS102
-        "21TS102" => array("topic" => "m5", "name_topic" => "Цех М-5 (I-отд.)", "alias" => "21TS102", "name_alias" => "T SETKY", "tag_param" => "T", "name_param" => "Температура", "value_type" => "CURRENT", "value_unit" => "град.С", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 1100, "comment" => "Температура под сетками в КА"),
+        "21TS102" => array("topic" => "m5", "name_topic" => "Р¦РµС… Рњ-5 (I-РѕС‚Рґ.)", "alias" => "21TS102", "name_alias" => "T SETKY", "tag_param" => "T", "name_param" => "РўРµРјРїРµСЂР°С‚СѓСЂР°", "value_type" => "CURRENT", "value_unit" => "РіСЂР°Рґ.РЎ", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 1100, "comment" => "РўРµРјРїРµСЂР°С‚СѓСЂР° РїРѕРґ СЃРµС‚РєР°РјРё РІ РљРђ"),
         //F102
-        "21VZ_F102" => array("topic" => "m5", "name_topic" => "Цех М-5 (I-отд.)", "alias" => "21VZ_F102", "name_alias" => "F VZ SMES", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "м3/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 60000, "comment" => "Расход воздуха в смеситель"),
+        "21VZ_F102" => array("topic" => "m5", "name_topic" => "Р¦РµС… Рњ-5 (I-РѕС‚Рґ.)", "alias" => "21VZ_F102", "name_alias" => "F VZ SMES", "tag_param" => "F", "name_param" => "Р Р°СЃС…РѕРґ", "value_type" => "CURRENT", "value_unit" => "Рј3/С‡", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 60000, "comment" => "Р Р°СЃС…РѕРґ РІРѕР·РґСѓС…Р° РІ СЃРјРµСЃРёС‚РµР»СЊ"),
         //F103
-        "21VZ_F103" => array("topic" => "m5", "name_topic" => "Цех М-5 (I-отд.)", "alias" => "21VZ_F103", "name_alias" => "F VZ DOB", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "м3/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 20000, "comment" => "Расход добавочного воздуха"),
+        "21VZ_F103" => array("topic" => "m5", "name_topic" => "Р¦РµС… Рњ-5 (I-РѕС‚Рґ.)", "alias" => "21VZ_F103", "name_alias" => "F VZ DOB", "tag_param" => "F", "name_param" => "Р Р°СЃС…РѕРґ", "value_type" => "CURRENT", "value_unit" => "Рј3/С‡", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 20000, "comment" => "Р Р°СЃС…РѕРґ РґРѕР±Р°РІРѕС‡РЅРѕРіРѕ РІРѕР·РґСѓС…Р°"),
         //F101
-        "21NH3_F101" => array("topic" => "m5", "name_topic" => "Цех М-5 (I-отд.)", "alias" => "21NH3_F101", "name_alias" => "F NH3 SMES", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "м3/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 8000, "comment" => "Расход NH3 в смеситель"),
+        "21NH3_F101" => array("topic" => "m5", "name_topic" => "Р¦РµС… Рњ-5 (I-РѕС‚Рґ.)", "alias" => "21NH3_F101", "name_alias" => "F NH3 SMES", "tag_param" => "F", "name_param" => "Р Р°СЃС…РѕРґ", "value_type" => "CURRENT", "value_unit" => "Рј3/С‡", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 8000, "comment" => "Р Р°СЃС…РѕРґ NH3 РІ СЃРјРµСЃРёС‚РµР»СЊ"),
         //F106
-        "21NH3_F106" => array("topic" => "m5", "name_topic" => "Цех М-5 (I-отд.)", "alias" => "21NH3_F106", "name_alias" => "F NH3 PCO", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "м3/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 160, "comment" => "Расход NH3 в РСО"),
+        "21NH3_F106" => array("topic" => "m5", "name_topic" => "Р¦РµС… Рњ-5 (I-РѕС‚Рґ.)", "alias" => "21NH3_F106", "name_alias" => "F NH3 PCO", "tag_param" => "F", "name_param" => "Р Р°СЃС…РѕРґ", "value_type" => "CURRENT", "value_unit" => "Рј3/С‡", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 160, "comment" => "Р Р°СЃС…РѕРґ NH3 РІ Р РЎРћ"),
         //F105
-        "21HNO3_F105" => array("topic" => "m5", "name_topic" => "Цех М-5 (I-отд.)", "alias" => "21HNO3_F105", "name_alias" => "F HNO3", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "м3/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 25, "comment" => "Расход кислоты с агрегата"),
+        "21HNO3_F105" => array("topic" => "m5", "name_topic" => "Р¦РµС… Рњ-5 (I-РѕС‚Рґ.)", "alias" => "21HNO3_F105", "name_alias" => "F HNO3", "tag_param" => "F", "name_param" => "Р Р°СЃС…РѕРґ", "value_type" => "CURRENT", "value_unit" => "Рј3/С‡", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 25, "comment" => "Р Р°СЃС…РѕРґ РєРёСЃР»РѕС‚С‹ СЃ Р°РіСЂРµРіР°С‚Р°"),
         //F171
-        "21NG_F171" => array("topic" => "m5", "name_topic" => "Цех М-5 (I-отд.)", "alias" => "21NG_F171", "name_alias" => "F NG UKST", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "м3/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 2000, "comment" => "Расход ПГ в УКСТ"),
+        "21NG_F171" => array("topic" => "m5", "name_topic" => "Р¦РµС… Рњ-5 (I-РѕС‚Рґ.)", "alias" => "21NG_F171", "name_alias" => "F NG UKST", "tag_param" => "F", "name_param" => "Р Р°СЃС…РѕРґ", "value_type" => "CURRENT", "value_unit" => "Рј3/С‡", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 2000, "comment" => "Р Р°СЃС…РѕРґ РџР“ РІ РЈРљРЎРў"),
         //EA_RD
-        "21EA_RD" => array("topic" => "m5", "name_topic" => "Цех М-5 (I-отд.)", "alias" => "21EA_RD", "name_alias" => "VT EA RD", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "кВт", "scale_min" => -1500, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 1500, "comment" => "Мощность РД"),
+        "21EA_RD" => array("topic" => "m5", "name_topic" => "Р¦РµС… Рњ-5 (I-РѕС‚Рґ.)", "alias" => "21EA_RD", "name_alias" => "VT EA RD", "tag_param" => "F", "name_param" => "Р Р°СЃС…РѕРґ", "value_type" => "CURRENT", "value_unit" => "РєР’С‚", "scale_min" => -1500, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 1500, "comment" => "РњРѕС‰РЅРѕСЃС‚СЊ Р Р”"),
         
         //============ AGR 3/1 =========//
         //PS-180
-        "31VZ_PS180" => array("topic" => "m5", "name_topic" => "Цех М-5 (I-отд.)", "alias" => "31VZ_PS180", "name_alias" => "P VZ KOMR", "tag_param" => "P", "name_param" => "Давление", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 3, "comment" => "Давление воздуха из компрессора"),
+        "31VZ_PS180" => array("topic" => "m5", "name_topic" => "Р¦РµС… Рњ-5 (I-РѕС‚Рґ.)", "alias" => "31VZ_PS180", "name_alias" => "P VZ KOMR", "tag_param" => "P", "name_param" => "Р”Р°РІР»РµРЅРёРµ", "value_type" => "CURRENT", "value_unit" => "РєРі/СЃРј2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 3, "comment" => "Р”Р°РІР»РµРЅРёРµ РІРѕР·РґСѓС…Р° РёР· РєРѕРјРїСЂРµСЃСЃРѕСЂР°"),
         //P181
-        "31VZ_P181" => array("topic" => "m5", "name_topic" => "Цех М-5 (I-отд.)", "alias" => "31VZ_P181", "name_alias" => "P VZ NAGN", "tag_param" => "P", "name_param" => "Давление", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 10, "comment" => "Давление воздуха за нагнетателем"),
+        "31VZ_P181" => array("topic" => "m5", "name_topic" => "Р¦РµС… Рњ-5 (I-РѕС‚Рґ.)", "alias" => "31VZ_P181", "name_alias" => "P VZ NAGN", "tag_param" => "P", "name_param" => "Р”Р°РІР»РµРЅРёРµ", "value_type" => "CURRENT", "value_unit" => "РєРі/СЃРј2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 10, "comment" => "Р”Р°РІР»РµРЅРёРµ РІРѕР·РґСѓС…Р° Р·Р° РЅР°РіРЅРµС‚Р°С‚РµР»РµРј"),
         //P127A
-        "31VZ_P127A" => array("topic" => "m5", "name_topic" => "Цех М-5 (I-отд.)", "alias" => "31VZ_P127A", "name_alias" => "P VZ SMES", "tag_param" => "P", "name_param" => "Давление", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 10, "comment" => "Давление воздуха в смеситель"),
+        "31VZ_P127A" => array("topic" => "m5", "name_topic" => "Р¦РµС… Рњ-5 (I-РѕС‚Рґ.)", "alias" => "31VZ_P127A", "name_alias" => "P VZ SMES", "tag_param" => "P", "name_param" => "Р”Р°РІР»РµРЅРёРµ", "value_type" => "CURRENT", "value_unit" => "РєРі/СЃРј2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 10, "comment" => "Р”Р°РІР»РµРЅРёРµ РІРѕР·РґСѓС…Р° РІ СЃРјРµСЃРёС‚РµР»СЊ"),
         //TS174
-        "31VZ_TS174" => array("topic" => "m5", "name_topic" => "Цех М-5 (I-отд.)", "alias" => "31VZ_TS174", "name_alias" => "T VZ TURB", "tag_param" => "T", "name_param" => "Температура", "value_type" => "CURRENT", "value_unit" => "град.С", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 1100, "comment" => "Температура воздуха перед турбиной"),
+        "31VZ_TS174" => array("topic" => "m5", "name_topic" => "Р¦РµС… Рњ-5 (I-РѕС‚Рґ.)", "alias" => "31VZ_TS174", "name_alias" => "T VZ TURB", "tag_param" => "T", "name_param" => "РўРµРјРїРµСЂР°С‚СѓСЂР°", "value_type" => "CURRENT", "value_unit" => "РіСЂР°Рґ.РЎ", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 1100, "comment" => "РўРµРјРїРµСЂР°С‚СѓСЂР° РІРѕР·РґСѓС…Р° РїРµСЂРµРґ С‚СѓСЂР±РёРЅРѕР№"),
         //TS102
-        "31TS102" => array("topic" => "m5", "name_topic" => "Цех М-5 (I-отд.)", "alias" => "31TS102", "name_alias" => "T SETKY", "tag_param" => "T", "name_param" => "Температура", "value_type" => "CURRENT", "value_unit" => "град.С", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 1100, "comment" => "Температура под сетками в КА"),
+        "31TS102" => array("topic" => "m5", "name_topic" => "Р¦РµС… Рњ-5 (I-РѕС‚Рґ.)", "alias" => "31TS102", "name_alias" => "T SETKY", "tag_param" => "T", "name_param" => "РўРµРјРїРµСЂР°С‚СѓСЂР°", "value_type" => "CURRENT", "value_unit" => "РіСЂР°Рґ.РЎ", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 1100, "comment" => "РўРµРјРїРµСЂР°С‚СѓСЂР° РїРѕРґ СЃРµС‚РєР°РјРё РІ РљРђ"),
         //F102
-        "31VZ_F102" => array("topic" => "m5", "name_topic" => "Цех М-5 (I-отд.)", "alias" => "31VZ_F102", "name_alias" => "F VZ SMES", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "м3/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 60000, "comment" => "Расход воздуха в смеситель"),
+        "31VZ_F102" => array("topic" => "m5", "name_topic" => "Р¦РµС… Рњ-5 (I-РѕС‚Рґ.)", "alias" => "31VZ_F102", "name_alias" => "F VZ SMES", "tag_param" => "F", "name_param" => "Р Р°СЃС…РѕРґ", "value_type" => "CURRENT", "value_unit" => "Рј3/С‡", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 60000, "comment" => "Р Р°СЃС…РѕРґ РІРѕР·РґСѓС…Р° РІ СЃРјРµСЃРёС‚РµР»СЊ"),
         //F103
-        "31VZ_F103" => array("topic" => "m5", "name_topic" => "Цех М-5 (I-отд.)", "alias" => "31VZ_F103", "name_alias" => "F VZ DOB", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "м3/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 20000, "comment" => "Расход добавочного воздуха"),
+        "31VZ_F103" => array("topic" => "m5", "name_topic" => "Р¦РµС… Рњ-5 (I-РѕС‚Рґ.)", "alias" => "31VZ_F103", "name_alias" => "F VZ DOB", "tag_param" => "F", "name_param" => "Р Р°СЃС…РѕРґ", "value_type" => "CURRENT", "value_unit" => "Рј3/С‡", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 20000, "comment" => "Р Р°СЃС…РѕРґ РґРѕР±Р°РІРѕС‡РЅРѕРіРѕ РІРѕР·РґСѓС…Р°"),
         //F101
-        "31NH3_F101" => array("topic" => "m5", "name_topic" => "Цех М-5 (I-отд.)", "alias" => "31NH3_F101", "name_alias" => "F NH3 SMES", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "м3/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 8000, "comment" => "Расход NH3 в смеситель"),
+        "31NH3_F101" => array("topic" => "m5", "name_topic" => "Р¦РµС… Рњ-5 (I-РѕС‚Рґ.)", "alias" => "31NH3_F101", "name_alias" => "F NH3 SMES", "tag_param" => "F", "name_param" => "Р Р°СЃС…РѕРґ", "value_type" => "CURRENT", "value_unit" => "Рј3/С‡", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 8000, "comment" => "Р Р°СЃС…РѕРґ NH3 РІ СЃРјРµСЃРёС‚РµР»СЊ"),
         //F106
-        "31NH3_F106" => array("topic" => "m5", "name_topic" => "Цех М-5 (I-отд.)", "alias" => "31NH3_F106", "name_alias" => "F NH3 PCO", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "м3/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 160, "comment" => "Расход NH3 в РСО"),
+        "31NH3_F106" => array("topic" => "m5", "name_topic" => "Р¦РµС… Рњ-5 (I-РѕС‚Рґ.)", "alias" => "31NH3_F106", "name_alias" => "F NH3 PCO", "tag_param" => "F", "name_param" => "Р Р°СЃС…РѕРґ", "value_type" => "CURRENT", "value_unit" => "Рј3/С‡", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 160, "comment" => "Р Р°СЃС…РѕРґ NH3 РІ Р РЎРћ"),
         //F105
-        "31HNO3_F105" => array("topic" => "m5", "name_topic" => "Цех М-5 (I-отд.)", "alias" => "31HNO3_F105", "name_alias" => "F HNO3", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "м3/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 25, "comment" => "Расход кислоты с агрегата"),
+        "31HNO3_F105" => array("topic" => "m5", "name_topic" => "Р¦РµС… Рњ-5 (I-РѕС‚Рґ.)", "alias" => "31HNO3_F105", "name_alias" => "F HNO3", "tag_param" => "F", "name_param" => "Р Р°СЃС…РѕРґ", "value_type" => "CURRENT", "value_unit" => "Рј3/С‡", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 25, "comment" => "Р Р°СЃС…РѕРґ РєРёСЃР»РѕС‚С‹ СЃ Р°РіСЂРµРіР°С‚Р°"),
         //F171
-        "31NG_F171" => array("topic" => "m5", "name_topic" => "Цех М-5 (I-отд.)", "alias" => "31NG_F171", "name_alias" => "F NG UKST", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "м3/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 2000, "comment" => "Расход ПГ в УКСТ"),
+        "31NG_F171" => array("topic" => "m5", "name_topic" => "Р¦РµС… Рњ-5 (I-РѕС‚Рґ.)", "alias" => "31NG_F171", "name_alias" => "F NG UKST", "tag_param" => "F", "name_param" => "Р Р°СЃС…РѕРґ", "value_type" => "CURRENT", "value_unit" => "Рј3/С‡", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 2000, "comment" => "Р Р°СЃС…РѕРґ РџР“ РІ РЈРљРЎРў"),
         //EA_RD
-        "31EA_RD" => array("topic" => "m5", "name_topic" => "Цех М-5 (I-отд.)", "alias" => "31EA_RD", "name_alias" => "VT EA RD", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "кВт", "scale_min" => -1500, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 1500, "comment" => "Мощность РД"),
+        "31EA_RD" => array("topic" => "m5", "name_topic" => "Р¦РµС… Рњ-5 (I-РѕС‚Рґ.)", "alias" => "31EA_RD", "name_alias" => "VT EA RD", "tag_param" => "F", "name_param" => "Р Р°СЃС…РѕРґ", "value_type" => "CURRENT", "value_unit" => "РєР’С‚", "scale_min" => -1500, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 1500, "comment" => "РњРѕС‰РЅРѕСЃС‚СЊ Р Р”"),
     );
 
 }

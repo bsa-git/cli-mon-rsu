@@ -1,34 +1,34 @@
 <?
 try {
-    //Определим путь к DOCUMENT_ROOT
+    //РћРїСЂРµРґРµР»РёРј РїСѓС‚СЊ Рє DOCUMENT_ROOT
     $rootDocument = realpath(dirname(__FILE__) . '/../');
 
     defined('ROOT_DOCUMENT')
             || define('ROOT_DOCUMENT', $rootDocument);
 
-    //Вставим модуль htmbox.inc.php
+    //Р’СЃС‚Р°РІРёРј РјРѕРґСѓР»СЊ htmbox.inc.php
     require_once($rootDocument . "/application/plugins/htmBox.inc.php");
 
-    //Установим require_once
+    //РЈСЃС‚Р°РЅРѕРІРёРј require_once
     htmBox::getIncludes('inc');
     myConfig::$arrSystem["cmd"] = 1;
 
     //==== Get params =========
-    //Получим массив входных параметров
+    //РџРѕР»СѓС‡РёРј РјР°СЃСЃРёРІ РІС…РѕРґРЅС‹С… РїР°СЂР°РјРµС‚СЂРѕРІ
     $strParams = $_SERVER['argv'][1];
     $arrParams = array();
     parse_str($strParams, $arrParams);
-    // Установим аргументы обращения к скрипту
+    // РЈСЃС‚Р°РЅРѕРІРёРј Р°СЂРіСѓРјРµРЅС‚С‹ РѕР±СЂР°С‰РµРЅРёСЏ Рє СЃРєСЂРёРїС‚Сѓ
     myConfig::$arrArguments = $arrParams;
 
-    //Действия при загрузке
+    //Р”РµР№СЃС‚РІРёСЏ РїСЂРё Р·Р°РіСЂСѓР·РєРµ
     $bootstrap = new Bootstrap();
     $bootstrap->init();
     
-    // Сохраним ссылку на обьект класса Bootstrap
+    // РЎРѕС…СЂР°РЅРёРј СЃСЃС‹Р»РєСѓ РЅР° РѕР±СЊРµРєС‚ РєР»Р°СЃСЃР° Bootstrap
     myConfig::$Bootstrap = $bootstrap;
 
-    //Определим входные параметры
+    //РћРїСЂРµРґРµР»РёРј РІС…РѕРґРЅС‹Рµ РїР°СЂР°РјРµС‚СЂС‹
     if (array_key_exists("c", $arrParams)) {
         $controller = $arrParams["c"];
     } else {
@@ -40,18 +40,18 @@ try {
         $action = 'index';
     }
 
-    //Установим GET параметры для действия контроллера
+    //РЈСЃС‚Р°РЅРѕРІРёРј GET РїР°СЂР°РјРµС‚СЂС‹ РґР»СЏ РґРµР№СЃС‚РІРёСЏ РєРѕРЅС‚СЂРѕР»Р»РµСЂР°
     sysBox::setDebugInfo("params", $arrParams);
     
-    //Ввыполним действие контроллера
+    //Р’РІС‹РїРѕР»РЅРёРј РґРµР№СЃС‚РІРёРµ РєРѕРЅС‚СЂРѕР»Р»РµСЂР°
     sysBox::runControllMetod($controller, $action);
     
 } catch (Exception $ex) {
     
-    // Сохраним ошибку в логе
+    // РЎРѕС…СЂР°РЅРёРј РѕС€РёР±РєСѓ РІ Р»РѕРіРµ
     strBox::saveErr2Log($ex->getMessage());
     
-    // Удалим файлы управления циклом
+    // РЈРґР°Р»РёРј С„Р°Р№Р»С‹ СѓРїСЂР°РІР»РµРЅРёСЏ С†РёРєР»РѕРј
     strBox::deleteCycleControl("stop");
     strBox::deleteCycleControl("start");
 }

@@ -1,8 +1,8 @@
 <?php
 
 /**
- * Модуль взаимодействия с обьектом -> Model_HistDayData
- * и базой данных Hist
+ * РњРѕРґСѓР»СЊ РІР·Р°РёРјРѕРґРµР№СЃС‚РІРёСЏ СЃ РѕР±СЊРµРєС‚РѕРј -> Model_HistDayData
+ * Рё Р±Р°Р·РѕР№ РґР°РЅРЅС‹С… Hist
  *
  * @uses       Model_DbTable_XXXX
  * @package    cli-azot-m5
@@ -15,7 +15,7 @@ class Model_HistDayDataMapper {
     protected $_dbTable;
 
     /**------------------------------------------------
-     * Определим экземпляр обьекта таблицы для работы с базой данных
+     * РћРїСЂРµРґРµР»РёРј СЌРєР·РµРјРїР»СЏСЂ РѕР±СЊРµРєС‚Р° С‚Р°Р±Р»РёС†С‹ РґР»СЏ СЂР°Р±РѕС‚С‹ СЃ Р±Р°Р·РѕР№ РґР°РЅРЅС‹С…
      *
      * @param  Model_DbTable_XXXX $aDBTable
      * @return Model_DbTable_XXXX
@@ -32,8 +32,8 @@ class Model_HistDayDataMapper {
     }
 
     /**-----------------------------------------
-     * Получим обьект таблицы Model_DbTable_XXXX
-     * для работы с базой данных
+     * РџРѕР»СѓС‡РёРј РѕР±СЊРµРєС‚ С‚Р°Р±Р»РёС†С‹ Model_DbTable_XXXX
+     * РґР»СЏ СЂР°Р±РѕС‚С‹ СЃ Р±Р°Р·РѕР№ РґР°РЅРЅС‹С…
      *
      * @return Model_DbTable_XXXX
      */
@@ -45,23 +45,23 @@ class Model_HistDayDataMapper {
     }
 
     /**-----------------------------
-     * Получить данные о тегах заданных в конфигурации
-     * за сутки
+     * РџРѕР»СѓС‡РёС‚СЊ РґР°РЅРЅС‹Рµ Рѕ С‚РµРіР°С… Р·Р°РґР°РЅРЅС‹С… РІ РєРѕРЅС„РёРіСѓСЂР°С†РёРё
+     * Р·Р° СЃСѓС‚РєРё
      *
-     * @return array        //Массив обьектов данных из истории
+     * @return array        //РњР°СЃСЃРёРІ РѕР±СЊРµРєС‚РѕРІ РґР°РЅРЅС‹С… РёР· РёСЃС‚РѕСЂРёРё
      */
     public function fetchTags() {
         $arrObjects = array();
         //--------------------------------
-        //Получим период времени
+        //РџРѕР»СѓС‡РёРј РїРµСЂРёРѕРґ РІСЂРµРјРµРЅРё
         $arrDates = strBox::getDateTimePeriod("day");
-        //Получим массив позиций
+        //РџРѕР»СѓС‡РёРј РјР°СЃСЃРёРІ РїРѕР·РёС†РёР№
         $arrDayTags = array_keys(myConfig::$arrDayTags);
-        //Выполним запрос к базе данных
+        //Р’С‹РїРѕР»РЅРёРј Р·Р°РїСЂРѕСЃ Рє Р±Р°Р·Рµ РґР°РЅРЅС‹С…
         foreach($arrDayTags as $tag) {
             $res = $this->getDbTable()->selectData('get_tag',array($tag,$arrDates["date_min"],$arrDates["date_max"]));
             while($arrResult = $res->Fetch()) {
-                //Скорректируем дату-время
+                //РЎРєРѕСЂСЂРµРєС‚РёСЂСѓРµРј РґР°С‚Сѓ-РІСЂРµРјСЏ
                 $my_time = $arrResult['Time'];//2006-10-16 1:00:00.00
                 $my_time = substr($my_time,0,-3);//$my_time = 2006-10-16 1:00:00
                 $arr_date = explode(" ",$my_time);//$arr_date[0] = 2006-10-16;$arr_date[1] = 1:00:00
@@ -80,21 +80,21 @@ class Model_HistDayDataMapper {
     }
 
     /**-----------------------------
-     * Получить данные о конкретном теге
-     * за сутки
+     * РџРѕР»СѓС‡РёС‚СЊ РґР°РЅРЅС‹Рµ Рѕ РєРѕРЅРєСЂРµС‚РЅРѕРј С‚РµРіРµ
+     * Р·Р° СЃСѓС‚РєРё
      *
-     * @param string $aTag  //Название позиции в истории
-     * @return array        //Массив обьектов данных из истории
+     * @param string $aTag  //РќР°Р·РІР°РЅРёРµ РїРѕР·РёС†РёРё РІ РёСЃС‚РѕСЂРёРё
+     * @return array        //РњР°СЃСЃРёРІ РѕР±СЊРµРєС‚РѕРІ РґР°РЅРЅС‹С… РёР· РёСЃС‚РѕСЂРёРё
      */
     public function fetchTag($aTag) {
         $arrObjects = array();
         //--------------------------------
-        //Получим период времени
+        //РџРѕР»СѓС‡РёРј РїРµСЂРёРѕРґ РІСЂРµРјРµРЅРё
         $arrDates = strBox::getDateTimePeriod("day");
         $source = $aTag;
         $res = $this->getDbTable()->selectData('get_tag',array($source,$arrDates["date_min"],$arrDates["date_max"]));
         while($arrResult = $res->Fetch()) {
-            //Скорректируем дату-время
+            //РЎРєРѕСЂСЂРµРєС‚РёСЂСѓРµРј РґР°С‚Сѓ-РІСЂРµРјСЏ
             $my_time = $arrResult['Time'];//2006-10-16 1:00:00.00
             $my_time = substr($my_time,0,-3);//$my_time = 2006-10-16 1:00:00
             $arr_date = explode(" ",$my_time);//$arr_date[0] = 2006-10-16;$arr_date[1] = 1:00:00

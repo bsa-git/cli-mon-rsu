@@ -8,7 +8,7 @@
 ##############################################
 
 /* * ***************************************************************
- * 	Классы для работы с базой данных
+ * 	РљР»Р°СЃСЃС‹ РґР»СЏ СЂР°Р±РѕС‚С‹ СЃ Р±Р°Р·РѕР№ РґР°РЅРЅС‹С…
  * *************************************************************** */
 
 class CAllDatabase {
@@ -21,9 +21,9 @@ class CAllDatabase {
     var $result;
     var $type;
 
-    //Соединяется с базой данных
+    //РЎРѕРµРґРёРЅСЏРµС‚СЃСЏ СЃ Р±Р°Р·РѕР№ РґР°РЅРЅС‹С…
     function Connect($DBHost, $DBName, $DBLogin, $DBPassword) {
-        //переопределяется!
+        //РїРµСЂРµРѕРїСЂРµРґРµР»СЏРµС‚СЃСЏ!
         return false;
     }
 
@@ -36,30 +36,30 @@ class CAllDatabase {
     }
 
     function DateToCharFunction($strFieldName, $strType = "FULL") {
-        //переопределяется!
+        //РїРµСЂРµРѕРїСЂРµРґРµР»СЏРµС‚СЃСЏ!
     }
 
     function CharToDateFunction($strValue, $strType = "FULL") {
-        //переопределяется!
+        //РїРµСЂРµРѕРїСЂРµРґРµР»СЏРµС‚СЃСЏ!
     }
 
     function Concat() {
-        //переопределяется!
+        //РїРµСЂРµРѕРїСЂРµРґРµР»СЏРµС‚СЃСЏ!
     }
 
     function IsNull($expression, $result) {
-        //переопределяется!
+        //РїРµСЂРµРѕРїСЂРµРґРµР»СЏРµС‚СЃСЏ!
     }
 
     function Length($field) {
-        //переопределяется!
+        //РїРµСЂРµРѕРїСЂРµРґРµР»СЏРµС‚СЃСЏ!
     }
 
     function ToChar($expr, $len = 0) {
         return "CAST(" . $expr . " AS CHAR" . ($len > 0 ? "(" . $len . ")" : "") . ")";
     }
 
-    // унифицированный формат в PHP формат
+    // СѓРЅРёС„РёС†РёСЂРѕРІР°РЅРЅС‹Р№ С„РѕСЂРјР°С‚ РІ PHP С„РѕСЂРјР°С‚
     function DateFormatToPHP($f) {
         $f = str_replace("YYYY", "Y", $f); // 1999
         $f = str_replace("MM", "m", $f); // 01 - 12
@@ -143,27 +143,27 @@ class CAllDatabase {
         return $strResult;
     }
 
-    //Делает запрос к базе данных
+    //Р”РµР»Р°РµС‚ Р·Р°РїСЂРѕСЃ Рє Р±Р°Р·Рµ РґР°РЅРЅС‹С…
     function Query($strSql, $bIgnoreErrors = false) {
-        //переопределяется!
+        //РїРµСЂРµРѕРїСЂРµРґРµР»СЏРµС‚СЃСЏ!
     }
 
-    //запрос с записью CLOB
+    //Р·Р°РїСЂРѕСЃ СЃ Р·Р°РїРёСЃСЊСЋ CLOB
     function QueryBind($strSql, $arBinds, $bIgnoreErrors = false) {
-        //переопределяется, где надо
+        //РїРµСЂРµРѕРїСЂРµРґРµР»СЏРµС‚СЃСЏ, РіРґРµ РЅР°РґРѕ
         return $this->Query($strSql, $bIgnoreErrors);
     }
 
     function ForSql($strValue, $iMaxLength = 0) {
-        //переопределяется!
+        //РїРµСЂРµРѕРїСЂРµРґРµР»СЏРµС‚СЃСЏ!
     }
 
     function PrepareInsert($strTableName, $arFields) {
-        //переопределяется!
+        //РїРµСЂРµРѕРїСЂРµРґРµР»СЏРµС‚СЃСЏ!
     }
 
     function PrepareUpdate($strTableName, $arFields) {
-        //переопределяется!
+        //РїРµСЂРµРѕРїСЂРµРґРµР»СЏРµС‚СЃСЏ!
     }
 
     function ParseSqlBatch($strSql, $bIncremental = False) {
@@ -296,12 +296,12 @@ class CAllDatabase {
 }
 
 /////////////////////////////////////////////////////
-// Класс результата выполнения CDatabase::Query()
+// РљР»Р°СЃСЃ СЂРµР·СѓР»СЊС‚Р°С‚Р° РІС‹РїРѕР»РЅРµРЅРёСЏ CDatabase::Query()
 /////////////////////////////////////////////////////
 class CAllDBResult {
 
-    var $result; //результат (первоначальный дескриптор)
-    var $arResult; //результат в виде массива после NavStart
+    var $result; //СЂРµР·СѓР»СЊС‚Р°С‚ (РїРµСЂРІРѕРЅР°С‡Р°Р»СЊРЅС‹Р№ РґРµСЃРєСЂРёРїС‚РѕСЂ)
+    var $arResult; //СЂРµР·СѓР»СЊС‚Р°С‚ РІ РІРёРґРµ РјР°СЃСЃРёРІР° РїРѕСЃР»Рµ NavStart
     var $bNavStart = false;
     var $bShowAll = false;
     var $NavNum, $NavPageCount, $NavPageNomer, $NavPageSize, $NavShowAll, $NavRecordCount;
@@ -347,7 +347,7 @@ class CAllDBResult {
             $this->result = $res;
     }
 
-    //После запроса делает выборку значений полей в массив
+    //РџРѕСЃР»Рµ Р·Р°РїСЂРѕСЃР° РґРµР»Р°РµС‚ РІС‹Р±РѕСЂРєСѓ Р·РЅР°С‡РµРЅРёР№ РїРѕР»РµР№ РІ РјР°СЃСЃРёРІ
     function Fetch() {
         
     }
@@ -390,7 +390,7 @@ class CAllDBResult {
         $sAll = GetMessage("nav_all");
         $sPaged = GetMessage("nav_paged");
 
-        // окно, которое двигаем по страницам
+        // РѕРєРЅРѕ, РєРѕС‚РѕСЂРѕРµ РґРІРёРіР°РµРј РїРѕ СЃС‚СЂР°РЅРёС†Р°Рј
         $nPageWindow = $this->nPageWindow;
 
         if (!$show_allways) {
@@ -400,7 +400,7 @@ class CAllDBResult {
 
         $sUrlPath = GetPagePath();
 
-        //Строка для формирования ссылки на следующие страницы навигации
+        //РЎС‚СЂРѕРєР° РґР»СЏ С„РѕСЂРјРёСЂРѕРІР°РЅРёСЏ СЃСЃС‹Р»РєРё РЅР° СЃР»РµРґСѓСЋС‰РёРµ СЃС‚СЂР°РЅРёС†С‹ РЅР°РІРёРіР°С†РёРё
         $arDel = array("PAGEN_" . $this->NavNum, "SIZEN_" . $this->NavNum, "SHOWALL_" . $this->NavNum, "PHPSESSID");
         if (is_array($arDeleteParam))
             $arDel = array_merge($arDel, $arDeleteParam);
@@ -432,13 +432,13 @@ class CAllDBResult {
             //echo "nEndPage = $nEndPage; nStartPage = $nStartPage;";
         }
         else {
-            // номер первой страницы в окне
+            // РЅРѕРјРµСЂ РїРµСЂРІРѕР№ СЃС‚СЂР°РЅРёС†С‹ РІ РѕРєРЅРµ
             if ($this->NavPageNomer > floor($nPageWindow / 2) + 1 && $this->NavPageCount > $nPageWindow)
                 $nStartPage = $this->NavPageNomer - floor($nPageWindow / 2);
             else
                 $nStartPage = 1;
 
-            // номер последней страницы в окне
+            // РЅРѕРјРµСЂ РїРѕСЃР»РµРґРЅРµР№ СЃС‚СЂР°РЅРёС†С‹ РІ РѕРєРЅРµ
             if ($this->NavPageNomer <= $this->NavPageCount - floor($nPageWindow / 2) && $nStartPage + $nPageWindow - 1 <= $this->NavPageCount)
                 $nEndPage = $nStartPage + $nPageWindow - 1;
             else {
@@ -453,21 +453,21 @@ class CAllDBResult {
 
         if ($template_path !== false && file_exists($template_path)) {
             /*
-              $this->bFirstPrintNav - вызов в первый раз
-              $this->NavPageNomer - номер текущей страницы
-              $this->NavPageCount - всего страниц
-              $this->NavPageSize - размер страницы
-              $this->NavRecordCount - количество всего записей
-              $this->bShowAll - разрешено ли показывать "все"
-              $this->NavShowAll - сейчас показываются все, а не постранично
-              $this->NavNum - номер навигации на странице
-              $this->bDescPageNumbering - прямая или обратная постраничка
+              $this->bFirstPrintNav - РІС‹Р·РѕРІ РІ РїРµСЂРІС‹Р№ СЂР°Р·
+              $this->NavPageNomer - РЅРѕРјРµСЂ С‚РµРєСѓС‰РµР№ СЃС‚СЂР°РЅРёС†С‹
+              $this->NavPageCount - РІСЃРµРіРѕ СЃС‚СЂР°РЅРёС†
+              $this->NavPageSize - СЂР°Р·РјРµСЂ СЃС‚СЂР°РЅРёС†С‹
+              $this->NavRecordCount - РєРѕР»РёС‡РµСЃС‚РІРѕ РІСЃРµРіРѕ Р·Р°РїРёСЃРµР№
+              $this->bShowAll - СЂР°Р·СЂРµС€РµРЅРѕ Р»Рё РїРѕРєР°Р·С‹РІР°С‚СЊ "РІСЃРµ"
+              $this->NavShowAll - СЃРµР№С‡Р°СЃ РїРѕРєР°Р·С‹РІР°СЋС‚СЃСЏ РІСЃРµ, Р° РЅРµ РїРѕСЃС‚СЂР°РЅРёС‡РЅРѕ
+              $this->NavNum - РЅРѕРјРµСЂ РЅР°РІРёРіР°С†РёРё РЅР° СЃС‚СЂР°РЅРёС†Рµ
+              $this->bDescPageNumbering - РїСЂСЏРјР°СЏ РёР»Рё РѕР±СЂР°С‚РЅР°СЏ РїРѕСЃС‚СЂР°РЅРёС‡РєР°
 
-              $this->nStartPage - первая страница в цепочке
-              $this->nEndPage - последняя страница в цепочке
+              $this->nStartPage - РїРµСЂРІР°СЏ СЃС‚СЂР°РЅРёС†Р° РІ С†РµРїРѕС‡РєРµ
+              $this->nEndPage - РїРѕСЃР»РµРґРЅСЏСЏ СЃС‚СЂР°РЅРёС†Р° РІ С†РµРїРѕС‡РєРµ
 
-              $strNavQueryString - параметры страницы без параметров навигации
-              $sUrlPath - урл текущей страницы
+              $strNavQueryString - РїР°СЂР°РјРµС‚СЂС‹ СЃС‚СЂР°РЅРёС†С‹ Р±РµР· РїР°СЂР°РјРµС‚СЂРѕРІ РЅР°РІРёРіР°С†РёРё
+              $sUrlPath - СѓСЂР» С‚РµРєСѓС‰РµР№ СЃС‚СЂР°РЅРёС†С‹
 
               Url for link to the page #PAGE_NUMBER#:
               $sUrlPath.'?PAGEN_'.$this->NavNum.'='.#PAGE_NUMBER#.$strNavQueryString.'#nav_start"'.$add_anchor
@@ -654,12 +654,12 @@ class CAllDBResult {
                 $PAGEN = 1;
         }
 
-        //Число записей для отображения на странице
+        //Р§РёСЃР»Рѕ Р·Р°РїРёСЃРµР№ РґР»СЏ РѕС‚РѕР±СЂР°Р¶РµРЅРёСЏ РЅР° СЃС‚СЂР°РЅРёС†Рµ
         $SIZEN = $nPageSize;
         if (IntVal($SIZEN) < 1)
             $SIZEN = 10;
 
-        //Показывать все записи
+        //РџРѕРєР°Р·С‹РІР°С‚СЊ РІСЃРµ Р·Р°РїРёСЃРё
         $SHOW_ALL = ($bShowAll ? (isset($SHOWALL) ? ($SHOWALL == 1) : (CPageOption::GetOptionString("main", "nav_page_in_session", "Y") == "Y" && $_SESSION[$SESS_ALL] == 1)) : false);
 
         $res = Array(
@@ -725,7 +725,7 @@ class CAllDBResult {
             $this->InitNavStartVars(IntVal($nPageSize), $bShowAll, $iNumPage);
 
         if ($this->bFromArray) {
-            //общее количество записей
+            //РѕР±С‰РµРµ РєРѕР»РёС‡РµСЃС‚РІРѕ Р·Р°РїРёСЃРµР№
             $this->NavRecordCount = count($this->arResult);
             if ($this->NavRecordCount < 1)
                 return;
@@ -733,12 +733,12 @@ class CAllDBResult {
             if ($this->NavShowAll)
                 $this->NavPageSize = $this->NavRecordCount;
 
-            //Определяю число страниц при указанном размере страниц. Счет начиная с 1
+            //РћРїСЂРµРґРµР»СЏСЋ С‡РёСЃР»Рѕ СЃС‚СЂР°РЅРёС† РїСЂРё СѓРєР°Р·Р°РЅРЅРѕРј СЂР°Р·РјРµСЂРµ СЃС‚СЂР°РЅРёС†. РЎС‡РµС‚ РЅР°С‡РёРЅР°СЏ СЃ 1
             $this->NavPageCount = floor($this->NavRecordCount / $this->NavPageSize);
             if ($this->NavRecordCount % $this->NavPageSize > 0)
                 $this->NavPageCount++;
 
-            //Номер страницы для отображения. Отсчет начинается с 1
+            //РќРѕРјРµСЂ СЃС‚СЂР°РЅРёС†С‹ РґР»СЏ РѕС‚РѕР±СЂР°Р¶РµРЅРёСЏ. РћС‚СЃС‡РµС‚ РЅР°С‡РёРЅР°РµС‚СЃСЏ СЃ 1
             $this->NavPageNomer =
                     ($this->PAGEN < 1 || $this->PAGEN > $this->NavPageCount ?
                             (CPageOption::GetOptionString("main", "nav_page_in_session", "Y") != "Y"
@@ -750,7 +750,7 @@ class CAllDBResult {
                             $this->PAGEN
                     );
 
-            //Смещение от начала RecordSet
+            //РЎРјРµС‰РµРЅРёРµ РѕС‚ РЅР°С‡Р°Р»Р° RecordSet
             $NavFirstRecordShow = $this->NavPageSize * ($this->NavPageNomer - 1);
             $NavLastRecordShow = $this->NavPageSize * $this->NavPageNomer;
 
@@ -825,7 +825,7 @@ class CAllDBResult {
 }
 
 /* * ******************************************************************
- * 	Класс для работы с MySQL
+ * 	РљР»Р°СЃСЃ РґР»СЏ СЂР°Р±РѕС‚С‹ СЃ MySQL
  * ****************************************************************** */
 
 class CDatabase extends CAllDatabase {
@@ -867,7 +867,7 @@ class CDatabase extends CAllDatabase {
         $this->Query("ROLLBACK", true);
     }
 
-    //Соединяется с базой данных
+    //РЎРѕРµРґРёРЅСЏРµС‚СЃСЏ СЃ Р±Р°Р·РѕР№ РґР°РЅРЅС‹С…
     function Connect($DBHost, $DBName, $DBLogin, $DBPassword) {
         $this->type = "MYSQL";
         $this->DBHost = $DBHost;
@@ -922,7 +922,7 @@ class CDatabase extends CAllDatabase {
         return true;
     }
 
-    //Делает запрос к базе данных
+    //Р”РµР»Р°РµС‚ Р·Р°РїСЂРѕСЃ Рє Р±Р°Р·Рµ РґР°РЅРЅС‹С…
     function Query($strSql, $bIgnoreErrors = false, $error_position = "") {
         $this->DoConnect();
         $this->db_Error = "";
@@ -994,7 +994,7 @@ class CDatabase extends CAllDatabase {
         return $res;
     }
 
-    //Делает запрос к базе данных. Для MySql больше ничего ;-)
+    //Р”РµР»Р°РµС‚ Р·Р°РїСЂРѕСЃ Рє Р±Р°Р·Рµ РґР°РЅРЅС‹С…. Р”Р»СЏ MySql Р±РѕР»СЊС€Рµ РЅРёС‡РµРіРѕ ;-)
     function QueryLong($strSql, $bIgnoreErrors = false) {
         return $this->Query($strSql, $bIgnoreErrors);
     }
@@ -1030,9 +1030,9 @@ class CDatabase extends CAllDatabase {
         return "'" . CDatabase::FormatDate($strValue, CLang::GetDateFormat($strType, $lang), ($strType == "SHORT" ? "Y-M-D" : "Y-M-D H:I:S")) . "'";
     }
 
-    //	1		если date1 > date2
-    //	0		если date1 = date2
-    //	-1		если date1 < date2
+    //	1		РµСЃР»Рё date1 > date2
+    //	0		РµСЃР»Рё date1 = date2
+    //	-1		РµСЃР»Рё date1 < date2
     function CompareDates($date1, $date2) {
         $s_date1 = $this->CharToDateFunction($date1);
         $s_date2 = $this->CharToDateFunction($date2);
@@ -1053,7 +1053,7 @@ class CDatabase extends CAllDatabase {
         return mysql_insert_id($this->db_Conn);
     }
 
-    //Отсоединяется от БД
+    //РћС‚СЃРѕРµРґРёРЅСЏРµС‚СЃСЏ РѕС‚ Р‘Р”
     function Disconnect() {
         if (!DBPersistent && $this->bConnected) {
             $this->bConnected = false;
@@ -1100,7 +1100,7 @@ class CDatabase extends CAllDatabase {
                 $value = $arFields[$strColumnName];
                 if (isset($value)) {
                     /*
-                      //массив может быть при сохранении файлов, тогда мы пропускаем - файлы требуют индивидуальной обработки
+                      //РјР°СЃСЃРёРІ РјРѕР¶РµС‚ Р±С‹С‚СЊ РїСЂРё СЃРѕС…СЂР°РЅРµРЅРёРё С„Р°Р№Р»РѕРІ, С‚РѕРіРґР° РјС‹ РїСЂРѕРїСѓСЃРєР°РµРј - С„Р°Р№Р»С‹ С‚СЂРµР±СѓСЋС‚ РёРЅРґРёРІРёРґСѓР°Р»СЊРЅРѕР№ РѕР±СЂР°Р±РѕС‚РєРё
                       if(is_array($value))
                       {
                       if(strlen($value["name"])>0 || strlen($value["del"])>0 || strlen($value["description"])>0)
@@ -1178,7 +1178,7 @@ class CDatabase extends CAllDatabase {
                 $value = $arFields[$strColumnName];
                 if (isset($value)) {
                     /*
-                      //массив может быть при сохранении файлов, тогда мы пропускаем - файлы требуют индивидуальной обработки
+                      //РјР°СЃСЃРёРІ РјРѕР¶РµС‚ Р±С‹С‚СЊ РїСЂРё СЃРѕС…СЂР°РЅРµРЅРёРё С„Р°Р№Р»РѕРІ, С‚РѕРіРґР° РјС‹ РїСЂРѕРїСѓСЃРєР°РµРј - С„Р°Р№Р»С‹ С‚СЂРµР±СѓСЋС‚ РёРЅРґРёРІРёРґСѓР°Р»СЊРЅРѕР№ РѕР±СЂР°Р±РѕС‚РєРё
                       if(is_array($value))
                       {
                       if(strlen($value["name"])>0 || strlen($value["del"])>0 || is_set($value, "description"))
@@ -1474,7 +1474,7 @@ class CDBResult extends CAllDBResult {
         parent::CAllDBResult($res);
     }
 
-    //После запроса делает выборку значений полей в массив
+    //РџРѕСЃР»Рµ Р·Р°РїСЂРѕСЃР° РґРµР»Р°РµС‚ РІС‹Р±РѕСЂРєСѓ Р·РЅР°С‡РµРЅРёР№ РїРѕР»РµР№ РІ РјР°СЃСЃРёРІ
     function Fetch() {
         if ($this->bNavStart || $this->bFromArray) {
             if (!is_array($this->arResult))
@@ -1546,7 +1546,7 @@ class CDBResult extends CAllDBResult {
     }
 
     function DBNavStart() {
-        //общее количество записей
+        //РѕР±С‰РµРµ РєРѕР»РёС‡РµСЃС‚РІРѕ Р·Р°РїРёСЃРµР№
         $this->NavRecordCount = mysql_num_rows($this->result);
         if ($this->NavRecordCount < 1)
             return;
@@ -1554,15 +1554,15 @@ class CDBResult extends CAllDBResult {
         if ($this->NavShowAll)
             $this->NavPageSize = $this->NavRecordCount;
 
-        //Определяем число страниц при указанном размере страниц. Счет начиная с 1
+        //РћРїСЂРµРґРµР»СЏРµРј С‡РёСЃР»Рѕ СЃС‚СЂР°РЅРёС† РїСЂРё СѓРєР°Р·Р°РЅРЅРѕРј СЂР°Р·РјРµСЂРµ СЃС‚СЂР°РЅРёС†. РЎС‡РµС‚ РЅР°С‡РёРЅР°СЏ СЃ 1
         $this->NavPageCount = floor($this->NavRecordCount / $this->NavPageSize);
         if ($this->NavRecordCount % $this->NavPageSize > 0)
             $this->NavPageCount++;
 
-        //Номер страницы для отображения. Отсчет начинается с 1
+        //РќРѕРјРµСЂ СЃС‚СЂР°РЅРёС†С‹ РґР»СЏ РѕС‚РѕР±СЂР°Р¶РµРЅРёСЏ. РћС‚СЃС‡РµС‚ РЅР°С‡РёРЅР°РµС‚СЃСЏ СЃ 1
         $this->NavPageNomer = ($this->PAGEN < 1 || $this->PAGEN > $this->NavPageCount ? ($_SESSION[$this->SESS_PAGEN] < 1 || $_SESSION[$this->SESS_PAGEN] > $this->NavPageCount ? 1 : $_SESSION[$this->SESS_PAGEN]) : $this->PAGEN);
 
-        //Смещение от начала RecordSet
+        //РЎРјРµС‰РµРЅРёРµ РѕС‚ РЅР°С‡Р°Р»Р° RecordSet
         $NavFirstRecordShow = $this->NavPageSize * ($this->NavPageNomer - 1);
         $NavLastRecordShow = $this->NavPageSize * $this->NavPageNomer;
 
@@ -1624,14 +1624,14 @@ class CDBResult extends CAllDBResult {
         if ($this->NavShowAll)
             $this->NavPageSize = $this->NavRecordCount;
 
-        //Определяем число страниц при указанном размере страниц. Счет начиная с 1
+        //РћРїСЂРµРґРµР»СЏРµРј С‡РёСЃР»Рѕ СЃС‚СЂР°РЅРёС† РїСЂРё СѓРєР°Р·Р°РЅРЅРѕРј СЂР°Р·РјРµСЂРµ СЃС‚СЂР°РЅРёС†. РЎС‡РµС‚ РЅР°С‡РёРЅР°СЏ СЃ 1
         $this->NavPageCount = ($this->NavPageSize > 0 ? floor($this->NavRecordCount / $this->NavPageSize) : 0);
         if ($bDescPageNumbering) {
             $makeweight = ($this->NavRecordCount % $this->NavPageSize);
             if ($this->NavPageCount == 0 && $makeweight > 0)
                 $this->NavPageCount = 1;
 
-            //Номер страницы для отображения.
+            //РќРѕРјРµСЂ СЃС‚СЂР°РЅРёС†С‹ РґР»СЏ РѕС‚РѕР±СЂР°Р¶РµРЅРёСЏ.
             //if($iNumPage===false)
             //	$this->PAGEN = $this->NavPageCount;
             $this->NavPageNomer =
@@ -1644,7 +1644,7 @@ class CDBResult extends CAllDBResult {
                             $this->PAGEN
                     );
 
-            //Смещение от начала RecordSet
+            //РЎРјРµС‰РµРЅРёРµ РѕС‚ РЅР°С‡Р°Р»Р° RecordSet
             $NavFirstRecordShow = 0;
             if ($this->NavPageNomer != $this->NavPageCount)
                 $NavFirstRecordShow += $makeweight;
@@ -1656,10 +1656,10 @@ class CDBResult extends CAllDBResult {
             if ($this->NavPageSize && ($this->NavRecordCount % $this->NavPageSize > 0))
                 $this->NavPageCount++;
 
-            //Номер страницы для отображения. Отсчет начинается с 1
+            //РќРѕРјРµСЂ СЃС‚СЂР°РЅРёС†С‹ РґР»СЏ РѕС‚РѕР±СЂР°Р¶РµРЅРёСЏ. РћС‚СЃС‡РµС‚ РЅР°С‡РёРЅР°РµС‚СЃСЏ СЃ 1
             $this->NavPageNomer = ($this->PAGEN < 1 || $this->PAGEN > $this->NavPageCount ? ($_SESSION[$this->SESS_PAGEN] < 1 || $_SESSION[$this->SESS_PAGEN] > $this->NavPageCount ? 1 : $_SESSION[$this->SESS_PAGEN]) : $this->PAGEN);
 
-            //Смещение от начала RecordSet
+            //РЎРјРµС‰РµРЅРёРµ РѕС‚ РЅР°С‡Р°Р»Р° RecordSet
             $NavFirstRecordShow = $this->NavPageSize * ($this->NavPageNomer - 1);
             $NavLastRecordShow = $this->NavPageSize * $this->NavPageNomer;
         }

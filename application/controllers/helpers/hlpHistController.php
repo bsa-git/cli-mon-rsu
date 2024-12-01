@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Ïîìîùíèê äëÿ êîíòðîëëåðà èñòîðèè (AIM HISTORY)
+ * ÐŸÐ¾Ð¼Ð¾Ñ‰Ð½Ð¸Ðº Ð´Ð»Ñ ÐºÐ¾Ð½Ñ‚Ñ€Ð¾Ð»Ð»ÐµÑ€Ð° Ð¸ÑÑ‚Ð¾Ñ€Ð¸Ð¸ (AIM HISTORY)
  *
  *
  * @package    cli-azot-m5
@@ -9,12 +9,12 @@
  */
 class Helper_HistController {
     /**
-     * Ïîëó÷èì ìàññèâ îáüåêòîâ îDayData äëÿ ñîõðàíåíèÿ
-     * äàííûõ ýòèõ îáüåêòîâ â áàçå äàííûõ
+     * ÐŸÐ¾Ð»ÑƒÑ‡Ð¸Ð¼ Ð¼Ð°ÑÑÐ¸Ð² Ð¾Ð±ÑŒÐµÐºÑ‚Ð¾Ð² Ð¾DayData Ð´Ð»Ñ ÑÐ¾Ñ…Ñ€Ð°Ð½ÐµÐ½Ð¸Ñ
+     * Ð´Ð°Ð½Ð½Ñ‹Ñ… ÑÑ‚Ð¸Ñ… Ð¾Ð±ÑŒÐµÐºÑ‚Ð¾Ð² Ð² Ð±Ð°Ð·Ðµ Ð´Ð°Ð½Ð½Ñ‹Ñ…
      *
-     * @param  array $aHistDayDataObjects   //Ìàññèâ îáüåêòîâ îHistDayData
+     * @param  array $aHistDayDataObjects   //ÐœÐ°ÑÑÐ¸Ð² Ð¾Ð±ÑŒÐµÐºÑ‚Ð¾Ð² Ð¾HistDayData
      *
-     * @return array                        //Ìàññèâ îáüåêòîâ îDayData
+     * @return array                        //ÐœÐ°ÑÑÐ¸Ð² Ð¾Ð±ÑŒÐµÐºÑ‚Ð¾Ð² Ð¾DayData
      */
 
     public function getDayDataObjects(array $aHistDayDataObjects) {
@@ -22,17 +22,17 @@ class Helper_HistController {
         $alias = "";
         $idTag = 0;
         //--------------------------
-        //Ñîçäàäèì îáüåêò Model_Tags
+        //Ð¡Ð¾Ð·Ð´Ð°Ð´Ð¸Ð¼ Ð¾Ð±ÑŒÐµÐºÑ‚ Model_Tags
         $oTags = new Model_Tags();
 
         foreach ($aHistDayDataObjects as $histDayDataObject) {
 
-            //Ñîçäàäèì îáüåêò Model_DayData
+            //Ð¡Ð¾Ð·Ð´Ð°Ð´Ð¸Ð¼ Ð¾Ð±ÑŒÐµÐºÑ‚ Model_DayData
             $oDayData = new Model_DayData();
-            //Î÷èñòèì çíà÷åíèÿ îáüåêòîâ
+            //ÐžÑ‡Ð¸ÑÑ‚Ð¸Ð¼ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ñ Ð¾Ð±ÑŒÐµÐºÑ‚Ð¾Ð²
             $oTags->clearValues();
 
-            //Óñòàíîâèì äàííûå äëÿ îáüåêòà $oDayData
+            //Ð£ÑÑ‚Ð°Ð½Ð¾Ð²Ð¸Ð¼ Ð´Ð°Ð½Ð½Ñ‹Ðµ Ð´Ð»Ñ Ð¾Ð±ÑŒÐµÐºÑ‚Ð° $oDayData
             $tag = $histDayDataObject->source;
 
             if ($alias !== myConfig::$arrDayTags[$tag]) {
@@ -50,35 +50,35 @@ class Helper_HistController {
             $oDayData->time_hist = strBox::getFormatDateTime($timeHist, "H:i:s");
             $oDayData->value = $histDayDataObject->value;
 
-            //Ñîõðàíèì îáüåêò â ìàññèâå
+            //Ð¡Ð¾Ñ…Ñ€Ð°Ð½Ð¸Ð¼ Ð¾Ð±ÑŒÐµÐºÑ‚ Ð² Ð¼Ð°ÑÑÐ¸Ð²Ðµ
             $arrDayData[] = $oDayData;
         }
         return $arrDayData;
     }
 
     /**
-     * Ïîëó÷èì ìàññèâ îáüåêòîâ îCurrentData äëÿ ñîõðàíåíèÿ
-     * äàííûõ ýòèõ îáüåêòîâ â áàçå äàííûõ
+     * ÐŸÐ¾Ð»ÑƒÑ‡Ð¸Ð¼ Ð¼Ð°ÑÑÐ¸Ð² Ð¾Ð±ÑŒÐµÐºÑ‚Ð¾Ð² Ð¾CurrentData Ð´Ð»Ñ ÑÐ¾Ñ…Ñ€Ð°Ð½ÐµÐ½Ð¸Ñ
+     * Ð´Ð°Ð½Ð½Ñ‹Ñ… ÑÑ‚Ð¸Ñ… Ð¾Ð±ÑŒÐµÐºÑ‚Ð¾Ð² Ð² Ð±Ð°Ð·Ðµ Ð´Ð°Ð½Ð½Ñ‹Ñ…
      *
-     * @param  array $aHistCurrentDataObjects   //Ìàññèâ îáüåêòîâ îHistCurrentData
+     * @param  array $aHistCurrentDataObjects   //ÐœÐ°ÑÑÐ¸Ð² Ð¾Ð±ÑŒÐµÐºÑ‚Ð¾Ð² Ð¾HistCurrentData
      *
-     * @return array                            //Ìàññèâ îáüåêòîâ îCurrentData
+     * @return array                            //ÐœÐ°ÑÑÐ¸Ð² Ð¾Ð±ÑŒÐµÐºÑ‚Ð¾Ð² Ð¾CurrentData
      */
     public function getCurrentDataObjects(array $aHistCurrentDataObjects) {
         $arrCurrentData = array();
         //--------------------------
         foreach ($aHistCurrentDataObjects as $histCurrentDataObject) {
-            //Ïîëó÷èì îáüåêò Model_Tags
+            //ÐŸÐ¾Ð»ÑƒÑ‡Ð¸Ð¼ Ð¾Ð±ÑŒÐµÐºÑ‚ Model_Tags
             $oTag = new Model_Tags();
-            //Ïîëó÷èì îáüåêò Model_CurrentData
+            //ÐŸÐ¾Ð»ÑƒÑ‡Ð¸Ð¼ Ð¾Ð±ÑŒÐµÐºÑ‚ Model_CurrentData
             $oCurrentData = new Model_CurrentData();
 
-            //Óñòàíîâèì äàííûå äëÿ îáüåêòà $oDayData
+            //Ð£ÑÑ‚Ð°Ð½Ð¾Ð²Ð¸Ð¼ Ð´Ð°Ð½Ð½Ñ‹Ðµ Ð´Ð»Ñ Ð¾Ð±ÑŒÐµÐºÑ‚Ð° $oDayData
             $tag = $histCurrentDataObject->source;
             $alias = myConfig::$arrCurrentTags[$tag];
             $oTag->alias = $alias;
             $oTag->find();
-            // Åñëè åñòü òàêàÿ ïîçèöèÿ â áàçå, çàïèøåì åå â ìàññèâ
+            // Ð•ÑÐ»Ð¸ ÐµÑÑ‚ÑŒ Ñ‚Ð°ÐºÐ°Ñ Ð¿Ð¾Ð·Ð¸Ñ†Ð¸Ñ Ð² Ð±Ð°Ð·Ðµ, Ð·Ð°Ð¿Ð¸ÑˆÐµÐ¼ ÐµÐµ Ð² Ð¼Ð°ÑÑÐ¸Ð²
             if ($oTag->id) {
                 $oCurrentData->ts = strBox::getCurrentDateTime();
                 $oCurrentData->tag_id = $oTag->id;
@@ -88,7 +88,7 @@ class Helper_HistController {
                 $oCurrentData->time_hist = strBox::getFormatDateTime($timeHist, "H:i:s");
                 $oCurrentData->value = $histCurrentDataObject->value;
 
-                //Ñîõðàíèì îáüåêò â ìàññèâå
+                //Ð¡Ð¾Ñ…Ñ€Ð°Ð½Ð¸Ð¼ Ð¾Ð±ÑŒÐµÐºÑ‚ Ð² Ð¼Ð°ÑÑÐ¸Ð²Ðµ
                 $arrCurrentData[] = $oCurrentData;
             }
         }
@@ -96,36 +96,36 @@ class Helper_HistController {
     }
 
     /**
-     * Ïîëó÷èì îáüåêò îCurrentValues äëÿ ñîõðàíåíèÿ
-     * äàííûõ â áàçå äàííûõ
+     * ÐŸÐ¾Ð»ÑƒÑ‡Ð¸Ð¼ Ð¾Ð±ÑŒÐµÐºÑ‚ Ð¾CurrentValues Ð´Ð»Ñ ÑÐ¾Ñ…Ñ€Ð°Ð½ÐµÐ½Ð¸Ñ
+     * Ð´Ð°Ð½Ð½Ñ‹Ñ… Ð² Ð±Ð°Ð·Ðµ Ð´Ð°Ð½Ð½Ñ‹Ñ…
      *
-     * @param  array $aHistCurrentDataObjects   //Ìàññèâ îáüåêòîâ îHistCurrentData
+     * @param  array $aHistCurrentDataObjects   //ÐœÐ°ÑÑÐ¸Ð² Ð¾Ð±ÑŒÐµÐºÑ‚Ð¾Ð² Ð¾HistCurrentData
      * @param  boolean $forDB                   // For DB
-     * @return Model_CurrentValues              //Îáüåêò $oCurrentValues
+     * @return Model_CurrentValues              //ÐžÐ±ÑŒÐµÐºÑ‚ $oCurrentValues
      */
     public function getCurrentValuesObjects(array $aHistCurrentDataObjects, $forDB = true) {
         //--------------------------
-        //Ïîëó÷èì îáüåêò Model_CurrentValues
+        //ÐŸÐ¾Ð»ÑƒÑ‡Ð¸Ð¼ Ð¾Ð±ÑŒÐµÐºÑ‚ Model_CurrentValues
         $oCurrentValues = new Model_CurrentValues();
-        // Óñòàíîâèì íåêîòîðûå ïîëÿ â îáüåêòå $oCurrentValues
+        // Ð£ÑÑ‚Ð°Ð½Ð¾Ð²Ð¸Ð¼ Ð½ÐµÐºÐ¾Ñ‚Ð¾Ñ€Ñ‹Ðµ Ð¿Ð¾Ð»Ñ Ð² Ð¾Ð±ÑŒÐµÐºÑ‚Ðµ $oCurrentValues
         $histCurrentDataObject = $aHistCurrentDataObjects[0];
         $oCurrentValues->ts = strBox::getCurrentDateTime();
         $timeHist = $histCurrentDataObject->time;
         $oCurrentValues->date_hist = strBox::getFormatDateTime($timeHist, "Y-m-d");
         $oCurrentValues->time_hist = strBox::getFormatDateTime($timeHist, "H:i:s");
-        // Óñòàíîâèì ïîëÿ name è value
+        // Ð£ÑÑ‚Ð°Ð½Ð¾Ð²Ð¸Ð¼ Ð¿Ð¾Ð»Ñ name Ð¸ value
         foreach ($aHistCurrentDataObjects as $histCurrentDataObject) {
-            //Óñòàíîâèì äàííûå äëÿ îáüåêòà $oDayData
+            //Ð£ÑÑ‚Ð°Ð½Ð¾Ð²Ð¸Ð¼ Ð´Ð°Ð½Ð½Ñ‹Ðµ Ð´Ð»Ñ Ð¾Ð±ÑŒÐµÐºÑ‚Ð° $oDayData
             $tag = $histCurrentDataObject->source;
             $alias = myConfig::$arrCurrentTags[$tag];
             $value = (string)$histCurrentDataObject->value;
 
             if($forDB){
-              //Ïîëó÷èì îáüåêò Model_Tags
+              //ÐŸÐ¾Ð»ÑƒÑ‡Ð¸Ð¼ Ð¾Ð±ÑŒÐµÐºÑ‚ Model_Tags
               $oTag = new Model_Tags();
               $oTag->alias = $alias;
               $oTag->find();
-              // Åñëè åñòü òàêàÿ ïîçèöèÿ â áàçå, çàïèøåì åå â ìàññèâ
+              // Ð•ÑÐ»Ð¸ ÐµÑÑ‚ÑŒ Ñ‚Ð°ÐºÐ°Ñ Ð¿Ð¾Ð·Ð¸Ñ†Ð¸Ñ Ð² Ð±Ð°Ð·Ðµ, Ð·Ð°Ð¿Ð¸ÑˆÐµÐ¼ ÐµÐµ Ð² Ð¼Ð°ÑÑÐ¸Ð²
               if ($oTag->id) {
                 $oCurrentValues->name .= $alias . ';';
                 $oCurrentValues->value .= $value . ';';
@@ -135,18 +135,18 @@ class Helper_HistController {
               $oCurrentValues->value .= $value . ';';
             }
         }
-        // Óáåðåì ïîñëåäíèé ðàçäåëèòåëü â èìåíàõ è â çíà÷åíèÿõ
+        // Ð£Ð±ÐµÑ€ÐµÐ¼ Ð¿Ð¾ÑÐ»ÐµÐ´Ð½Ð¸Ð¹ Ñ€Ð°Ð·Ð´ÐµÐ»Ð¸Ñ‚ÐµÐ»ÑŒ Ð² Ð¸Ð¼ÐµÐ½Ð°Ñ… Ð¸ Ð² Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸ÑÑ…
         $oCurrentValues->name = rtrim($oCurrentValues->name, ';');
         $oCurrentValues->value = rtrim($oCurrentValues->value, ';');
         return $oCurrentValues;
     }
 
     /**
-     * Óäàëèòü äóáëèðîâàííûå çàïèñè â áàçå äàííûõ
+     * Ð£Ð´Ð°Ð»Ð¸Ñ‚ÑŒ Ð´ÑƒÐ±Ð»Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð½Ñ‹Ðµ Ð·Ð°Ð¿Ð¸ÑÐ¸ Ð² Ð±Ð°Ð·Ðµ Ð´Ð°Ð½Ð½Ñ‹Ñ…
      *
-     * @param  array $aObjects   //Ìàññèâ îáüåêòîâ
+     * @param  array $aObjects   //ÐœÐ°ÑÑÐ¸Ð² Ð¾Ð±ÑŒÐµÐºÑ‚Ð¾Ð²
      *
-     * @return int              //Êîë. óäàëåííûõ çàïèñåé
+     * @return int              //ÐšÐ¾Ð». ÑƒÐ´Ð°Ð»ÐµÐ½Ð½Ñ‹Ñ… Ð·Ð°Ð¿Ð¸ÑÐµÐ¹
      */
     public function deleteDoubleRows_DayData(array $aObjects) {
         $count = 0;
@@ -154,7 +154,7 @@ class Helper_HistController {
         $date_hist = "";
         //--------------------------
         foreach ($aObjects as $oObject) {
-            //Óäàëèì äóáëèðîâàííûå çàïèñè â áàçå äàííûõ
+            //Ð£Ð´Ð°Ð»Ð¸Ð¼ Ð´ÑƒÐ±Ð»Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð½Ñ‹Ðµ Ð·Ð°Ð¿Ð¸ÑÐ¸ Ð² Ð±Ð°Ð·Ðµ Ð´Ð°Ð½Ð½Ñ‹Ñ…
             if ($name !== $oObject->name OR $date_hist !== $oObject->date_hist) {
                 $count += $oObject->deleteDouble();
                 $name = $oObject->name;
@@ -162,7 +162,7 @@ class Helper_HistController {
             }
         }
         if ($count) {
-            $msg = "WARNING... Óäàëåíî èç MySQL äóáëèðîâàííûõ çàïèñåé - $count";
+            $msg = "WARNING... Ð£Ð´Ð°Ð»ÐµÐ½Ð¾ Ð¸Ð· MySQL Ð´ÑƒÐ±Ð»Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð½Ñ‹Ñ… Ð·Ð°Ð¿Ð¸ÑÐµÐ¹ - $count";
             sysBox::setDebugInfo("warnings", array("message" => $msg));
             sysBox::printTXT($msg);
         }
@@ -170,11 +170,11 @@ class Helper_HistController {
     }
 
     /**
-     * Óäàëèòü äóáëèðîâàííûå çàïèñè â áàçå äàííûõ
+     * Ð£Ð´Ð°Ð»Ð¸Ñ‚ÑŒ Ð´ÑƒÐ±Ð»Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð½Ñ‹Ðµ Ð·Ð°Ð¿Ð¸ÑÐ¸ Ð² Ð±Ð°Ð·Ðµ Ð´Ð°Ð½Ð½Ñ‹Ñ…
      *
-     * @param  array $aObjects   //Ìàññèâ îáüåêòîâ
+     * @param  array $aObjects   //ÐœÐ°ÑÑÐ¸Ð² Ð¾Ð±ÑŒÐµÐºÑ‚Ð¾Ð²
      *
-     * @return int              //Êîë. óäàëåííûõ çàïèñåé
+     * @return int              //ÐšÐ¾Ð». ÑƒÐ´Ð°Ð»ÐµÐ½Ð½Ñ‹Ñ… Ð·Ð°Ð¿Ð¸ÑÐµÐ¹
      */
     public function deleteDoubleRows_CurrentData(array $aObjects) {
         $count = 0;
@@ -183,7 +183,7 @@ class Helper_HistController {
         $time_hist = "";
         //--------------------------
         foreach ($aObjects as $oObject) {
-            //Óäàëèì äóáëèðîâàííûå çàïèñè â áàçå äàííûõ
+            //Ð£Ð´Ð°Ð»Ð¸Ð¼ Ð´ÑƒÐ±Ð»Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð½Ñ‹Ðµ Ð·Ð°Ð¿Ð¸ÑÐ¸ Ð² Ð±Ð°Ð·Ðµ Ð´Ð°Ð½Ð½Ñ‹Ñ…
             if ($name !== $oObject->name OR
                     $date_hist !== $oObject->date_hist OR
                     $time_hist !== $oObject->time_hist) {
@@ -194,7 +194,7 @@ class Helper_HistController {
             }
         }
         if ($count) {
-            $msg = "WARNING... Óäàëåíî èç MySQL äóáëèðîâàííûõ çàïèñåé - $count";
+            $msg = "WARNING... Ð£Ð´Ð°Ð»ÐµÐ½Ð¾ Ð¸Ð· MySQL Ð´ÑƒÐ±Ð»Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð½Ñ‹Ñ… Ð·Ð°Ð¿Ð¸ÑÐµÐ¹ - $count";
             sysBox::setDebugInfo("warnings", array("message" => $msg));
             sysBox::printTXT($msg);
         }
