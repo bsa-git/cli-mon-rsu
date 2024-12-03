@@ -9,5 +9,5 @@ nbproject
 composer.lock
 data/logs/*
 data/logs/Errors/*
-test/data/logs/*
-test/data/logs/Errors/*
+test/logs/*
+test/logs/Errors/*
