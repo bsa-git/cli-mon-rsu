@@ -72,6 +72,8 @@ class Tags1 {
         "02PAR:02T2_2.PNT" => "02PAR_T2_2",
         "02PAR:02P2_2.PNT" => "02PAR_P2_2",
         "02PAR:02F2_2.PNT" => "02PAR_F2_2",
+        //PAR-1+2
+        "02SBS_OC:02PARG_KF.PNT" => "02PARG_KF",
         //VODA XOB
         "02VODA_XOB:02T1.PNT" => "02XOB_T1",
         "02VODA_XOB:02P4.PNT" => "02XOB_P4",
@@ -324,6 +326,8 @@ class Tags1 {
         "02PAR_T2_2" => array("value_unit" => "град.С", "scale_min" => 200, "scale_max" => 250),
         "02PAR_P2_2" => array("value_unit" => "кг/см2", "scale_min" => 0, "scale_max" => 25),
         "02PAR_F2_2" => array("value_unit" => "т/ч", "scale_min" => 20, "scale_max" => 30),
+        //PAR-1+2
+        "02PARG_KF" => array("value_unit" => "гкал/тмнг", "scale_min" => 0.5, "scale_max" => 2),
         //SKLAD
         "02SKLAD_01L26" => array("value_unit" => "м3", "scale_min" => 500, "scale_max" => 800),
         "02SKLAD_02L26" => array("value_unit" => "м3", "scale_min" => 1000, "scale_max" => 1500),
@@ -573,6 +577,8 @@ class Tags1 {
         "02PAR_T2_2" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02PAR_T2_2", "name_alias" => "T PAR-2", "tag_param" => "T", "name_param" => "Температура", "value_type" => "CURRENT", "value_unit" => "град.С", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 400, "comment" => "Температура ПАР16-2"),
         "02PAR_P2_2" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02PAR_P2_2", "name_alias" => "P PAR-2", "tag_param" => "P", "name_param" => "Давление", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 25, "comment" => "Давление ПАР16-2"),
         "02PAR_F2_2" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02PAR_F2_2", "name_alias" => "F PAR-2", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "т/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 80, "comment" => "Расход ПАР16-2"),
+        //PAR-1+2
+        "02PARG_KF" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02PARG_KF", "name_alias" => "KF PAR-1+2", "tag_param" => "KF", "name_param" => "Расходный коэф.", "value_type" => "CURRENT", "value_unit" => "гкал/тмнг", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 3, "comment" => "Расходный коэф. ПАР16-1+2"),
         //SKLAD
         "02SKLAD_01L26" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02SKLAD_01L26", "name_alias" => "L SKLAD-1", "tag_param" => "L", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "м3", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 1000, "comment" => "Уровень HNO3 склад 1 отд."),
         "02SKLAD_02L26" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02SKLAD_02L26", "name_alias" => "L SKLAD-1", "tag_param" => "L", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "м3", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 1800, "comment" => "Уровень HNO3 склад 2 отд."),
