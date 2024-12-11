@@ -72,7 +72,7 @@ class Tags1 {
         "02PAR:02T2_2.PNT" => "02PAR_T2_2",
         "02PAR:02P2_2.PNT" => "02PAR_P2_2",
         "02PAR:02F2_2.PNT" => "02PAR_F2_2",
-        //PAR-(1+2)
+        //PAR(1+2)
         "02SBS_OC:02PARG_KF2.PNT" => "02PARG_KF2",
         //VODA XOB
         "02VODA_XOB:02T1.PNT" => "02XOB_T1",
