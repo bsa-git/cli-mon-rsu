@@ -1,0 +1,1 @@
+.\php\php.exe .\public\index2.php "c=hist&a=stop_cycle&test=1"

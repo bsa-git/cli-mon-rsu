@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<DATAPACKET Version="2.0">
+<METADATA>
+<FIELDS>
+<FIELD FieldName="source" DisplayLabel="Позиция в истории" FieldType="String" FieldClass="THist"/>
+<FIELD FieldName="time" DisplayLabel="ДатаВремя в истории" FieldType="DateTime" FieldClass="THist"/>
+<FIELD FieldName="value" DisplayLabel="Значение в истории" FieldType="Float" FieldClass="THist"/>
+<FIELD FieldName="id" DisplayLabel="Уникальный код записи" FieldType="Integer" FieldClass="TDataBase"/>
+<FIELD FieldName="ts" DisplayLabel="Временная мента" FieldType="DateTime" FieldClass="TDataBase"/>
+<FIELD FieldName="tag_id" DisplayLabel="Уникальный код позиции" FieldType="Integer" FieldClass="TDataBase"/>
+<FIELD FieldName="name" DisplayLabel="Название позиции" FieldType="String" FieldClass="TDataBase"/>
+<FIELD FieldName="date_hist" DisplayLabel="Дата в истории" FieldType="Date" FieldClass="TDataBase"/>
+<FIELD FieldName="time_hist" DisplayLabel="Время в истории" FieldType="Time" FieldClass="TDataBase"/>
+<FIELD FieldName="value" DisplayLabel="Значение в истории" FieldType="Float" FieldClass="TDataBase"/>
+</FIELDS>
+</METADATA>
+<PARAMS/>
+<RESULTS>
+</RESULTS>
+<WARNINGS>
+</WARNINGS>
+<ROWHIST>
+</ROWHIST>
+<ROWDATA>
+</ROWDATA>
+<DEBUGS>
+</DEBUGS>
+</DATAPACKET>
