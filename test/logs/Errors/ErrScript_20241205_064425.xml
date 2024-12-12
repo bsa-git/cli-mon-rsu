@@ -1,2 +1,0 @@
-<?xml version="1.0" encoding="windows-1251"?>
-<data><Params><c>hist</c><a>current_values_cycle</a><hist>all</hist><test>1</test></Params><Result>ERR</Result><Message>MSG: Error the select of records from DB - 'tags'!#Request select the records from DB:#SELECT * FROM `tags` WHERE ()#</Message><MemoryUsage>Memory used by the script: 5.449 mb.</MemoryUsage></data>
