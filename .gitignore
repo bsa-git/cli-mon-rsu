@@ -1,1 +1,9 @@
-nbproject/*
+nbproject/
+test/logs/Errors/*
+!test/logs/Errors/README.md
+test/logs/*
+!test/logs/README.md
+test/scripts/*
+!test/scripts/README.md
+test/upload/*
+!test/upload/README.md
