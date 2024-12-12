@@ -6,4 +6,3 @@ test/logs/*
 test/scripts/*
 !test/scripts/README.md
 test/upload/*
-!test/upload/README.md
