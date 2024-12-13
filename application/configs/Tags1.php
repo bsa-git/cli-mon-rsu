@@ -89,6 +89,7 @@ class Tags1 {
 	"02SKLAD:02HNO3_R.PNT" => "02HNO3_R",
         //7 AGRs MNG OF HNO3
         "02SBS_OC:02HNO3_7AGR.PNT" => "02HNO3_7AGR",
+        "02SBS_OC:02AK_V_7AGR.PNT" => "02AK_V_7AGR",
         //VZ KIP
         "02SBS_OC:02PS10.PNT" => "02PS10",
         //AZVS
@@ -304,30 +305,30 @@ class Tags1 {
         //NH3
         "02NH3_T4" => array("value_unit" => "град.С", "scale_min" => 70, "scale_max" => 90),
         "02NH3_P4" => array("value_unit" => "кг/см2", "scale_min" => 2, "scale_max" => 3),
-        "02NH3_F4" => array("value_unit" => "м3/ч", "scale_min" => 3000, "scale_max" => 10000),
+        "02NH3_F4" => array("value_unit" => "м3/год", "scale_min" => 3000, "scale_max" => 10000),
         //PGAZ
         "02PGAZ_T16" => array("value_unit" => "град.С", "scale_min" => -5, "scale_max" => 10),
         "02PGAZ_P5" => array("value_unit" => "кг/см2", "scale_min" => 8, "scale_max" => 10),
-        "02PGAZ_F5" => array("value_unit" => "м3/ч", "scale_min" => 3000, "scale_max" => 6000),
+        "02PGAZ_F5" => array("value_unit" => "м3/год", "scale_min" => 3000, "scale_max" => 6000),
         "02PGAZ_R" => array("value_unit" => "кг/м3", "scale_min" => 0.65, "scale_max" => 1),
         "02PGAZ_CO2" => array("value_unit" => "%", "scale_min" => 0, "scale_max" => 1),
         "02PGAZ_N2" => array("value_unit" => "%", "scale_min" => 0, "scale_max" => 1),
         //JAM-1
         "02JAM_T21_1" => array("value_unit" => "град.С", "scale_min" => 0, "scale_max" => 10),
         "02JAM_P21_1" => array("value_unit" => "кг/см2", "scale_min" => 10, "scale_max" => 15), //10..15
-        "02JAM_F21_1" => array("value_unit" => "т/ч", "scale_min" => 5, "scale_max" => 15),
+        "02JAM_F21_1" => array("value_unit" => "т/год", "scale_min" => 5, "scale_max" => 15),
         //JAM-2
         "02JAM_T21_2" => array("value_unit" => "град.С", "scale_min" => 0, "scale_max" => 10),
         "02JAM_P21_2" => array("value_unit" => "кг/см2", "scale_min" => 10, "scale_max" => 15),
-        "02JAM_F21_2" => array("value_unit" => "т/ч", "scale_min" => 5, "scale_max" => 15),
+        "02JAM_F21_2" => array("value_unit" => "т/год", "scale_min" => 5, "scale_max" => 15),
         //PAR-1
         "02PAR_T2_1" => array("value_unit" => "град.С", "scale_min" => 200, "scale_max" => 250),
         "02PAR_P2_1" => array("value_unit" => "кг/см2", "scale_min" => 0, "scale_max" => 25),
-        "02PAR_F2_1" => array("value_unit" => "т/ч", "scale_min" => 20, "scale_max" => 30),
+        "02PAR_F2_1" => array("value_unit" => "т/год", "scale_min" => 20, "scale_max" => 30),
         //PAR-2
         "02PAR_T2_2" => array("value_unit" => "град.С", "scale_min" => 200, "scale_max" => 250),
         "02PAR_P2_2" => array("value_unit" => "кг/см2", "scale_min" => 0, "scale_max" => 25),
-        "02PAR_F2_2" => array("value_unit" => "т/ч", "scale_min" => 20, "scale_max" => 30),
+        "02PAR_F2_2" => array("value_unit" => "т/год", "scale_min" => 20, "scale_max" => 30),
         //PAR-(1+2)
         "02PARG_KF2" => array("value_unit" => "гкал/т", "scale_min" => 0.5, "scale_max" => 2),
         //SKLAD
@@ -336,11 +337,12 @@ class Tags1 {
         "02SKLAD_SUM" => array("value_unit" => "м3", "scale_min" => 1500, "scale_max" => 2300),
 	"02HNO3_R" => array("value_unit" => "т/м3", "scale_min" => 1.25, "scale_max" => 1.35),
         //7 AGRs MNG OF HNO3
-        "02HNO3_7AGR" => array("value_unit" => "т.мнг/ч", "scale_min" => 12, "scale_max" => 100),
+        "02HNO3_7AGR" => array("value_unit" => "т.мнг/год", "scale_min" => 12, "scale_max" => 100),
+        "02AK_V_7AGR" => array("value_unit" => "м3/год", "scale_min" => 10, "scale_max" => 150), 
         //VODA XOB
         "02XOB_T1" => array("value_unit" => "град.С", "scale_min" => 70, "scale_max" => 90),
         "02XOB_P4" => array("value_unit" => "кг/см2", "scale_min" => 5, "scale_max" => 8),
-        "02XOB_F1" => array("value_unit" => "м3/ч", "scale_min" => 150, "scale_max" => 200),
+        "02XOB_F1" => array("value_unit" => "м3/год", "scale_min" => 150, "scale_max" => 200),
         //VODA OB
         "02OB_T1_1" => array("value_unit" => "град.С", "scale_min" => 20, "scale_max" => 30),
         "02OB_T1_2" => array("value_unit" => "град.С", "scale_min" => 10, "scale_max" => 40),
@@ -350,18 +352,18 @@ class Tags1 {
         //AZVS
         "02P17" => array("value_unit" => "кг/см2", "scale_min" => 4, "scale_max" => 40),
         //M9
-        "02HNO3_F20_1" => array("value_unit" => "т/ч", "scale_min" => 40, "scale_max" => 70),
-        "02HNO3_F20_2" => array("value_unit" => "т/ч", "scale_min" => 40, "scale_max" => 70),
+        "02HNO3_F20_1" => array("value_unit" => "т/год", "scale_min" => 40, "scale_max" => 70),
+        "02HNO3_F20_2" => array("value_unit" => "т/год", "scale_min" => 40, "scale_max" => 70),
         "02HNO3_P20_1" => array("value_unit" => "кг/см2", "scale_min" => 5, "scale_max" => 15),
         "02HNO3_P20_2" => array("value_unit" => "кг/см2", "scale_min" => 5, "scale_max" => 15),
         "02HNO3_P22_1" => array("value_unit" => "кг/см2", "scale_min" => 5, "scale_max" => 12),
         "02HNO3_P22_2" => array("value_unit" => "кг/см2", "scale_min" => 5, "scale_max" => 12),
         "02HNO3_Q20" => array("value_unit" => "%", "scale_min" => 55, "scale_max" => 57),
         "02HNO3_T20" => array("value_unit" => "град.С", "scale_min" => 40, "scale_max" => 47),
-        "02HNO3_F20_2_FV" => array("value_unit" => "м3/ч", "scale_min" => 50, "scale_max" => 80),
-	"02HNO3_F20_1_FV" => array("value_unit" => "м3/ч", "scale_min" => 50, "scale_max" => 80),
-	"02HNO3_1_MNG" => array("value_unit" => "т.мнг/ч", "scale_min" => 40, "scale_max" => 80),
-	"02HNO3_2_MNG" => array("value_unit" => "т.мнг/ч", "scale_min" => 40, "scale_max" => 80),
+        "02HNO3_F20_2_FV" => array("value_unit" => "м3/год", "scale_min" => 50, "scale_max" => 80),
+	"02HNO3_F20_1_FV" => array("value_unit" => "м3/год", "scale_min" => 50, "scale_max" => 80),
+	"02HNO3_1_MNG" => array("value_unit" => "т.мнг/год", "scale_min" => 40, "scale_max" => 80),
+	"02HNO3_2_MNG" => array("value_unit" => "т.мнг/год", "scale_min" => 40, "scale_max" => 80),
 	"02T1010" => array("value_unit" => "град.С", "scale_min" => 20, "scale_max" => 50),
 	"02D1010" => array("value_unit" => "т/м3", "scale_min" => 1.3, "scale_max" => 1.4),
 	"02Q20_1_M9" => array("value_unit" => "%", "scale_min" => 50, "scale_max" => 58),
@@ -380,17 +382,17 @@ class Tags1 {
         //TS102
         "12TS102" => array("value_unit" => "град.С", "scale_min" => 800, "scale_max" => 1000),
         //F102
-        "12VZ_F102" => array("value_unit" => "м3/ч", "scale_min" => 40000, "scale_max" => 60000),
+        "12VZ_F102" => array("value_unit" => "м3/год", "scale_min" => 40000, "scale_max" => 60000),
         //F103
-        "12VZ_F103" => array("value_unit" => "м3/ч", "scale_min" => 10000, "scale_max" => 18000),
+        "12VZ_F103" => array("value_unit" => "м3/год", "scale_min" => 10000, "scale_max" => 18000),
         //F101
-        "12NH3_F101" => array("value_unit" => "м3/ч", "scale_min" => 5000, "scale_max" => 7000),
+        "12NH3_F101" => array("value_unit" => "м3/год", "scale_min" => 5000, "scale_max" => 7000),
         //F106
-        "12NH3_F106" => array("value_unit" => "м3/ч", "scale_min" => 100, "scale_max" => 140),
+        "12NH3_F106" => array("value_unit" => "м3/год", "scale_min" => 100, "scale_max" => 140),
         //F105
-        "12HNO3_F105" => array("value_unit" => "м3/ч", "scale_min" => 15, "scale_max" => 25),
+        "12HNO3_F105" => array("value_unit" => "м3/год", "scale_min" => 15, "scale_max" => 25),
         //F171
-        "12NG_F171" => array("value_unit" => "м3/ч", "scale_min" => 800, "scale_max" => 1000),
+        "12NG_F171" => array("value_unit" => "м3/год", "scale_min" => 800, "scale_max" => 1000),
         //EA_RD
         "12EA_RD" => array("value_unit" => "кВт", "scale_min" => 400, "scale_max" => 500),
 
@@ -406,17 +408,17 @@ class Tags1 {
         //TS102
         "22TS102" => array("value_unit" => "град.С", "scale_min" => 800, "scale_max" => 1000),
         //F102
-        "22VZ_F102" => array("value_unit" => "м3/ч", "scale_min" => 40000, "scale_max" => 60000),
+        "22VZ_F102" => array("value_unit" => "м3/год", "scale_min" => 40000, "scale_max" => 60000),
         //F103
-        "22VZ_F103" => array("value_unit" => "м3/ч", "scale_min" => 10000, "scale_max" => 18000),
+        "22VZ_F103" => array("value_unit" => "м3/год", "scale_min" => 10000, "scale_max" => 18000),
         //F101
-        "22NH3_F101" => array("value_unit" => "м3/ч", "scale_min" => 5000, "scale_max" => 7000),
+        "22NH3_F101" => array("value_unit" => "м3/год", "scale_min" => 5000, "scale_max" => 7000),
         //F106
-        "22NH3_F106" => array("value_unit" => "м3/ч", "scale_min" => 100, "scale_max" => 140),
+        "22NH3_F106" => array("value_unit" => "м3/год", "scale_min" => 100, "scale_max" => 140),
         //F105
-        "22HNO3_F105" => array("value_unit" => "м3/ч", "scale_min" => 15, "scale_max" => 25),
+        "22HNO3_F105" => array("value_unit" => "м3/год", "scale_min" => 15, "scale_max" => 25),
         //F171
-        "22NG_F171" => array("value_unit" => "м3/ч", "scale_min" => 800, "scale_max" => 1000),
+        "22NG_F171" => array("value_unit" => "м3/год", "scale_min" => 800, "scale_max" => 1000),
         //EA_RD
         "22EA_RD" => array("value_unit" => "кВт", "scale_min" => 400, "scale_max" => 500),
 
@@ -432,17 +434,17 @@ class Tags1 {
         //TS102
         "32TS102" => array("value_unit" => "град.С", "scale_min" => 800, "scale_max" => 1000),
         //F102
-        "32VZ_F102" => array("value_unit" => "м3/ч", "scale_min" => 40000, "scale_max" => 60000),
+        "32VZ_F102" => array("value_unit" => "м3/год", "scale_min" => 40000, "scale_max" => 60000),
         //F103
-        "32VZ_F103" => array("value_unit" => "м3/ч", "scale_min" => 10000, "scale_max" => 18000),
+        "32VZ_F103" => array("value_unit" => "м3/год", "scale_min" => 10000, "scale_max" => 18000),
         //F101
-        "32NH3_F101" => array("value_unit" => "м3/ч", "scale_min" => 5000, "scale_max" => 7000),
+        "32NH3_F101" => array("value_unit" => "м3/год", "scale_min" => 5000, "scale_max" => 7000),
         //F106
-        "32NH3_F106" => array("value_unit" => "м3/ч", "scale_min" => 100, "scale_max" => 140),
+        "32NH3_F106" => array("value_unit" => "м3/год", "scale_min" => 100, "scale_max" => 140),
         //F105
-        "32HNO3_F105" => array("value_unit" => "м3/ч", "scale_min" => 15, "scale_max" => 25),
+        "32HNO3_F105" => array("value_unit" => "м3/год", "scale_min" => 15, "scale_max" => 25),
         //F171
-        "32NG_F171" => array("value_unit" => "м3/ч", "scale_min" => 800, "scale_max" => 1000),
+        "32NG_F171" => array("value_unit" => "м3/год", "scale_min" => 800, "scale_max" => 1000),
         //EA_RD
         "32EA_RD" => array("value_unit" => "кВт", "scale_min" => 400, "scale_max" => 500),
 
@@ -458,17 +460,17 @@ class Tags1 {
         //TS102
         "42TS102" => array("value_unit" => "град.С", "scale_min" => 800, "scale_max" => 1000),
         //F102
-        "42VZ_F102" => array("value_unit" => "м3/ч", "scale_min" => 40000, "scale_max" => 60000),
+        "42VZ_F102" => array("value_unit" => "м3/год", "scale_min" => 40000, "scale_max" => 60000),
         //F103
-        "42VZ_F103" => array("value_unit" => "м3/ч", "scale_min" => 10000, "scale_max" => 18000),
+        "42VZ_F103" => array("value_unit" => "м3/год", "scale_min" => 10000, "scale_max" => 18000),
         //F101
-        "42NH3_F101" => array("value_unit" => "м3/ч", "scale_min" => 5000, "scale_max" => 7000),
+        "42NH3_F101" => array("value_unit" => "м3/год", "scale_min" => 5000, "scale_max" => 7000),
         //F106
-        "42NH3_F106" => array("value_unit" => "м3/ч", "scale_min" => 100, "scale_max" => 140),
+        "42NH3_F106" => array("value_unit" => "м3/год", "scale_min" => 100, "scale_max" => 140),
         //F105
-        "42HNO3_F105" => array("value_unit" => "м3/ч", "scale_min" => 15, "scale_max" => 25),
+        "42HNO3_F105" => array("value_unit" => "м3/год", "scale_min" => 15, "scale_max" => 25),
         //F171
-        "42NG_F171" => array("value_unit" => "м3/ч", "scale_min" => 800, "scale_max" => 1000),
+        "42NG_F171" => array("value_unit" => "м3/год", "scale_min" => 800, "scale_max" => 1000),
         //EA_RD
         "42EA_RD" => array("value_unit" => "кВт", "scale_min" => 400, "scale_max" => 500),
 
@@ -484,17 +486,17 @@ class Tags1 {
         //TS102
         "52TS102" => array("value_unit" => "град.С", "scale_min" => 800, "scale_max" => 1000),
         //F102
-        "52VZ_F102" => array("value_unit" => "м3/ч", "scale_min" => 40000, "scale_max" => 60000),
+        "52VZ_F102" => array("value_unit" => "м3/год", "scale_min" => 40000, "scale_max" => 60000),
         //F103
-        "52VZ_F103" => array("value_unit" => "м3/ч", "scale_min" => 10000, "scale_max" => 18000),
+        "52VZ_F103" => array("value_unit" => "м3/год", "scale_min" => 10000, "scale_max" => 18000),
         //F101
-        "52NH3_F101" => array("value_unit" => "м3/ч", "scale_min" => 5000, "scale_max" => 7000),
+        "52NH3_F101" => array("value_unit" => "м3/год", "scale_min" => 5000, "scale_max" => 7000),
         //F106
-        "52NH3_F106" => array("value_unit" => "м3/ч", "scale_min" => 100, "scale_max" => 140),
+        "52NH3_F106" => array("value_unit" => "м3/год", "scale_min" => 100, "scale_max" => 140),
         //F105
-        "52HNO3_F105" => array("value_unit" => "м3/ч", "scale_min" => 15, "scale_max" => 25),
+        "52HNO3_F105" => array("value_unit" => "м3/год", "scale_min" => 15, "scale_max" => 25),
         //F171
-        "52NG_F171" => array("value_unit" => "м3/ч", "scale_min" => 800, "scale_max" => 1000),
+        "52NG_F171" => array("value_unit" => "м3/год", "scale_min" => 800, "scale_max" => 1000),
         //EA_RD
         "52EA_RD" => array("value_unit" => "кВт", "scale_min" => 400, "scale_max" => 500),
 
@@ -510,17 +512,17 @@ class Tags1 {
         //TS102
         "62TS102" => array("value_unit" => "град.С", "scale_min" => 800, "scale_max" => 1000),
         //F102
-        "62VZ_F102" => array("value_unit" => "м3/ч", "scale_min" => 40000, "scale_max" => 60000),
+        "62VZ_F102" => array("value_unit" => "м3/год", "scale_min" => 40000, "scale_max" => 60000),
         //F103
-        "62VZ_F103" => array("value_unit" => "м3/ч", "scale_min" => 10000, "scale_max" => 18000),
+        "62VZ_F103" => array("value_unit" => "м3/год", "scale_min" => 10000, "scale_max" => 18000),
         //F101
-        "62NH3_F101" => array("value_unit" => "м3/ч", "scale_min" => 5000, "scale_max" => 7000),
+        "62NH3_F101" => array("value_unit" => "м3/год", "scale_min" => 5000, "scale_max" => 7000),
         //F106
-        "62NH3_F106" => array("value_unit" => "м3/ч", "scale_min" => 100, "scale_max" => 140),
+        "62NH3_F106" => array("value_unit" => "м3/год", "scale_min" => 100, "scale_max" => 140),
         //F105
-        "62HNO3_F105" => array("value_unit" => "м3/ч", "scale_min" => 15, "scale_max" => 25),
+        "62HNO3_F105" => array("value_unit" => "м3/год", "scale_min" => 15, "scale_max" => 25),
         //F171
-        "62NG_F171" => array("value_unit" => "м3/ч", "scale_min" => 800, "scale_max" => 1000),
+        "62NG_F171" => array("value_unit" => "м3/год", "scale_min" => 800, "scale_max" => 1000),
         //EA_RD
         "62EA_RD" => array("value_unit" => "кВт", "scale_min" => 400, "scale_max" => 500),
 
@@ -536,17 +538,17 @@ class Tags1 {
         //TS102
         "72TS102" => array("value_unit" => "град.С", "scale_min" => 800, "scale_max" => 1000),
         //F102
-        "72VZ_F102" => array("value_unit" => "м3/ч", "scale_min" => 40000, "scale_max" => 60000),
+        "72VZ_F102" => array("value_unit" => "м3/год", "scale_min" => 40000, "scale_max" => 60000),
         //F103
-        "72VZ_F103" => array("value_unit" => "м3/ч", "scale_min" => 10000, "scale_max" => 18000),
+        "72VZ_F103" => array("value_unit" => "м3/год", "scale_min" => 10000, "scale_max" => 18000),
         //F101
-        "72NH3_F101" => array("value_unit" => "м3/ч", "scale_min" => 5000, "scale_max" => 7000),
+        "72NH3_F101" => array("value_unit" => "м3/год", "scale_min" => 5000, "scale_max" => 7000),
         //F106
-        "72NH3_F106" => array("value_unit" => "м3/ч", "scale_min" => 100, "scale_max" => 140),
+        "72NH3_F106" => array("value_unit" => "м3/год", "scale_min" => 100, "scale_max" => 140),
         //F105
-        "72HNO3_F105" => array("value_unit" => "м3/ч", "scale_min" => 15, "scale_max" => 25),
+        "72HNO3_F105" => array("value_unit" => "м3/год", "scale_min" => 15, "scale_max" => 25),
         //F171
-        "72NG_F171" => array("value_unit" => "м3/ч", "scale_min" => 800, "scale_max" => 1000),
+        "72NG_F171" => array("value_unit" => "м3/год", "scale_min" => 800, "scale_max" => 1000),
         //EA_RD
         "72EA_RD" => array("value_unit" => "кВт", "scale_min" => 400, "scale_max" => 500),
     );
@@ -559,250 +561,251 @@ class Tags1 {
         //============ OC =========//
         //NH3
         "02NH3_T4" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02NH3_T4", "name_alias" => "T NH3", "tag_param" => "T", "name_param" => "Температура", "value_type" => "CURRENT", "value_unit" => "град.С", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 200, "comment" => "Температура газ. NH3"),
-        "02NH3_P4" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02NH3_P4", "name_alias" => "P NH3", "tag_param" => "P", "name_param" => "Давление", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 10, "comment" => "Давление газ. NH3"),
-        "02NH3_F4" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02NH3_F4", "name_alias" => "F NH3", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "м3/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 20000, "comment" => "Расход газ. NH3"),
+        "02NH3_P4" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02NH3_P4", "name_alias" => "P NH3", "tag_param" => "P", "name_param" => "Тиск", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 10, "comment" => "Тиск газ. NH3"),
+        "02NH3_F4" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02NH3_F4", "name_alias" => "F NH3", "tag_param" => "F", "name_param" => "Витрата", "value_type" => "CURRENT", "value_unit" => "м3/год", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 20000, "comment" => "Витрата газ. NH3"),
         //PGAZ
         "02PGAZ_T16" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02PGAZ_T16", "name_alias" => "T PGAZ", "tag_param" => "T", "name_param" => "Температура", "value_type" => "CURRENT", "value_unit" => "град.С", "scale_min" => -50, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 50, "comment" => "Температура природного газа"),
-        "02PGAZ_P5" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02PGAZ_P5", "name_alias" => "P PGAZ", "tag_param" => "P", "name_param" => "Давление", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 16, "comment" => "Давление природного газа"),
-        "02PGAZ_F5" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02PGAZ_F5", "name_alias" => "F PGAZ", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "м3/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 12500, "comment" => "Расход природного газа"),
+        "02PGAZ_P5" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02PGAZ_P5", "name_alias" => "P PGAZ", "tag_param" => "P", "name_param" => "Тиск", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 16, "comment" => "Тиск природного газа"),
+        "02PGAZ_F5" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02PGAZ_F5", "name_alias" => "F PGAZ", "tag_param" => "F", "name_param" => "Витрата", "value_type" => "CURRENT", "value_unit" => "м3/год", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 12500, "comment" => "Витрата природного газа"),
         //JAM-1
         "02JAM_T21_1" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02JAM_T21_1", "name_alias" => "T JAM-1", "tag_param" => "T", "name_param" => "Температура", "value_type" => "CURRENT", "value_unit" => "град.С", "scale_min" => -50, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 50, "comment" => "Температура ЖА-1"),
-        "02JAM_P21_1" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02JAM_P21_1", "name_alias" => "P JAM-1", "tag_param" => "P", "name_param" => "Давление", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 25, "comment" => "Давление ЖА-1"),
-        "02JAM_F21_1" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02JAM_F21_1", "name_alias" => "F JAM-1", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "т/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 25, "comment" => "Расход ЖА-1"),
+        "02JAM_P21_1" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02JAM_P21_1", "name_alias" => "P JAM-1", "tag_param" => "P", "name_param" => "Тиск", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 25, "comment" => "Тиск ЖА-1"),
+        "02JAM_F21_1" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02JAM_F21_1", "name_alias" => "F JAM-1", "tag_param" => "F", "name_param" => "Витрата", "value_type" => "CURRENT", "value_unit" => "т/год", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 25, "comment" => "Витрата ЖА-1"),
         //JAM-2
         "02JAM_T21_2" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02JAM_T21_2", "name_alias" => "T JAM-1", "tag_param" => "T", "name_param" => "Температура", "value_type" => "CURRENT", "value_unit" => "град.С", "scale_min" => -50, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 50, "comment" => "Температура ЖА-1"),
-        "02JAM_P21_2" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02JAM_P21_2", "name_alias" => "P JAM-1", "tag_param" => "P", "name_param" => "Давление", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 25, "comment" => "Давление ЖА-1"),
-        "02JAM_F21_2" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02JAM_F21_2", "name_alias" => "F JAM-1", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "т/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 25, "comment" => "Расход ЖА-1"),
+        "02JAM_P21_2" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02JAM_P21_2", "name_alias" => "P JAM-1", "tag_param" => "P", "name_param" => "Тиск", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 25, "comment" => "Тиск ЖА-1"),
+        "02JAM_F21_2" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02JAM_F21_2", "name_alias" => "F JAM-1", "tag_param" => "F", "name_param" => "Витрата", "value_type" => "CURRENT", "value_unit" => "т/год", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 25, "comment" => "Витрата ЖА-1"),
         //PAR-1
         "02PAR_T2_1" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02PAR_T2_1", "name_alias" => "T PAR-1", "tag_param" => "T", "name_param" => "Температура", "value_type" => "CURRENT", "value_unit" => "град.С", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 400, "comment" => "Температура ПАР16-1"),
-        "02PAR_P2_1" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02PAR_P2_1", "name_alias" => "P PAR-1", "tag_param" => "P", "name_param" => "Давление", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 25, "comment" => "Давление ПАР16-1"),
-        "02PAR_F2_1" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02PAR_F2_1", "name_alias" => "F PAR-1", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "т/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 80, "comment" => "Расход ПАР16-1"),
+        "02PAR_P2_1" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02PAR_P2_1", "name_alias" => "P PAR-1", "tag_param" => "P", "name_param" => "Тиск", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 25, "comment" => "Тиск ПАР16-1"),
+        "02PAR_F2_1" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02PAR_F2_1", "name_alias" => "F PAR-1", "tag_param" => "F", "name_param" => "Витрата", "value_type" => "CURRENT", "value_unit" => "т/год", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 80, "comment" => "Витрата ПАР16-1"),
         //PAR-2
         "02PAR_T2_2" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02PAR_T2_2", "name_alias" => "T PAR-2", "tag_param" => "T", "name_param" => "Температура", "value_type" => "CURRENT", "value_unit" => "град.С", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 400, "comment" => "Температура ПАР16-2"),
-        "02PAR_P2_2" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02PAR_P2_2", "name_alias" => "P PAR-2", "tag_param" => "P", "name_param" => "Давление", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 25, "comment" => "Давление ПАР16-2"),
-        "02PAR_F2_2" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02PAR_F2_2", "name_alias" => "F PAR-2", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "т/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 80, "comment" => "Расход ПАР16-2"),
+        "02PAR_P2_2" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02PAR_P2_2", "name_alias" => "P PAR-2", "tag_param" => "P", "name_param" => "Тиск", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 25, "comment" => "Тиск ПАР16-2"),
+        "02PAR_F2_2" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02PAR_F2_2", "name_alias" => "F PAR-2", "tag_param" => "F", "name_param" => "Витрата", "value_type" => "CURRENT", "value_unit" => "т/год", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 80, "comment" => "Витрата ПАР16-2"),
         //PAR-(1+2)
-        "02PARG_KF2" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02PARG_KF2", "name_alias" => "KF PAR-1+2", "tag_param" => "KF", "name_param" => "Расход.коэф", "value_type" => "CURRENT", "value_unit" => "гкал/т", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 3, "comment" => "Расход.коэф ПАР16"),
+        "02PARG_KF2" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02PARG_KF2", "name_alias" => "KF PAR-1+2", "tag_param" => "KF", "name_param" => "Витрата.коэф", "value_type" => "CURRENT", "value_unit" => "гкал/т", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 3, "comment" => "Витрата.коэф ПАР16"),
         //SKLAD
-        "02SKLAD_01L26" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02SKLAD_01L26", "name_alias" => "L SKLAD-1", "tag_param" => "L", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "м3", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 1000, "comment" => "Уровень HNO3 склад 1 отд."),
-        "02SKLAD_02L26" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02SKLAD_02L26", "name_alias" => "L SKLAD-1", "tag_param" => "L", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "м3", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 1800, "comment" => "Уровень HNO3 склад 2 отд."),
-        "02SKLAD_SUM" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02SKLAD_SUM", "name_alias" => "L SKLAD-1", "tag_param" => "L", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "м3", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 2800, "comment" => "Уровень HNO3 склад 1,2 отд."),
-	"02SKLAD_HNO3_R" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02SKLAD_HNO3_R", "name_alias" => "R HNO3", "tag_param" => "L", "name_param" => "Плотность", "value_type" => "CURRENT", "value_unit" => "т/м3", "scale_min" => 1.2, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 1.4, "comment" => "Плотность HNO3 склад 2 отд."),
+        "02SKLAD_01L26" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02SKLAD_01L26", "name_alias" => "L SKLAD-1", "tag_param" => "L", "name_param" => "Витрата", "value_type" => "CURRENT", "value_unit" => "м3", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 1000, "comment" => "Рівень HNO3 склад 1 отд."),
+        "02SKLAD_02L26" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02SKLAD_02L26", "name_alias" => "L SKLAD-1", "tag_param" => "L", "name_param" => "Витрата", "value_type" => "CURRENT", "value_unit" => "м3", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 1800, "comment" => "Рівень HNO3 склад 2 отд."),
+        "02SKLAD_SUM" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02SKLAD_SUM", "name_alias" => "L SKLAD-1", "tag_param" => "L", "name_param" => "Витрата", "value_type" => "CURRENT", "value_unit" => "м3", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 2800, "comment" => "Рівень HNO3 склад 1,2 отд."),
+	"02SKLAD_HNO3_R" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02SKLAD_HNO3_R", "name_alias" => "R HNO3", "tag_param" => "L", "name_param" => "Щільність", "value_type" => "CURRENT", "value_unit" => "т/м3", "scale_min" => 1.2, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 1.4, "comment" => "Щільність HNO3 склад 2 отд."),
         //7 AGRs MNG OF HNO3
-        "02HNO3_7AGR" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02HNO3_7AGR", "name_alias" => "F HNO3 1-7", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "т.мнг/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 126, "comment" => "Расход HNO3 (мнг.) 1...7 агр "),
+        "02HNO3_7AGR" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02HNO3_7AGR", "name_alias" => "F HNO3 1-7", "tag_param" => "F", "name_param" => "Витрата", "value_type" => "CURRENT", "value_unit" => "т.мнг/год", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 126, "comment" => "Витрата HNO3 (мнг.) 1...7 агр "),
+        "02AK_V_7AGR" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02AK_V_7AGR", "name_alias" => "F HNO3 1-7", "tag_param" => "F", "name_param" => "Витрата", "value_type" => "CURRENT", "value_unit" => "м3/год", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 175, "comment" => "Витрата HNO3 (м3) 1...7 агр "),
         //M9(Кислота в цех М9)
-        "02HNO3_Q20" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02HNO3_Q20", "name_alias" => "Q HNO3", "tag_param" => "Q", "name_param" => "Концентрация", "value_type" => "CURRENT", "value_unit" => "%", "scale_min" => 45, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 60, "comment" => "Концентрация HNO3 в хранилище"),
+        "02HNO3_Q20" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02HNO3_Q20", "name_alias" => "Q HNO3", "tag_param" => "Q", "name_param" => "Концентрація", "value_type" => "CURRENT", "value_unit" => "%", "scale_min" => 45, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 60, "comment" => "Концентрація HNO3 в хранилище"),
         "02HNO3_T20" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02HNO3_T20", "name_alias" => "T HNO3", "tag_param" => "T", "name_param" => "Температура", "value_type" => "CURRENT", "value_unit" => "град.С", "scale_min" => -50, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 60, "comment" => "Температура HNO3 в хранилище"),
-        "02HNO3_P20_1" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02HNO3_P20_1", "name_alias" => "P HNO3 20/1", "tag_param" => "P", "name_param" => "Давление", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 20, "comment" => "Давление HNO3 в 1 кол."),
-        "02HNO3_P20_2" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02HNO3_P20_2", "name_alias" => "P HNO3 20/2", "tag_param" => "P", "name_param" => "Давление", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 20, "comment" => "Давление HNO3 в 2 кол."),
-        "02HNO3_P22_1" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02HNO3_P22_1", "name_alias" => "P HNO3 22/1", "tag_param" => "P", "name_param" => "Давление", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 16, "comment" => "Давление HNO3 в 1 кол. М9"),
-        "02HNO3_P22_2" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02HNO3_P22_2", "name_alias" => "P HNO3 22/2", "tag_param" => "P", "name_param" => "Давление", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 16, "comment" => "Давление HNO3 в 2 кол. М9"),
-        "02HNO3_F20_1" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02HNO3_F20_1", "name_alias" => "F HNO3 20/1", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "т/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 100, "comment" => "Расход HNO3 в 1 кол."),
-        "02HNO3_F20_2" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02HNO3_F20_2", "name_alias" => "F HNO3 20/2", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "т/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 100, "comment" => "Расход HNO3 в 2 кол."),
-        "02HNO3_F20_2_FV" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02HNO3_F20_2_FV", "name_alias" => "F HNO3 20/2_V", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "м3/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 100, "comment" => "Расход HNO3 в 2 кол."),
-        "02HNO3_F20_1_FV" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02HNO3_F20_1_FV", "name_alias" => "F HNO3 20/1_V", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "м3/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 100, "comment" => "Расход HNO3 в 1 кол."),
-	"02HNO3_1_MNG" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02HNO3_1_MNG", "name_alias" => "F HNO3 20/1_MNG", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "т.мнг/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 125, "comment" => "Расход HNO3 в 1 кол."),
-	"02HNO3_2_MNG" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02HNO3_2_MNG", "name_alias" => "F HNO3 20/2_MNG", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "т.мнг/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 125, "comment" => "Расход HNO3 в 2 кол."),
+        "02HNO3_P20_1" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02HNO3_P20_1", "name_alias" => "P HNO3 20/1", "tag_param" => "P", "name_param" => "Тиск", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 20, "comment" => "Тиск HNO3 в 1 кол."),
+        "02HNO3_P20_2" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02HNO3_P20_2", "name_alias" => "P HNO3 20/2", "tag_param" => "P", "name_param" => "Тиск", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 20, "comment" => "Тиск HNO3 в 2 кол."),
+        "02HNO3_P22_1" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02HNO3_P22_1", "name_alias" => "P HNO3 22/1", "tag_param" => "P", "name_param" => "Тиск", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 16, "comment" => "Тиск HNO3 в 1 кол. М9"),
+        "02HNO3_P22_2" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02HNO3_P22_2", "name_alias" => "P HNO3 22/2", "tag_param" => "P", "name_param" => "Тиск", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 16, "comment" => "Тиск HNO3 в 2 кол. М9"),
+        "02HNO3_F20_1" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02HNO3_F20_1", "name_alias" => "F HNO3 20/1", "tag_param" => "F", "name_param" => "Витрата", "value_type" => "CURRENT", "value_unit" => "т/год", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 100, "comment" => "Витрата HNO3 в 1 кол."),
+        "02HNO3_F20_2" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02HNO3_F20_2", "name_alias" => "F HNO3 20/2", "tag_param" => "F", "name_param" => "Витрата", "value_type" => "CURRENT", "value_unit" => "т/год", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 100, "comment" => "Витрата HNO3 в 2 кол."),
+        "02HNO3_F20_2_FV" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02HNO3_F20_2_FV", "name_alias" => "F HNO3 20/2_V", "tag_param" => "F", "name_param" => "Витрата", "value_type" => "CURRENT", "value_unit" => "м3/год", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 100, "comment" => "Витрата HNO3 в 2 кол."),
+        "02HNO3_F20_1_FV" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02HNO3_F20_1_FV", "name_alias" => "F HNO3 20/1_V", "tag_param" => "F", "name_param" => "Витрата", "value_type" => "CURRENT", "value_unit" => "м3/год", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 100, "comment" => "Витрата HNO3 в 1 кол."),
+	"02HNO3_1_MNG" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02HNO3_1_MNG", "name_alias" => "F HNO3 20/1_MNG", "tag_param" => "F", "name_param" => "Витрата", "value_type" => "CURRENT", "value_unit" => "т.мнг/год", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 125, "comment" => "Витрата HNO3 в 1 кол."),
+	"02HNO3_2_MNG" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02HNO3_2_MNG", "name_alias" => "F HNO3 20/2_MNG", "tag_param" => "F", "name_param" => "Витрата", "value_type" => "CURRENT", "value_unit" => "т.мнг/год", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 125, "comment" => "Витрата HNO3 в 2 кол."),
 	"02T1010" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02T1010", "name_alias" => "T HNO3 1010", "tag_param" => "T", "name_param" => "Температура", "value_type" => "CURRENT", "value_unit" => "град.С", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 100, "comment" => "Температура HNO3 в 1 кол."),
-	"02D1010" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02D1010", "name_alias" => "D HNO3 1010", "tag_param" => "D", "name_param" => "Плотность", "value_type" => "CURRENT", "value_unit" => "т/м3", "scale_min" => 1.3, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 1.4, "comment" => "Плотность HNO3 в 1 кол."),
-	"02Q20_1_M9" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02Q20_1_M9", "name_alias" => "Q HNO3 20/1", "tag_param" => "Q", "name_param" => "Концентрация", "value_type" => "CURRENT", "value_unit" => "%", "scale_min" => 45, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 60, "comment" => "Концентрация HNO3 в 1 кол."),
+	"02D1010" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02D1010", "name_alias" => "D HNO3 1010", "tag_param" => "D", "name_param" => "Щільність", "value_type" => "CURRENT", "value_unit" => "т/м3", "scale_min" => 1.3, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 1.4, "comment" => "Щільність HNO3 в 1 кол."),
+	"02Q20_1_M9" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02Q20_1_M9", "name_alias" => "Q HNO3 20/1", "tag_param" => "Q", "name_param" => "Концентрація", "value_type" => "CURRENT", "value_unit" => "%", "scale_min" => 45, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 60, "comment" => "Концентрація HNO3 в 1 кол."),
 	"02T2010" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02T2010", "name_alias" => "T HNO3 2010", "tag_param" => "T", "name_param" => "Температура", "value_type" => "CURRENT", "value_unit" => "град.С", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 100, "comment" => "Температура HNO3 в 2 кол."),
-	"02D2010" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02D2010", "name_alias" => "D HNO3 2010", "tag_param" => "D", "name_param" => "Плотность", "value_type" => "CURRENT", "value_unit" => "т/м3", "scale_min" => 1.3, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 1.4, "comment" => "Плотность HNO3 в 2 кол."),
-	"02Q20_2_M9" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02Q20_2_M9", "name_alias" => "Q HNO3 20/2", "tag_param" => "Q", "name_param" => "Концентрация", "value_type" => "CURRENT", "value_unit" => "%", "scale_min" => 45, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 60, "comment" => "Концентрация HNO3 в 2 кол."),	
+	"02D2010" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02D2010", "name_alias" => "D HNO3 2010", "tag_param" => "D", "name_param" => "Щільність", "value_type" => "CURRENT", "value_unit" => "т/м3", "scale_min" => 1.3, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 1.4, "comment" => "Щільність HNO3 в 2 кол."),
+	"02Q20_2_M9" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02Q20_2_M9", "name_alias" => "Q HNO3 20/2", "tag_param" => "Q", "name_param" => "Концентрація", "value_type" => "CURRENT", "value_unit" => "%", "scale_min" => 45, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 60, "comment" => "Концентрація HNO3 в 2 кол."),	
 	//VODA XOB
-        "02XOB_T1" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02XOB_T1", "name_alias" => "T XOB", "tag_param" => "T", "name_param" => "Температура", "value_type" => "CURRENT", "value_unit" => "град.С", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 100, "comment" => "Температура хим.очищенной воды"),
-        "02XOB_P4" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02XOB_P4", "name_alias" => "P XOB", "tag_param" => "P", "name_param" => "Давление", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 10, "comment" => "Давление хим.очищенной воды"),
-        "02XOB_F1" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02XOB_F1", "name_alias" => "F XOB", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "м3/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 260, "comment" => "Расход хим.очищенной воды"),
+        "02XOB_T1" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02XOB_T1", "name_alias" => "T XOB", "tag_param" => "T", "name_param" => "Температура", "value_type" => "CURRENT", "value_unit" => "град.С", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 100, "comment" => "Температура хім.очищений воды"),
+        "02XOB_P4" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02XOB_P4", "name_alias" => "P XOB", "tag_param" => "P", "name_param" => "Тиск", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 10, "comment" => "Тиск хім.очищений воды"),
+        "02XOB_F1" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02XOB_F1", "name_alias" => "F XOB", "tag_param" => "F", "name_param" => "Витрата", "value_type" => "CURRENT", "value_unit" => "м3/год", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 260, "comment" => "Витрата хім.очищений воды"),
         //VODA OB
-        "02OB_T1_1" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02OB_T1_1", "name_alias" => "T OB-1", "tag_param" => "T", "name_param" => "Температура", "value_type" => "CURRENT", "value_unit" => "град.С", "scale_min" => -50, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 50, "comment" => "Температура оборотной воды 1"),
-        "02OB_T1_2" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02OB_T1_2", "name_alias" => "T OB-2", "tag_param" => "T", "name_param" => "Температура", "value_type" => "CURRENT", "value_unit" => "град.С", "scale_min" => -50, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 50, "comment" => "Температура Ооборотной воды 2"),
-        "02OB_P5_1" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02OB_P5_1", "name_alias" => "P OB", "tag_param" => "P", "name_param" => "Давление", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 10, "comment" => "Давление оборотной воды"),
+        "02OB_T1_1" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02OB_T1_1", "name_alias" => "T OB-1", "tag_param" => "T", "name_param" => "Температура", "value_type" => "CURRENT", "value_unit" => "град.С", "scale_min" => -50, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 50, "comment" => "Температура оборотний воды 1"),
+        "02OB_T1_2" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02OB_T1_2", "name_alias" => "T OB-2", "tag_param" => "T", "name_param" => "Температура", "value_type" => "CURRENT", "value_unit" => "град.С", "scale_min" => -50, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 50, "comment" => "Температура Ооборотний воды 2"),
+        "02OB_P5_1" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02OB_P5_1", "name_alias" => "P OB", "tag_param" => "P", "name_param" => "Тиск", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 10, "comment" => "Тиск оборотний воды"),
         //VZ KIP
-        "02PS10" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02PS10", "name_alias" => "P VZ-KIP", "tag_param" => "P", "name_param" => "Давление", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 10, "comment" => "Давление воздуха КИП"),
-        //AZVS(Азото водородная смесь в цех)
-        "02P17" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02P17", "name_alias" => "P AZVS", "tag_param" => "P", "name_param" => "Давление", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 40, "comment" => "Азото водородная смесь в цех"),
+        "02PS10" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02PS10", "name_alias" => "P VZ-KIP", "tag_param" => "P", "name_param" => "Тиск", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 10, "comment" => "Тиск повітря КИП"),
+        //AZVS(Азото воднева суміш в цех)
+        "02P17" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "02P17", "name_alias" => "P AZVS", "tag_param" => "P", "name_param" => "Тиск", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 40, "comment" => "Азото воднева суміш в цех"),
         
         //============ AGR 1/2 =========//
         //PS-180
-        "12VZ_PS180" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "12VZ_PS180", "name_alias" => "P VZ KOMR", "tag_param" => "P", "name_param" => "Давление", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 3, "comment" => "Давление воздуха из компрессора"),
+        "12VZ_PS180" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "12VZ_PS180", "name_alias" => "P VZ KOMR", "tag_param" => "P", "name_param" => "Тиск", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 3, "comment" => "Тиск повітря з компресора"),
         //P181
-        "12VZ_P181" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "12VZ_P181", "name_alias" => "P VZ NAGN", "tag_param" => "P", "name_param" => "Давление", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 10, "comment" => "Давление воздуха за нагнетателем"),
+        "12VZ_P181" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "12VZ_P181", "name_alias" => "P VZ NAGN", "tag_param" => "P", "name_param" => "Тиск", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 10, "comment" => "Тиск повітря за нагнітачем"),
         //P127A
-        "12VZ_P127A" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "12VZ_P127A", "name_alias" => "P VZ SMES", "tag_param" => "P", "name_param" => "Давление", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 10, "comment" => "Давление воздуха в смеситель"),
+        "12VZ_P127A" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "12VZ_P127A", "name_alias" => "P VZ SMES", "tag_param" => "P", "name_param" => "Тиск", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 10, "comment" => "Тиск повітря в змішувач"),
         //TS174
-        "12VZ_TS174" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "12VZ_TS174", "name_alias" => "T VZ TURB", "tag_param" => "T", "name_param" => "Температура", "value_type" => "CURRENT", "value_unit" => "град.С", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 1100, "comment" => "Температура воздуха перед турбиной"),
+        "12VZ_TS174" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "12VZ_TS174", "name_alias" => "T VZ TURB", "tag_param" => "T", "name_param" => "Температура", "value_type" => "CURRENT", "value_unit" => "град.С", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 1100, "comment" => "Температура повітря перед турбіною"),
         //TS102
-        "12TS102" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "12TS102", "name_alias" => "T SETKY", "tag_param" => "T", "name_param" => "Температура", "value_type" => "CURRENT", "value_unit" => "град.С", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 1100, "comment" => "Температура под сетками в КА"),
+        "12TS102" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "12TS102", "name_alias" => "T SETKY", "tag_param" => "T", "name_param" => "Температура", "value_type" => "CURRENT", "value_unit" => "град.С", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 1100, "comment" => "Температура під сітками в КА"),
         //F102
-        "12VZ_F102" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "12VZ_F102", "name_alias" => "F VZ SMES", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "м3/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 60000, "comment" => "Расход воздуха в смеситель"),
+        "12VZ_F102" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "12VZ_F102", "name_alias" => "F VZ SMES", "tag_param" => "F", "name_param" => "Витрата", "value_type" => "CURRENT", "value_unit" => "м3/год", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 60000, "comment" => "Витрата повітря в змішувач"),
         //F103
-        "12VZ_F103" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "12VZ_F103", "name_alias" => "F VZ DOB", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "м3/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 20000, "comment" => "Расход добавочного воздуха"),
+        "12VZ_F103" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "12VZ_F103", "name_alias" => "F VZ DOB", "tag_param" => "F", "name_param" => "Витрата", "value_type" => "CURRENT", "value_unit" => "м3/год", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 20000, "comment" => "Витрата додаткового повітря"),
         //F101
-        "12NH3_F101" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "12NH3_F101", "name_alias" => "F NH3 SMES", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "м3/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 8000, "comment" => "Расход NH3 в смеситель"),
+        "12NH3_F101" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "12NH3_F101", "name_alias" => "F NH3 SMES", "tag_param" => "F", "name_param" => "Витрата", "value_type" => "CURRENT", "value_unit" => "м3/год", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 8000, "comment" => "Витрата NH3 в змішувач"),
         //F106
-        "12NH3_F106" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "12NH3_F106", "name_alias" => "F NH3 PCO", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "м3/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 160, "comment" => "Расход NH3 в РСО"),
+        "12NH3_F106" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "12NH3_F106", "name_alias" => "F NH3 PCO", "tag_param" => "F", "name_param" => "Витрата", "value_type" => "CURRENT", "value_unit" => "м3/год", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 160, "comment" => "Витрата NH3 в РСО"),
         //F105
-        "12HNO3_F105" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "12HNO3_F105", "name_alias" => "F HNO3", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "м3/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 25, "comment" => "Расход кислоты с агрегата"),
+        "12HNO3_F105" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "12HNO3_F105", "name_alias" => "F HNO3", "tag_param" => "F", "name_param" => "Витрата", "value_type" => "CURRENT", "value_unit" => "м3/год", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 25, "comment" => "Витрата кислоти з агрегату"),
         //F171
-        "12NG_F171" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "12NG_F171", "name_alias" => "F NG UKST", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "м3/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 2000, "comment" => "Расход ПГ в УКСТ"),
+        "12NG_F171" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "12NG_F171", "name_alias" => "F NG UKST", "tag_param" => "F", "name_param" => "Витрата", "value_type" => "CURRENT", "value_unit" => "м3/год", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 2000, "comment" => "Витрата ПГ в УКСТ"),
         //EA_RD
-        "12EA_RD" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "12EA_RD", "name_alias" => "VT EA RD", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "кВт", "scale_min" => -1500, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 1500, "comment" => "Мощность РД"),
+        "12EA_RD" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "12EA_RD", "name_alias" => "VT EA RD", "tag_param" => "S", "name_param" => "Потужність", "value_type" => "CURRENT", "value_unit" => "кВт", "scale_min" => -1500, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 1500, "comment" => "Потужність РД"),
         
         //============ AGR 2/2 =========//
         //PS-180
-        "22VZ_PS180" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "22VZ_PS180", "name_alias" => "P VZ KOMR", "tag_param" => "P", "name_param" => "Давление", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 3, "comment" => "Давление воздуха из компрессора"),
+        "22VZ_PS180" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "22VZ_PS180", "name_alias" => "P VZ KOMR", "tag_param" => "P", "name_param" => "Тиск", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 3, "comment" => "Тиск повітря з компресора"),
         //P181
-        "22VZ_P181" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "22VZ_P181", "name_alias" => "P VZ NAGN", "tag_param" => "P", "name_param" => "Давление", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 10, "comment" => "Давление воздуха за нагнетателем"),
+        "22VZ_P181" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "22VZ_P181", "name_alias" => "P VZ NAGN", "tag_param" => "P", "name_param" => "Тиск", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 10, "comment" => "Тиск повітря за нагнітачем"),
         //P127A
-        "22VZ_P127A" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "22VZ_P127A", "name_alias" => "P VZ SMES", "tag_param" => "P", "name_param" => "Давление", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 10, "comment" => "Давление воздуха в смеситель"),
+        "22VZ_P127A" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "22VZ_P127A", "name_alias" => "P VZ SMES", "tag_param" => "P", "name_param" => "Тиск", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 10, "comment" => "Тиск повітря в змішувач"),
         //TS174
-        "22VZ_TS174" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "22VZ_TS174", "name_alias" => "T VZ TURB", "tag_param" => "T", "name_param" => "Температура", "value_type" => "CURRENT", "value_unit" => "град.С", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 1100, "comment" => "Температура воздуха перед турбиной"),
+        "22VZ_TS174" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "22VZ_TS174", "name_alias" => "T VZ TURB", "tag_param" => "T", "name_param" => "Температура", "value_type" => "CURRENT", "value_unit" => "град.С", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 1100, "comment" => "Температура повітря перед турбіною"),
         //TS102
-        "22TS102" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "22TS102", "name_alias" => "T SETKY", "tag_param" => "T", "name_param" => "Температура", "value_type" => "CURRENT", "value_unit" => "град.С", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 1100, "comment" => "Температура под сетками в КА"),
+        "22TS102" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "22TS102", "name_alias" => "T SETKY", "tag_param" => "T", "name_param" => "Температура", "value_type" => "CURRENT", "value_unit" => "град.С", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 1100, "comment" => "Температура під сітками в КА"),
         //F102
-        "22VZ_F102" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "22VZ_F102", "name_alias" => "F VZ SMES", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "м3/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 60000, "comment" => "Расход воздуха в смеситель"),
+        "22VZ_F102" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "22VZ_F102", "name_alias" => "F VZ SMES", "tag_param" => "F", "name_param" => "Витрата", "value_type" => "CURRENT", "value_unit" => "м3/год", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 60000, "comment" => "Витрата повітря в змішувач"),
         //F103
-        "22VZ_F103" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "22VZ_F103", "name_alias" => "F VZ DOB", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "м3/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 20000, "comment" => "Расход добавочного воздуха"),
+        "22VZ_F103" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "22VZ_F103", "name_alias" => "F VZ DOB", "tag_param" => "F", "name_param" => "Витрата", "value_type" => "CURRENT", "value_unit" => "м3/год", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 20000, "comment" => "Витрата додаткового повітря"),
         //F101
-        "22NH3_F101" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "22NH3_F101", "name_alias" => "F NH3 SMES", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "м3/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 8000, "comment" => "Расход NH3 в смеситель"),
+        "22NH3_F101" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "22NH3_F101", "name_alias" => "F NH3 SMES", "tag_param" => "F", "name_param" => "Витрата", "value_type" => "CURRENT", "value_unit" => "м3/год", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 8000, "comment" => "Витрата NH3 в змішувач"),
         //F106
-        "22NH3_F106" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "22NH3_F106", "name_alias" => "F NH3 PCO", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "м3/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 160, "comment" => "Расход NH3 в РСО"),
+        "22NH3_F106" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "22NH3_F106", "name_alias" => "F NH3 PCO", "tag_param" => "F", "name_param" => "Витрата", "value_type" => "CURRENT", "value_unit" => "м3/год", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 160, "comment" => "Витрата NH3 в РСО"),
         //F105
-        "22HNO3_F105" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "22HNO3_F105", "name_alias" => "F HNO3", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "м3/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 25, "comment" => "Расход кислоты с агрегата"),
+        "22HNO3_F105" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "22HNO3_F105", "name_alias" => "F HNO3", "tag_param" => "F", "name_param" => "Витрата", "value_type" => "CURRENT", "value_unit" => "м3/год", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 25, "comment" => "Витрата кислоти з агрегату"),
         //F171
-        "22NG_F171" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "22NG_F171", "name_alias" => "F NG UKST", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "м3/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 2000, "comment" => "Расход ПГ в УКСТ"),
+        "22NG_F171" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "22NG_F171", "name_alias" => "F NG UKST", "tag_param" => "F", "name_param" => "Витрата", "value_type" => "CURRENT", "value_unit" => "м3/год", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 2000, "comment" => "Витрата ПГ в УКСТ"),
         //EA_RD
-        "22EA_RD" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "22EA_RD", "name_alias" => "VT EA RD", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "кВт", "scale_min" => -1500, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 1500, "comment" => "Мощность РД"),
+        "22EA_RD" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "22EA_RD", "name_alias" => "VT EA RD", "tag_param" => "S", "name_param" => "Витрата", "value_type" => "CURRENT", "value_unit" => "кВт", "scale_min" => -1500, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 1500, "comment" => "Потужність РД"),
         
         //============ AGR 3/2 =========//
         //PS-180
-        "32VZ_PS180" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "32VZ_PS180", "name_alias" => "P VZ KOMR", "tag_param" => "P", "name_param" => "Давление", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 3, "comment" => "Давление воздуха из компрессора"),
+        "32VZ_PS180" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "32VZ_PS180", "name_alias" => "P VZ KOMR", "tag_param" => "P", "name_param" => "Тиск", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 3, "comment" => "Тиск повітря з компресора"),
         //P181
-        "32VZ_P181" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "32VZ_P181", "name_alias" => "P VZ NAGN", "tag_param" => "P", "name_param" => "Давление", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 10, "comment" => "Давление воздуха за нагнетателем"),
+        "32VZ_P181" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "32VZ_P181", "name_alias" => "P VZ NAGN", "tag_param" => "P", "name_param" => "Тиск", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 10, "comment" => "Тиск повітря за нагнітачем"),
         //P127A
-        "32VZ_P127A" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "32VZ_P127A", "name_alias" => "P VZ SMES", "tag_param" => "P", "name_param" => "Давление", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 10, "comment" => "Давление воздуха в смеситель"),
+        "32VZ_P127A" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "32VZ_P127A", "name_alias" => "P VZ SMES", "tag_param" => "P", "name_param" => "Тиск", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 10, "comment" => "Тиск повітря в змішувач"),
         //TS174
-        "32VZ_TS174" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "32VZ_TS174", "name_alias" => "T VZ TURB", "tag_param" => "T", "name_param" => "Температура", "value_type" => "CURRENT", "value_unit" => "град.С", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 1100, "comment" => "Температура воздуха перед турбиной"),
+        "32VZ_TS174" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "32VZ_TS174", "name_alias" => "T VZ TURB", "tag_param" => "T", "name_param" => "Температура", "value_type" => "CURRENT", "value_unit" => "град.С", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 1100, "comment" => "Температура повітря перед турбіною"),
         //TS102
-        "32TS102" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "32TS102", "name_alias" => "T SETKY", "tag_param" => "T", "name_param" => "Температура", "value_type" => "CURRENT", "value_unit" => "град.С", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 1100, "comment" => "Температура под сетками в КА"),
+        "32TS102" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "32TS102", "name_alias" => "T SETKY", "tag_param" => "T", "name_param" => "Температура", "value_type" => "CURRENT", "value_unit" => "град.С", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 1100, "comment" => "Температура під сітками в КА"),
         //F102
-        "32VZ_F102" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "32VZ_F102", "name_alias" => "F VZ SMES", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "м3/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 60000, "comment" => "Расход воздуха в смеситель"),
+        "32VZ_F102" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "32VZ_F102", "name_alias" => "F VZ SMES", "tag_param" => "F", "name_param" => "Витрата", "value_type" => "CURRENT", "value_unit" => "м3/год", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 60000, "comment" => "Витрата повітря в змішувач"),
         //F103
-        "32VZ_F103" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "32VZ_F103", "name_alias" => "F VZ DOB", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "м3/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 20000, "comment" => "Расход добавочного воздуха"),
+        "32VZ_F103" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "32VZ_F103", "name_alias" => "F VZ DOB", "tag_param" => "F", "name_param" => "Витрата", "value_type" => "CURRENT", "value_unit" => "м3/год", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 20000, "comment" => "Витрата додаткового повітря"),
         //F101
-        "32NH3_F101" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "32NH3_F101", "name_alias" => "F NH3 SMES", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "м3/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 8000, "comment" => "Расход NH3 в смеситель"),
+        "32NH3_F101" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "32NH3_F101", "name_alias" => "F NH3 SMES", "tag_param" => "F", "name_param" => "Витрата", "value_type" => "CURRENT", "value_unit" => "м3/год", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 8000, "comment" => "Витрата NH3 в змішувач"),
         //F106
-        "32NH3_F106" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "32NH3_F106", "name_alias" => "F NH3 PCO", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "м3/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 160, "comment" => "Расход NH3 в РСО"),
+        "32NH3_F106" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "32NH3_F106", "name_alias" => "F NH3 PCO", "tag_param" => "F", "name_param" => "Витрата", "value_type" => "CURRENT", "value_unit" => "м3/год", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 160, "comment" => "Витрата NH3 в РСО"),
         //F105
-        "32HNO3_F105" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "32HNO3_F105", "name_alias" => "F HNO3", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "м3/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 25, "comment" => "Расход кислоты с агрегата"),
+        "32HNO3_F105" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "32HNO3_F105", "name_alias" => "F HNO3", "tag_param" => "F", "name_param" => "Витрата", "value_type" => "CURRENT", "value_unit" => "м3/год", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 25, "comment" => "Витрата кислоти з агрегату"),
         //F171
-        "32NG_F171" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "32NG_F171", "name_alias" => "F NG UKST", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "м3/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 2000, "comment" => "Расход ПГ в УКСТ"),
+        "32NG_F171" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "32NG_F171", "name_alias" => "F NG UKST", "tag_param" => "F", "name_param" => "Витрата", "value_type" => "CURRENT", "value_unit" => "м3/год", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 2000, "comment" => "Витрата ПГ в УКСТ"),
         //EA_RD
-        "32EA_RD" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "32EA_RD", "name_alias" => "VT EA RD", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "кВт", "scale_min" => -1500, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 1500, "comment" => "Мощность РД"),
+        "32EA_RD" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "32EA_RD", "name_alias" => "VT EA RD", "tag_param" => "S", "name_param" => "Витрата", "value_type" => "CURRENT", "value_unit" => "кВт", "scale_min" => -1500, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 1500, "comment" => "Потужність РД"),
         
         //============ AGR 4/2 =========//
         //PS-180
-        "42VZ_PS180" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "42VZ_PS180", "name_alias" => "P VZ KOMR", "tag_param" => "P", "name_param" => "Давление", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 3, "comment" => "Давление воздуха из компрессора"),
+        "42VZ_PS180" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "42VZ_PS180", "name_alias" => "P VZ KOMR", "tag_param" => "P", "name_param" => "Тиск", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 3, "comment" => "Тиск повітря з компресора"),
         //P181
-        "42VZ_P181" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "42VZ_P181", "name_alias" => "P VZ NAGN", "tag_param" => "P", "name_param" => "Давление", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 10, "comment" => "Давление воздуха за нагнетателем"),
+        "42VZ_P181" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "42VZ_P181", "name_alias" => "P VZ NAGN", "tag_param" => "P", "name_param" => "Тиск", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 10, "comment" => "Тиск повітря за нагнітачем"),
         //P127A
-        "42VZ_P127A" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "42VZ_P127A", "name_alias" => "P VZ SMES", "tag_param" => "P", "name_param" => "Давление", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 10, "comment" => "Давление воздуха в смеситель"),
+        "42VZ_P127A" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "42VZ_P127A", "name_alias" => "P VZ SMES", "tag_param" => "P", "name_param" => "Тиск", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 10, "comment" => "Тиск повітря в змішувач"),
         //TS174
-        "42VZ_TS174" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "42VZ_TS174", "name_alias" => "T VZ TURB", "tag_param" => "T", "name_param" => "Температура", "value_type" => "CURRENT", "value_unit" => "град.С", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 1100, "comment" => "Температура воздуха перед турбиной"),
+        "42VZ_TS174" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "42VZ_TS174", "name_alias" => "T VZ TURB", "tag_param" => "T", "name_param" => "Температура", "value_type" => "CURRENT", "value_unit" => "град.С", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 1100, "comment" => "Температура повітря перед турбіною"),
         //TS102
-        "42TS102" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "42TS102", "name_alias" => "T SETKY", "tag_param" => "T", "name_param" => "Температура", "value_type" => "CURRENT", "value_unit" => "град.С", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 1100, "comment" => "Температура под сетками в КА"),
+        "42TS102" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "42TS102", "name_alias" => "T SETKY", "tag_param" => "T", "name_param" => "Температура", "value_type" => "CURRENT", "value_unit" => "град.С", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 1100, "comment" => "Температура під сітками в КА"),
         //F102
-        "42VZ_F102" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "42VZ_F102", "name_alias" => "F VZ SMES", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "м3/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 60000, "comment" => "Расход воздуха в смеситель"),
+        "42VZ_F102" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "42VZ_F102", "name_alias" => "F VZ SMES", "tag_param" => "F", "name_param" => "Витрата", "value_type" => "CURRENT", "value_unit" => "м3/год", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 60000, "comment" => "Витрата повітря в змішувач"),
         //F103
-        "42VZ_F103" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "42VZ_F103", "name_alias" => "F VZ DOB", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "м3/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 20000, "comment" => "Расход добавочного воздуха"),
+        "42VZ_F103" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "42VZ_F103", "name_alias" => "F VZ DOB", "tag_param" => "F", "name_param" => "Витрата", "value_type" => "CURRENT", "value_unit" => "м3/год", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 20000, "comment" => "Витрата додаткового повітря"),
         //F101
-        "42NH3_F101" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "42NH3_F101", "name_alias" => "F NH3 SMES", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "м3/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 8000, "comment" => "Расход NH3 в смеситель"),
+        "42NH3_F101" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "42NH3_F101", "name_alias" => "F NH3 SMES", "tag_param" => "F", "name_param" => "Витрата", "value_type" => "CURRENT", "value_unit" => "м3/год", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 8000, "comment" => "Витрата NH3 в змішувач"),
         //F106
-        "42NH3_F106" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "42NH3_F106", "name_alias" => "F NH3 PCO", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "м3/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 160, "comment" => "Расход NH3 в РСО"),
+        "42NH3_F106" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "42NH3_F106", "name_alias" => "F NH3 PCO", "tag_param" => "F", "name_param" => "Витрата", "value_type" => "CURRENT", "value_unit" => "м3/год", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 160, "comment" => "Витрата NH3 в РСО"),
         //F105
-        "42HNO3_F105" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "42HNO3_F105", "name_alias" => "F HNO3", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "м3/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 25, "comment" => "Расход кислоты с агрегата"),
+        "42HNO3_F105" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "42HNO3_F105", "name_alias" => "F HNO3", "tag_param" => "F", "name_param" => "Витрата", "value_type" => "CURRENT", "value_unit" => "м3/год", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 25, "comment" => "Витрата кислоти з агрегату"),
         //F171
-        "42NG_F171" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "42NG_F171", "name_alias" => "F NG UKST", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "м3/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 2000, "comment" => "Расход ПГ в УКСТ"),
+        "42NG_F171" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "42NG_F171", "name_alias" => "F NG UKST", "tag_param" => "F", "name_param" => "Витрата", "value_type" => "CURRENT", "value_unit" => "м3/год", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 2000, "comment" => "Витрата ПГ в УКСТ"),
         //EA_RD
-        "42EA_RD" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "42EA_RD", "name_alias" => "VT EA RD", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "кВт", "scale_min" => -1500, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 1500, "comment" => "Мощность РД"),
+        "42EA_RD" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "42EA_RD", "name_alias" => "VT EA RD", "tag_param" => "S", "name_param" => "Витрата", "value_type" => "CURRENT", "value_unit" => "кВт", "scale_min" => -1500, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 1500, "comment" => "Потужність РД"),
         
         //============ AGR 5/2 =========//
         //PS-180
-        "52VZ_PS180" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "52VZ_PS180", "name_alias" => "P VZ KOMR", "tag_param" => "P", "name_param" => "Давление", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 3, "comment" => "Давление воздуха из компрессора"),
+        "52VZ_PS180" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "52VZ_PS180", "name_alias" => "P VZ KOMR", "tag_param" => "P", "name_param" => "Тиск", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 3, "comment" => "Тиск повітря з компресора"),
         //P181
-        "52VZ_P181" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "52VZ_P181", "name_alias" => "P VZ NAGN", "tag_param" => "P", "name_param" => "Давление", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 10, "comment" => "Давление воздуха за нагнетателем"),
+        "52VZ_P181" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "52VZ_P181", "name_alias" => "P VZ NAGN", "tag_param" => "P", "name_param" => "Тиск", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 10, "comment" => "Тиск повітря за нагнітачем"),
         //P127A
-        "52VZ_P127A" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "52VZ_P127A", "name_alias" => "P VZ SMES", "tag_param" => "P", "name_param" => "Давление", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 10, "comment" => "Давление воздуха в смеситель"),
+        "52VZ_P127A" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "52VZ_P127A", "name_alias" => "P VZ SMES", "tag_param" => "P", "name_param" => "Тиск", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 10, "comment" => "Тиск повітря в змішувач"),
         //TS174
-        "52VZ_TS174" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "52VZ_TS174", "name_alias" => "T VZ TURB", "tag_param" => "T", "name_param" => "Температура", "value_type" => "CURRENT", "value_unit" => "град.С", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 1100, "comment" => "Температура воздуха перед турбиной"),
+        "52VZ_TS174" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "52VZ_TS174", "name_alias" => "T VZ TURB", "tag_param" => "T", "name_param" => "Температура", "value_type" => "CURRENT", "value_unit" => "град.С", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 1100, "comment" => "Температура повітря перед турбіною"),
         //TS102
-        "52TS102" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "52TS102", "name_alias" => "T SETKY", "tag_param" => "T", "name_param" => "Температура", "value_type" => "CURRENT", "value_unit" => "град.С", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 1100, "comment" => "Температура под сетками в КА"),
+        "52TS102" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "52TS102", "name_alias" => "T SETKY", "tag_param" => "T", "name_param" => "Температура", "value_type" => "CURRENT", "value_unit" => "град.С", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 1100, "comment" => "Температура під сітками в КА"),
         //F102
-        "52VZ_F102" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "52VZ_F102", "name_alias" => "F VZ SMES", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "м3/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 60000, "comment" => "Расход воздуха в смеситель"),
+        "52VZ_F102" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "52VZ_F102", "name_alias" => "F VZ SMES", "tag_param" => "F", "name_param" => "Витрата", "value_type" => "CURRENT", "value_unit" => "м3/год", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 60000, "comment" => "Витрата повітря в змішувач"),
         //F103
-        "52VZ_F103" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "52VZ_F103", "name_alias" => "F VZ DOB", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "м3/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 20000, "comment" => "Расход добавочного воздуха"),
+        "52VZ_F103" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "52VZ_F103", "name_alias" => "F VZ DOB", "tag_param" => "F", "name_param" => "Витрата", "value_type" => "CURRENT", "value_unit" => "м3/год", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 20000, "comment" => "Витрата додаткового повітря"),
         //F101
-        "52NH3_F101" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "52NH3_F101", "name_alias" => "F NH3 SMES", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "м3/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 8000, "comment" => "Расход NH3 в смеситель"),
+        "52NH3_F101" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "52NH3_F101", "name_alias" => "F NH3 SMES", "tag_param" => "F", "name_param" => "Витрата", "value_type" => "CURRENT", "value_unit" => "м3/год", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 8000, "comment" => "Витрата NH3 в змішувач"),
         //F106
-        "52NH3_F106" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "52NH3_F106", "name_alias" => "F NH3 PCO", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "м3/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 160, "comment" => "Расход NH3 в РСО"),
+        "52NH3_F106" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "52NH3_F106", "name_alias" => "F NH3 PCO", "tag_param" => "F", "name_param" => "Витрата", "value_type" => "CURRENT", "value_unit" => "м3/год", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 160, "comment" => "Витрата NH3 в РСО"),
         //F105
-        "52HNO3_F105" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "52HNO3_F105", "name_alias" => "F HNO3", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "м3/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 25, "comment" => "Расход кислоты с агрегата"),
+        "52HNO3_F105" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "52HNO3_F105", "name_alias" => "F HNO3", "tag_param" => "F", "name_param" => "Витрата", "value_type" => "CURRENT", "value_unit" => "м3/год", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 25, "comment" => "Витрата кислоти з агрегату"),
         //F171
-        "52NG_F171" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "52NG_F171", "name_alias" => "F NG UKST", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "м3/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 2000, "comment" => "Расход ПГ в УКСТ"),
+        "52NG_F171" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "52NG_F171", "name_alias" => "F NG UKST", "tag_param" => "F", "name_param" => "Витрата", "value_type" => "CURRENT", "value_unit" => "м3/год", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 2000, "comment" => "Витрата ПГ в УКСТ"),
         //EA_RD
-        "52EA_RD" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "52EA_RD", "name_alias" => "VT EA RD", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "кВт", "scale_min" => -1500, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 1500, "comment" => "Мощность РД"),
+        "52EA_RD" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "52EA_RD", "name_alias" => "VT EA RD", "tag_param" => "S", "name_param" => "Витрата", "value_type" => "CURRENT", "value_unit" => "кВт", "scale_min" => -1500, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 1500, "comment" => "Потужність РД"),
         
         //============ AGR 6/2 =========//
         //PS-180
-        "62VZ_PS180" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "62VZ_PS180", "name_alias" => "P VZ KOMR", "tag_param" => "P", "name_param" => "Давление", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 3, "comment" => "Давление воздуха из компрессора"),
+        "62VZ_PS180" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "62VZ_PS180", "name_alias" => "P VZ KOMR", "tag_param" => "P", "name_param" => "Тиск", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 3, "comment" => "Тиск повітря з компресора"),
         //P181
-        "62VZ_P181" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "62VZ_P181", "name_alias" => "P VZ NAGN", "tag_param" => "P", "name_param" => "Давление", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 10, "comment" => "Давление воздуха за нагнетателем"),
+        "62VZ_P181" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "62VZ_P181", "name_alias" => "P VZ NAGN", "tag_param" => "P", "name_param" => "Тиск", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 10, "comment" => "Тиск повітря за нагнітачем"),
         //P127A
-        "62VZ_P127A" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "62VZ_P127A", "name_alias" => "P VZ SMES", "tag_param" => "P", "name_param" => "Давление", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 10, "comment" => "Давление воздуха в смеситель"),
+        "62VZ_P127A" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "62VZ_P127A", "name_alias" => "P VZ SMES", "tag_param" => "P", "name_param" => "Тиск", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 10, "comment" => "Тиск повітря в змішувач"),
         //TS174
-        "62VZ_TS174" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "62VZ_TS174", "name_alias" => "T VZ TURB", "tag_param" => "T", "name_param" => "Температура", "value_type" => "CURRENT", "value_unit" => "град.С", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 1100, "comment" => "Температура воздуха перед турбиной"),
+        "62VZ_TS174" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "62VZ_TS174", "name_alias" => "T VZ TURB", "tag_param" => "T", "name_param" => "Температура", "value_type" => "CURRENT", "value_unit" => "град.С", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 1100, "comment" => "Температура повітря перед турбіною"),
         //TS102
-        "62TS102" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "62TS102", "name_alias" => "T SETKY", "tag_param" => "T", "name_param" => "Температура", "value_type" => "CURRENT", "value_unit" => "град.С", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 1100, "comment" => "Температура под сетками в КА"),
+        "62TS102" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "62TS102", "name_alias" => "T SETKY", "tag_param" => "T", "name_param" => "Температура", "value_type" => "CURRENT", "value_unit" => "град.С", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 1100, "comment" => "Температура під сітками в КА"),
         //F102
-        "62VZ_F102" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "62VZ_F102", "name_alias" => "F VZ SMES", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "м3/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 60000, "comment" => "Расход воздуха в смеситель"),
+        "62VZ_F102" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "62VZ_F102", "name_alias" => "F VZ SMES", "tag_param" => "F", "name_param" => "Витрата", "value_type" => "CURRENT", "value_unit" => "м3/год", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 60000, "comment" => "Витрата повітря в змішувач"),
         //F103
-        "62VZ_F103" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "62VZ_F103", "name_alias" => "F VZ DOB", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "м3/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 20000, "comment" => "Расход добавочного воздуха"),
+        "62VZ_F103" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "62VZ_F103", "name_alias" => "F VZ DOB", "tag_param" => "F", "name_param" => "Витрата", "value_type" => "CURRENT", "value_unit" => "м3/год", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 20000, "comment" => "Витрата додаткового повітря"),
         //F101
-        "62NH3_F101" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "62NH3_F101", "name_alias" => "F NH3 SMES", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "м3/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 8000, "comment" => "Расход NH3 в смеситель"),
+        "62NH3_F101" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "62NH3_F101", "name_alias" => "F NH3 SMES", "tag_param" => "F", "name_param" => "Витрата", "value_type" => "CURRENT", "value_unit" => "м3/год", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 8000, "comment" => "Витрата NH3 в змішувач"),
         //F106
-        "62NH3_F106" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "62NH3_F106", "name_alias" => "F NH3 PCO", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "м3/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 160, "comment" => "Расход NH3 в РСО"),
+        "62NH3_F106" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "62NH3_F106", "name_alias" => "F NH3 PCO", "tag_param" => "F", "name_param" => "Витрата", "value_type" => "CURRENT", "value_unit" => "м3/год", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 160, "comment" => "Витрата NH3 в РСО"),
         //F105
-        "62HNO3_F105" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "62HNO3_F105", "name_alias" => "F HNO3", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "м3/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 25, "comment" => "Расход кислоты с агрегата"),
+        "62HNO3_F105" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "62HNO3_F105", "name_alias" => "F HNO3", "tag_param" => "F", "name_param" => "Витрата", "value_type" => "CURRENT", "value_unit" => "м3/год", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 25, "comment" => "Витрата кислоти з агрегату"),
         //F171
-        "62NG_F171" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "62NG_F171", "name_alias" => "F NG UKST", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "м3/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 2000, "comment" => "Расход ПГ в УКСТ"),
+        "62NG_F171" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "62NG_F171", "name_alias" => "F NG UKST", "tag_param" => "F", "name_param" => "Витрата", "value_type" => "CURRENT", "value_unit" => "м3/год", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 2000, "comment" => "Витрата ПГ в УКСТ"),
         //EA_RD
-        "62EA_RD" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "62EA_RD", "name_alias" => "VT EA RD", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "кВт", "scale_min" => -1500, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 1500, "comment" => "Мощность РД"),
+        "62EA_RD" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "62EA_RD", "name_alias" => "VT EA RD", "tag_param" => "S", "name_param" => "Витрата", "value_type" => "CURRENT", "value_unit" => "кВт", "scale_min" => -1500, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 1500, "comment" => "Потужність РД"),
         
         //============ AGR 7/2 =========//
         //PS-180
-        "72VZ_PS180" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "72VZ_PS180", "name_alias" => "P VZ KOMR", "tag_param" => "P", "name_param" => "Давление", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 3, "comment" => "Давление воздуха из компрессора"),
+        "72VZ_PS180" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "72VZ_PS180", "name_alias" => "P VZ KOMR", "tag_param" => "P", "name_param" => "Тиск", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 3, "comment" => "Тиск повітря з компресора"),
         //P181
-        "72VZ_P181" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "72VZ_P181", "name_alias" => "P VZ NAGN", "tag_param" => "P", "name_param" => "Давление", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 10, "comment" => "Давление воздуха за нагнетателем"),
+        "72VZ_P181" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "72VZ_P181", "name_alias" => "P VZ NAGN", "tag_param" => "P", "name_param" => "Тиск", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 10, "comment" => "Тиск повітря за нагнітачем"),
         //P127A
-        "72VZ_P127A" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "72VZ_P127A", "name_alias" => "P VZ SMES", "tag_param" => "P", "name_param" => "Давление", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 10, "comment" => "Давление воздуха в смеситель"),
+        "72VZ_P127A" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "72VZ_P127A", "name_alias" => "P VZ SMES", "tag_param" => "P", "name_param" => "Тиск", "value_type" => "CURRENT", "value_unit" => "кг/см2", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 10, "comment" => "Тиск повітря в змішувач"),
         //TS174
-        "72VZ_TS174" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "72VZ_TS174", "name_alias" => "T VZ TURB", "tag_param" => "T", "name_param" => "Температура", "value_type" => "CURRENT", "value_unit" => "град.С", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 1100, "comment" => "Температура воздуха перед турбиной"),
+        "72VZ_TS174" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "72VZ_TS174", "name_alias" => "T VZ TURB", "tag_param" => "T", "name_param" => "Температура", "value_type" => "CURRENT", "value_unit" => "град.С", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 1100, "comment" => "Температура повітря перед турбіною"),
         //TS102
-        "72TS102" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "72TS102", "name_alias" => "T SETKY", "tag_param" => "T", "name_param" => "Температура", "value_type" => "CURRENT", "value_unit" => "град.С", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 1100, "comment" => "Температура под сетками в КА"),
+        "72TS102" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "72TS102", "name_alias" => "T SETKY", "tag_param" => "T", "name_param" => "Температура", "value_type" => "CURRENT", "value_unit" => "град.С", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 1100, "comment" => "Температура під сітками в КА"),
         //F102
-        "72VZ_F102" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "72VZ_F102", "name_alias" => "F VZ SMES", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "м3/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 60000, "comment" => "Расход воздуха в смеситель"),
+        "72VZ_F102" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "72VZ_F102", "name_alias" => "F VZ SMES", "tag_param" => "F", "name_param" => "Витрата", "value_type" => "CURRENT", "value_unit" => "м3/год", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 60000, "comment" => "Витрата повітря в змішувач"),
         //F103
-        "72VZ_F103" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "72VZ_F103", "name_alias" => "F VZ DOB", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "м3/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 20000, "comment" => "Расход добавочного воздуха"),
+        "72VZ_F103" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "72VZ_F103", "name_alias" => "F VZ DOB", "tag_param" => "F", "name_param" => "Витрата", "value_type" => "CURRENT", "value_unit" => "м3/год", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 20000, "comment" => "Витрата додаткового повітря"),
         //F101
-        "72NH3_F101" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "72NH3_F101", "name_alias" => "F NH3 SMES", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "м3/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 8000, "comment" => "Расход NH3 в смеситель"),
+        "72NH3_F101" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "72NH3_F101", "name_alias" => "F NH3 SMES", "tag_param" => "F", "name_param" => "Витрата", "value_type" => "CURRENT", "value_unit" => "м3/год", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 8000, "comment" => "Витрата NH3 в змішувач"),
         //F106
-        "72NH3_F106" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "72NH3_F106", "name_alias" => "F NH3 PCO", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "м3/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 160, "comment" => "Расход NH3 в РСО"),
+        "72NH3_F106" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "72NH3_F106", "name_alias" => "F NH3 PCO", "tag_param" => "F", "name_param" => "Витрата", "value_type" => "CURRENT", "value_unit" => "м3/год", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 160, "comment" => "Витрата NH3 в РСО"),
         //F105
-        "72HNO3_F105" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "72HNO3_F105", "name_alias" => "F HNO3", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "м3/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 25, "comment" => "Расход кислоты с агрегата"),
+        "72HNO3_F105" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "72HNO3_F105", "name_alias" => "F HNO3", "tag_param" => "F", "name_param" => "Витрата", "value_type" => "CURRENT", "value_unit" => "м3/год", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 25, "comment" => "Витрата кислоти з агрегату"),
         //F171
-        "72NG_F171" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "72NG_F171", "name_alias" => "F NG UKST", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "м3/ч", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 2000, "comment" => "Расход ПГ в УКСТ"),
+        "72NG_F171" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "72NG_F171", "name_alias" => "F NG UKST", "tag_param" => "F", "name_param" => "Витрата", "value_type" => "CURRENT", "value_unit" => "м3/год", "scale_min" => 0, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 2000, "comment" => "Витрата ПГ в УКСТ"),
         //EA_RD
-        "72EA_RD" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "72EA_RD", "name_alias" => "VT EA RD", "tag_param" => "F", "name_param" => "Расход", "value_type" => "CURRENT", "value_unit" => "кВт", "scale_min" => -1500, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 1500, "comment" => "Мощность РД"),
+        "72EA_RD" => array("topic" => "m5", "name_topic" => "Цех М-5 (II-отд.)", "alias" => "72EA_RD", "name_alias" => "VT EA RD", "tag_param" => "S", "name_param" => "Витрата", "value_type" => "CURRENT", "value_unit" => "кВт", "scale_min" => -1500, "blocking_min" => NULL, "signal_min" => NULL, "signal_max" => NULL, "blocking_max" => NULL, "scale_max" => 1500, "comment" => "Потужність РД"),
     );
 
 }
